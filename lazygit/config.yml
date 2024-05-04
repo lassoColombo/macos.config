@@ -1,0 +1,11 @@
+os:
+  editPreset: "nvim"
+
+customCommands:
+  - key: "C"
+    command: 'git commit -m "$(echo "{{.SelectedLocalBranch.Name}}" | cut -d"-" -f1,2) {{.Form.Message}}"'
+    context: "files"
+    prompts:
+      - type: "input"
+        title: "Message"
+        key: "Message"

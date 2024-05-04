@@ -1,0 +1,16 @@
+themes {
+    tokyo-night-storm {
+        fg "#c0caf5"
+        bg "#394b70"
+        black "#1d202f"
+        red "#f7768e"
+        green "#9ece6a"
+        yellow "#e0af68"
+        blue "#7aa2f7"
+        magenta "#ff007c"
+        cyan "#7dcfff"
+        white "#DADFF7"
+        orange "#ff9e64"
+    }
+}
+
