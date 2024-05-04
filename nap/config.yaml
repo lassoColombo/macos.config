@@ -1,5 +1,6 @@
 # Configuration
-home: ~/.config/nap/naps/
+home: /Users/colombos/.config/nap/naps
+
 default_language: bash
 theme: nord
 
@@ -15,4 +16,3 @@ red: "#f7768e"
 black: "#1d202f"
 gray: "#394b70"
 white: "#FFFFFF"
-
