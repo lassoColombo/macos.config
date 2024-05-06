@@ -25,7 +25,7 @@ keybinds {
                 floating true
             }
         }
-        bind "Alt w" {
+        bind "Alt m" {
             LaunchOrFocusPlugin "zellij:session-manager" {
                 floating true
                 move_to_focused_tab true
