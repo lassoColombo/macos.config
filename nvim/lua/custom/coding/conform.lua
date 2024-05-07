@@ -60,6 +60,7 @@ return {
         sql = { 'sqlfmt' },
         yaml = { 'prettier' },
         json = { 'prettier' },
+        go = { 'gofmt', 'goimports' },
         -- Conform can also run multiple formatters sequentially
         -- go = { 'goimports', 'gofumpt' },
         -- You can use a sub-list to tell conform to run *until* a formatter

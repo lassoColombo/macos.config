@@ -81,6 +81,7 @@ return { -- LSP Configuration & Plugins
       yamlls = require 'custom.lsp.configs.yamlls',
       jsonls = require 'custom.lsp.configs.jsonls',
       sqls = require 'custom.lsp.configs.sqls',
+      gopls = {},
     }
 
     require('mason').setup()
@@ -118,6 +119,9 @@ return { -- LSP Configuration & Plugins
       -- 'ansible-lint',
       -- markdown
       'marksman',
+      -- go
+      'gopls',
+      'goimports',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
