@@ -73,6 +73,7 @@ zstyle ':omz:update' frequency 1
 plugins=(
     git
     vi-mode
+    asdf
     docker
     docker-machine
     docker-compose
@@ -84,7 +85,7 @@ plugins=(
     safe-paste
     zoxide
     copyfile
-    globalias
+    # globalias
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,11 +115,14 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# sourcing some plugins installed with brew
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autopair/autopair.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(fzf --zsh)"
 
+# to set golang path with asdf
+. ~/.asdf/plugins/golang/set-env.zsh
 
 if [[ -z "$ZELLIJ" ]]; then
     zellij list-sessions | grep -q home && zellij attach home  || zellij --layout ~/.config/zellij/layouts/home.kdl  attach --create home 
