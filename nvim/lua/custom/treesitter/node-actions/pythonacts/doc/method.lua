@@ -73,7 +73,7 @@ return {
 
     local _, indent_start, _, _ = node:range()
     -- we want to indent by four spaces more with respect to the class definition
-    indent_start = indent_start + 3
+    indent_start = indent_start + 4
 
     local docstring = { indent('"""', indent_start), indent(string.format('%s ...', helpers.node_text(fnname)), indent_start) }
 
