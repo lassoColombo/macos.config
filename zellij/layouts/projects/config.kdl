@@ -1,5 +1,5 @@
 layout name="config" {
-    tab name="oh-my" cwd="~/.config/oh-my-zsh/" focus=true{
+    tab name="oh-my" cwd="~/.config/.oh-my-zsh/" focus=true{
         pane name="oh-my" command="nvim"
     }
     tab name="zsh" cwd="~/.config/zsh/" {
@@ -11,8 +11,8 @@ layout name="config" {
     tab name="zellij" cwd="~/.config/zellij/" {
         pane name="zellij" command="nvim"
     }
-    tab name="i3" cwd="~/.config/i3/" {
-        pane name="i3" command="nvim"
+    tab name="scripts" cwd="~/.config/scripts/" {
+        pane name="scripts" command="nvim"
     }
 
    default_tab_template {
