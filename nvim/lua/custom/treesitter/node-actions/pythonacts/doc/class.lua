@@ -43,15 +43,8 @@ return {
     table.insert(docstring, indent('"""', indent_start))
     table.insert(docstring, '')
 
-    -- :NOTE: this is here to mock the target node.
-    -- if i were to give a real target node, it would be overridden
-    local fake_node = {}
-    fake_node.range = function()
-      local start_row, start_col, _, _ = superclasses:child(superclasses:child_count() - 1):range()
-      return start_row + 1, 0, start_row + 1, 0
-    end
-
-    return docstring, { target = fake_node }
+    local start_row, start_col, _, _ = superclasses:child(superclasses:child_count() - 1):range()
+    return docstring, { target = { start_row + 1, 0, start_row + 1, 0 } }
   end,
 
   name = 'generate doc for class',

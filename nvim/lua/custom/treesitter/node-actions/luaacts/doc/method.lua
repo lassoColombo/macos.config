@@ -67,15 +67,8 @@ return {
 
     multiinsert(docstring, indent('--- @return ', indent_start), '')
 
-    -- :NOTE: this is here to mock the target node.
-    -- if i were to give a real target node, its range would be overridden
-    local fake_node = {}
-    fake_node.range = function()
-      local start_row, start_col, _, _ = node:range()
-      return start_row, 0, start_row, 0
-    end
-
-    return docstring, { target = fake_node }
+    local start_row, start_col, _, _ = node:range()
+    return docstring, { target = { start_row, 0, start_row, 0 } }
   end,
 
   name = 'generate doc for method',

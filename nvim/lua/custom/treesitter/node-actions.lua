@@ -1,5 +1,6 @@
 return {
-  'CKolkey/ts-node-action',
+  'lassoColombo/ts-node-action',
+  branch = 'range-as-an-opt',
   event = 'VimEnter',
   dependencies = { 'nvim-treesitter' },
   opts = function()
@@ -8,6 +9,7 @@ return {
     require('ts-node-action').setup {
       python = require 'custom.treesitter.node-actions.python',
       lua = require 'custom.treesitter.node-actions.lua-actions',
+      go = require 'custom.treesitter.node-actions.go',
     }
   end,
   -- config = function()
