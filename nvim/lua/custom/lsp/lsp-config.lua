@@ -22,19 +22,20 @@ return { -- LSP Configuration & Plugins
         end
 
         require('which-key').register {
-          ['<leader>L'] = { mode = { 'v', 'n' }, name = '[L]SP', _ = 'which_key_ignore' },
+          ['<leader>l'] = { mode = { 'v', 'n' }, name = '[L]SP', _ = 'which_key_ignore' },
         }
+        map('<leader>lr', '<cmd>LspRestart<CR>', { desc = '[L]SP [R]estart' })
 
-        map('<leader>cr', vim.lsp.buf.rename, '[C]ode [R]ename')
-        map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
-        map('<leader>cil', '<cmd>LspInfo<cr>', '[C]ode [I]nfo [L]sp')
-        map('K', vim.lsp.buf.hover, 'Hover Documentation')
+        map('<leader>lr', vim.lsp.buf.rename, '[L]SP [R]ename')
+        map('<leader>la', vim.lsp.buf.code_action, '[L]SP [A]ction')
+        map('<leader>li', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
+        map('<leader>lk', vim.lsp.buf.hover, 'Hover Documentation')
         -- telescope lsp mappings
         -- stylua: ignore start
         local telescope = require 'telescope.builtin'
-        map('gr', telescope.lsp_references, '[G]oto [R]eferences')
-        map('gd', telescope.lsp_definitions, '[G]oto [D]efinitions')
-        map('gD', telescope.lsp_type_definitions, '[G]oto type [D]efinitions')
+        map('<leader>sr', telescope.lsp_references, '[S]earch [R]eferences')
+        map('<leader>st', telescope.lsp_definitions, '[S]earch [D]efinitions')
+        map('<leader>sT', telescope.lsp_type_definitions, '[S]earch type [D]efinitions')
         map('<leader>sr', telescope.lsp_references, '[S]earch [R]eferences')
         map('<leader>si', telescope.lsp_implementations, '[S]earch [I]mplementation')
         map('<leader>ss', telescope.lsp_document_symbols, '[S]earc [S]ymbols (document)')
@@ -43,11 +44,11 @@ return { -- LSP Configuration & Plugins
         map('<leader>sd', function() telescope.diagnostics { bufnr = 0 } end, '[S]earch [D]iagnostics (buffer)')
         -- trouble lsp mappings
         local trouble = require 'trouble'
-        map('<leader>ld', function () trouble.toggle 'document_diagnostics' end, '[L]ist [D]iagnostics (document)')
-        map('<leader>lD', function () trouble.toggle 'workspace_diagnostics' end, '[L]ist [D]iagnostics (workspace)')
-        map('<leader>lr', function () trouble.toggle 'lsp_references' end, '[L]ist [R]eferences')
-        map('<leader>lq', function () trouble.toggle 'quickfix' end, '[L]ist [Q]uickfix')
-        map('<leader>ll', function () trouble.toggle 'loclist' end, '[L]ist [L]oc')
+        map('<leader>Ld', function () trouble.toggle 'document_diagnostics' end, '[L]ist [D]iagnostics (document)')
+        map('<leader>LD', function () trouble.toggle 'workspace_diagnostics' end, '[L]ist [D]iagnostics (workspace)')
+        map('<leader>Lr', function () trouble.toggle 'lsp_references' end, '[L]ist [R]eferences')
+        map('<leader>Lq', function () trouble.toggle 'quickfix' end, '[L]ist [Q]uickfix')
+        map('<leader>Ll', function () trouble.toggle 'loclist' end, '[L]ist [L]oc')
         -- :TODO: drop builtins in favour of the following (not working!!)
         -- map(']d', function () require("trouble").next({skip_groups = true, jump = true}) end, '[next [D]iagnostic')
         -- map('[d', function () require("trouble").previous({skip_groups = true, jump = true}) end, '[previous [D]iagnostic')

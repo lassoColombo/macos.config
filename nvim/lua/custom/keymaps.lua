@@ -3,7 +3,7 @@
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
-vim.keymap.set({ 'n', 'v' }, '<Esc>', "<cmd>execute 'nohlsearch | NoiceDismiss'<CR>")
+vim.keymap.set({ 'n', 'v' }, '<Esc>', "<cmd>execute 'nohlsearch | NoiceDismiss'<CR>", { desc = 'dismiss hilight and notifications' })
 vim.keymap.set({ 'n', 'v' }, '<leader>p', '"+p', { desc = '[P]aste from system clipboard' })
 vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+y', { desc = '[Y]ank to system clipboard' })
 
