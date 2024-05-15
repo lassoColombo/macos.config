@@ -72,6 +72,7 @@ zstyle ':omz:update' frequency 1
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    ssh
     vi-mode
     asdf
     docker
