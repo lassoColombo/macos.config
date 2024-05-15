@@ -72,5 +72,6 @@ return {
 
     require 'custom.cmp.snippets.luasnips.luasnips'
     require 'custom.cmp.snippets.pyhonsnips.pythonsnips'
+    require 'custom.cmp.snippets.gosnips.gosnips'
   end,
 }
