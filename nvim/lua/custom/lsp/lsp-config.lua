@@ -26,9 +26,9 @@ return { -- LSP Configuration & Plugins
         }
         map('<leader>lr', '<cmd>LspRestart<CR>', { desc = '[L]SP [R]estart' })
 
+        map('<leader>il', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
         map('<leader>lr', vim.lsp.buf.rename, '[L]SP [R]ename')
         map('<leader>la', vim.lsp.buf.code_action, '[L]SP [A]ction')
-        map('<leader>li', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
         map('<leader>lk', vim.lsp.buf.hover, 'Hover Documentation')
         -- telescope lsp mappings
         -- stylua: ignore start

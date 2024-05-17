@@ -7,6 +7,7 @@ return { -- Useful plugin to show you pending keybinds.
     -- Document existing key chains
     require('which-key').register {
       ['<leader>c'] = { mode = { 'v', 'n' }, name = '[C]ode', _ = 'which_key_ignore' },
+      ['<leader>i'] = { mode = { 'v', 'n' }, name = '[I]nfo', _ = 'which_key_ignore' },
       ['<leader>ci'] = { mode = { 'v', 'n' }, name = '[C]ode [I]nfo', _ = 'which_key_ignore' },
       ['<leader>ct'] = { mode = { 'v', 'n' }, name = '[C]ode [T]reesitter', _ = 'which_key_ignore' },
       ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
