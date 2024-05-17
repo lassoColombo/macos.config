@@ -74,4 +74,15 @@ return {
     require 'custom.cmp.snippets.pyhonsnips.pythonsnips'
     require 'custom.cmp.snippets.gosnips.gosnips'
   end,
+  setup = function()
+    local opts = {}
+    opts.sql = {
+      sources = {
+        { name = 'nvim_lsp' },
+        { name = 'vim-dadbod-completion' },
+        { name = 'buffer' },
+      },
+    }
+    return opts
+  end,
 }
