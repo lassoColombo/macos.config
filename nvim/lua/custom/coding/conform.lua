@@ -5,10 +5,10 @@ return {
 
   keys = {
     {
-      '<leader>cif',
+      '<leader>if',
       '<cmd>ConformInfo<cr>',
       mode = 'n',
-      desc = '[C]ode [I]nfo [F]ormat',
+      desc = '[I]nfo [F]ormat',
     },
     {
       '<leader>cf',
@@ -69,9 +69,9 @@ return {
       },
     }
     -- puntual configuration
-    -- require('conform').formatters.black = {
-    --   args = { '--lime-length', '130' },
-    -- }
+    require('conform').formatters.black = {
+      prepend_args = { '--line-length', '130' },
+    }
     return opts
     -- :NOTE: old user commands to toggle autoformat
     --
