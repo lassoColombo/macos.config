@@ -33,6 +33,7 @@ return { -- Highlight, edit, and navigate code
         'json5',
         'jsonc',
         'yaml',
+        'sql',
         'dockerfile',
         'gitignore',
       },
