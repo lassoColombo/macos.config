@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+var=$(printenv | cut -d= -f1 | fzf) &&
+echo "$(printenv "$var")" | pbcopy &&
+unset var

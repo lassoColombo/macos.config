@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Set default value for $1 if not provided
+: "${1:=4}"
+
+echo "The value of \$1 is: $1"
