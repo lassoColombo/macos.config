@@ -5,7 +5,13 @@ return {
       '<leader><leader>o',
       '<cmd>Oil .<cr>',
       mode = 'n',
-      desc = '[O]il',
+      desc = '[O]il workspace',
+    },
+    {
+      '<leader><leader>O',
+      '<cmd>Oil<cr>',
+      mode = 'n',
+      desc = '[O]il buffer',
     },
   },
   opts = {
@@ -13,6 +19,7 @@ return {
       ['g?'] = 'actions.show_help',
       ['<CR>'] = 'actions.select',
       ['L'] = 'actions.select',
+      ['H'] = 'actions.select',
       ['<C-v>'] = 'actions.select_vsplit',
       ['<C-s>'] = 'actions.select_split',
       ['<C-t>'] = 'actions.select_tab',

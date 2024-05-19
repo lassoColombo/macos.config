@@ -25,6 +25,19 @@ return { -- Fuzzy Finder (files, lsp, etc)
     }
     -- See `:help telescope.builtin`
     local builtin = require 'telescope.builtin'
+    -- lsp keymaps
+    local telescope = require 'telescope.builtin'
+    vim.keymap.set('n', '<leader>sr', telescope.lsp_references, { desc = '[S]earch [R]eferences' })
+    vim.keymap.set('n', '<leader>st', telescope.lsp_definitions, { desc = '[S]earch [D]efinitions' })
+    vim.keymap.set('n', '<leader>sT', telescope.lsp_type_definitions, { desc = '[S]earch type [D]efinitions' })
+    vim.keymap.set('n', '<leader>sr', telescope.lsp_references, { desc = '[S]earch [R]eferences' })
+    vim.keymap.set('n', '<leader>si', telescope.lsp_implementations, { desc = '[S]earch [I]mplementation' })
+    vim.keymap.set('n', '<leader>ss', telescope.lsp_document_symbols, { desc = '[S]earc [S]ymbols (document)' })
+    vim.keymap.set('n', '<leader>sS', telescope.lsp_dynamic_workspace_symbols, { desc = '[S]earch [S]ymbols (workspace)' })
+    vim.keymap.set('n', '<leader>sD', telescope.diagnostics, { desc = '[S]earch [D]iagnostics (workspace)' })
+    vim.keymap.set('n', '<leader>sd', function()
+      telescope.diagnostics { bufnr = 0 }
+    end, { desc = '[S]earch [D]iagnostics (buffer)' })
     -- grep searches
     vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
     vim.keymap.set('n', '<leader>sg', builtin.current_buffer_fuzzy_find, { desc = '[S]earch [G]rep (buffer)' })

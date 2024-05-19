@@ -26,34 +26,19 @@ return { -- LSP Configuration & Plugins
         }
         map('<leader>lr', '<cmd>LspRestart<CR>', { desc = '[L]SP [R]estart' })
 
-        map('<leader>il', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
+        map('<leader>li', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
         map('<leader>lr', vim.lsp.buf.rename, '[L]SP [R]ename')
         map('<leader>la', vim.lsp.buf.code_action, '[L]SP [A]ction')
         map('<leader>lk', vim.lsp.buf.hover, 'Hover Documentation')
-        -- telescope lsp mappings
-        -- stylua: ignore start
-        local telescope = require 'telescope.builtin'
-        map('<leader>sr', telescope.lsp_references, '[S]earch [R]eferences')
-        map('<leader>st', telescope.lsp_definitions, '[S]earch [D]efinitions')
-        map('<leader>sT', telescope.lsp_type_definitions, '[S]earch type [D]efinitions')
-        map('<leader>sr', telescope.lsp_references, '[S]earch [R]eferences')
-        map('<leader>si', telescope.lsp_implementations, '[S]earch [I]mplementation')
-        map('<leader>ss', telescope.lsp_document_symbols, '[S]earc [S]ymbols (document)')
-        map('<leader>sS', telescope.lsp_dynamic_workspace_symbols, '[S]earch [S]ymbols (workspace)')
-        map('<leader>sD', telescope.diagnostics, '[S]earch [D]iagnostics (workspace)')
-        map('<leader>sd', function() telescope.diagnostics { bufnr = 0 } end, '[S]earch [D]iagnostics (buffer)')
-        -- trouble lsp mappings
-        local trouble = require 'trouble'
-        map('<leader>Ld', function () trouble.toggle 'document_diagnostics' end, '[L]ist [D]iagnostics (document)')
-        map('<leader>LD', function () trouble.toggle 'workspace_diagnostics' end, '[L]ist [D]iagnostics (workspace)')
-        map('<leader>Lr', function () trouble.toggle 'lsp_references' end, '[L]ist [R]eferences')
-        map('<leader>Lq', function () trouble.toggle 'quickfix' end, '[L]ist [Q]uickfix')
-        map('<leader>Ll', function () trouble.toggle 'loclist' end, '[L]ist [L]oc')
-        -- :TODO: drop builtins in favour of the following (not working!!)
-        -- map(']d', function () require("trouble").next({skip_groups = true, jump = true}) end, '[next [D]iagnostic')
-        -- map('[d', function () require("trouble").previous({skip_groups = true, jump = true}) end, '[previous [D]iagnostic')
-        --
-        -- stylua: ignore end
+        vim.keymap.set('n', '[d', function()
+          vim.diagnostic.goto_prev { float = { source = true } }
+        end, { desc = 'Go to previous [D]iagnostic message' })
+        vim.keymap.set('n', ']d', function()
+          vim.diagnostic.goto_next { float = { source = true } }
+        end, { desc = 'Go to next [D]iagnostic message' })
+        vim.keymap.set('n', '<leader>ld', function()
+          vim.diagnostic.open_float { source = true }
+        end, { desc = '[L]SP (line) [D]iagnostics' })
 
         -- The following two autocommands are used to highlight references of the
         -- word under cursor when your cursor rests there for a little while.
@@ -86,7 +71,7 @@ return { -- LSP Configuration & Plugins
     }
 
     require('mason').setup()
-    vim.keymap.set('n', '<leader>cm', '<cmd>Mason<CR>', { desc = '[C]ode [M]ason' })
+    vim.keymap.set('n', '<leader<leader>m', '<cmd>Mason<CR>', { desc = '[C]ode [M]ason' })
 
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {

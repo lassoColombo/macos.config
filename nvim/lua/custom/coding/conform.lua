@@ -5,21 +5,21 @@ return {
 
   keys = {
     {
-      '<leader>if',
+      '<leader>fi',
       '<cmd>ConformInfo<cr>',
       mode = 'n',
-      desc = '[I]nfo [F]ormat',
+      desc = '[F]ormat [I]nfo',
     },
     {
-      '<leader>cf',
+      '<leader>fb',
       function()
         require('conform').format { async = true, lsp_fallback = true }
       end,
       mode = { 'n', 'v' },
-      desc = '[C]ode [F]ormat',
+      desc = '[F]ormat [B]uffer',
     },
     {
-      '<leader>tf',
+      '<leader>Tf',
       function()
         local log_level = (vim.g.autoformat_on_save and vim.log.levels.WARN or vim.log.levels.INFO)
         vim.g.autoformat_on_save = not vim.g.autoformat_on_save

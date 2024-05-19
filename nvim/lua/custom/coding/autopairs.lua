@@ -4,7 +4,7 @@ return {
   event = 'BufEnter',
   dependencies = { 'hrsh7th/nvim-cmp' },
   keys = {
-    vim.keymap.set('n', '<leader>tp', function()
+    vim.keymap.set('n', '<leader>Tp', function()
       local pairs = require 'nvim-autopairs'
       local log_level = nil
       if pairs.state.disabled then

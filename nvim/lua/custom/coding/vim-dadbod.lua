@@ -11,6 +11,7 @@ return {
   },
   {
     'kristijanhusak/vim-dadbod-ui',
+    event = 'VeryLazy',
     dependencies = {
       { 'tpope/vim-dadbod', lazy = true },
       { 'kristijanhusak/vim-dadbod-completion', lazy = true },
@@ -18,7 +19,7 @@ return {
     ft = { 'sql', 'mysql', 'plsql', 'mongo' },
     keys = {
       {
-        '<leader>tu',
+        '<leader>Tu',
         '<cmd>DBUIToggle<cr>',
         mode = 'n',
         desc = '[T]oggle DB [U]I',

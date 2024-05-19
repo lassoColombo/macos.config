@@ -1,5 +1,56 @@
 return {
   'folke/trouble.nvim',
+  keys = {
+    {
+      '<leader>Ll',
+      function()
+        require('trouble').toggle 'loclist'
+      end,
+      mode = 'n',
+      desc = '[L]ist [L]oc',
+    },
+    {
+      '<leader>Lq',
+      function()
+        require('trouble').toggle 'quickfix'
+      end,
+      mode = 'n',
+      desc = '[L]ist [Q]uickfix',
+    },
+    {
+      '<leader>Ld',
+      function()
+        require('trouble').toggle 'document_diagnostics'
+      end,
+      mode = 'n',
+      desc = '[L]ist [D]iagnostics (document)',
+    },
+    {
+      '<leader>LD',
+      function()
+        require('trouble').toggle 'workspace_diagnostics'
+      end,
+      mode = 'n',
+      desc = '[L]ist [D]iagnostics (workspace)',
+    },
+    {
+      '<leader>Lr',
+      function()
+        require('trouble').toggle 'lsp_references'
+      end,
+      mode = 'n',
+      desc = '[L]ist [R]eferences',
+    },
+    {
+      '<leader>Ll',
+      function()
+        require('trouble').toggle 'loclist'
+      end,
+      mode = 'n',
+      desc = '[L]ist [L]oc',
+    },
+  },
+
   dependencies = { 'nvim-tree/nvim-web-devicons', 'folke/todo-comments.nvim' },
   opts = {
     position = 'bottom', -- position of the list can be: bottom, top, left, right

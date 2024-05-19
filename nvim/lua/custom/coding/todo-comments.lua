@@ -5,8 +5,8 @@ return {
   keys = {
     { '<leader>st', '<cmd>TodoTelescope<cr>', desc = '[S]earch [T]odos' },
     { '<leader>sT', '<cmd>TodoTelescope keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[S]earch [T]odos' },
-    { '<leader>lt', '<cmd>Trouble todo<cr>', desc = '[L]ist [T]odos' },
-    { '<leader>lT', '<cmd>TodoTrouble keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[L]ist [T]odos (errors|warnings)' },
+    { '<leader>Lt', '<cmd>Trouble todo<cr>', desc = '[L]ist [T]odos' },
+    { '<leader>LT', '<cmd>TodoTrouble keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[L]ist [T]odos (errors|warnings)' },
     {
       '<leader>tt',
       function()
