@@ -19,12 +19,12 @@ return {
     end,
     keys = {
       {
-        '<leader>cls',
+        '<leader>ls',
         function()
           require('yaml-companion').open_ui_select()
         end,
         mode = 'n',
-        desc = '[C]ode [L]SP select [S]chema',
+        desc = '[L]SP [Y]AML [S]chema',
       },
     },
   },
