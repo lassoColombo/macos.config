@@ -59,7 +59,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
     end, { desc = '[S]earch [N]eovim files' })
     vim.keymap.set('n', '<leader>/', function()
       builtin.current_buffer_fuzzy_find(require('telescope.themes').get_ivy {
-        winblend = 10,
+        winblend = 0,
         previewer = true,
       })
     end, { desc = '[/] Fuzzily search in current buffer' })

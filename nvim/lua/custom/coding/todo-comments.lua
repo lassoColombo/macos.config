@@ -8,7 +8,7 @@ return {
     { '<leader>Lt', '<cmd>Trouble todo<cr>', desc = '[L]ist [T]odos' },
     { '<leader>LT', '<cmd>TodoTrouble keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[L]ist [T]odos (errors|warnings)' },
     {
-      '<leader>tt',
+      '<leader>Tt',
       function()
         local comments = require 'todo-comments'
         local log_level = (vim.g.todo_comments and vim.log.levels.WARN or vim.log.levels.INFO)

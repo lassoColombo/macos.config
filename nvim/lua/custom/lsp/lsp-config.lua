@@ -24,7 +24,7 @@ return { -- LSP Configuration & Plugins
         require('which-key').register {
           ['<leader>l'] = { mode = { 'v', 'n' }, name = '[L]SP', _ = 'which_key_ignore' },
         }
-        map('<leader>lr', '<cmd>LspRestart<CR>', { desc = '[L]SP [R]estart' })
+        map('<leader>lR', '<cmd>LspRestart<CR>', '[L]SP [R]estart')
 
         map('<leader>li', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
         map('<leader>lr', vim.lsp.buf.rename, '[L]SP [R]ename')
