@@ -1,5 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 host=$(awk '{print $1}' ~/.ssh/known_hosts | cut -d, -f1 | sort -u | fzf) &&
-ssh "$host" &
-unset host
+ssh "$host" 
