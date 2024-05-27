@@ -19,7 +19,7 @@ return {
       desc = '[F]ormat [B]uffer',
     },
     {
-      '<leader>Tf',
+      '<leader><leader>tf',
       function()
         local log_level = (vim.g.autoformat_on_save and vim.log.levels.WARN or vim.log.levels.INFO)
         vim.g.autoformat_on_save = not vim.g.autoformat_on_save

@@ -47,27 +47,27 @@ vim.keymap.set('n', '<C-down>', '<cmd>horizontal resize -3<CR>', { desc = 'Move 
 
 -- toggle keymaps
 -- toggle word wrap
-vim.keymap.set('n', '<leader>Tw', function()
+vim.keymap.set('n', '<leader><leader>tw', function()
   vim.wo.wrap = not vim.wo.wrap
   vim.notify('set line wrap to ' .. tostring(vim.wo.wrap), vim.log.levels.WARN)
 end, { desc = '[T]oggle [W]rap' })
 
 -- toggle line relativeness
-vim.keymap.set('n', '<leader>Tl', function()
+vim.keymap.set('n', '<leader><leader>tl', function()
   vim.opt.relativenumber = not vim.opt.relativenumber
   local log_level = (vim.opt.relativenumber and vim.log.levels.INFO or vim.log.levels.WARN)
   vim.notify('set line wrap to ' .. tostring(vim.opt.relativenumber), log_level)
 end, { desc = '[T]oggle relative [L]ines' })
 
 -- toggle lines
-vim.keymap.set('n', '<leader>TL', function()
+vim.keymap.set('n', '<leader><leader>tL', function()
   vim.opt.number = not vim.opt.number
   local log_level = (vim.opt.number and vim.log.levels.INFO or vim.log.levels.WARN)
   vim.notify('set line wrap to ' .. tostring(vim.opt.number), log_level)
 end, { desc = '[T]oggle [L]ines' })
 
 -- toggle diagnostics
-vim.keymap.set('n', '<leader>Td', function()
+vim.keymap.set('n', '<leader><leader>td', function()
   if vim.diagnostic.is_disabled() then
     vim.diagnostic.enable()
   else
@@ -79,7 +79,7 @@ vim.keymap.set('n', '<leader>Td', function()
 end, { desc = '[T]oggle [D]iagnostics' })
 
 -- toggle lines
-vim.keymap.set('n', '<leader>TL', function()
+vim.keymap.set('n', '<leader><leader>tL', function()
   vim.opt.number = not vim.opt.number
   local log_level = (vim.opt.number and vim.log.levels.INFO or vim.log.levels.WARN)
   vim.notify('set line wrap to ' .. tostring(vim.opt.number), log_level)

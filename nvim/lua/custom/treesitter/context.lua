@@ -6,7 +6,7 @@ return {
       require('treesitter-context').go_to_context(vim.v.count1)
     end, { silent = true }),
 
-    vim.keymap.set('n', '<leader>Tc', function()
+    vim.keymap.set('n', '<leader><leader>tc', function()
       local context = require 'treesitter-context'
       if context.enabled() then
         context.disable()

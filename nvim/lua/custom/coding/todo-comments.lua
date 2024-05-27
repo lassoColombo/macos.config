@@ -3,12 +3,12 @@ return {
   event = 'VimEnter',
   dependencies = { 'nvim-lua/plenary.nvim' },
   keys = {
-    { '<leader>st', '<cmd>TodoTelescope<cr>', desc = '[S]earch [T]odos' },
-    { '<leader>sT', '<cmd>TodoTelescope keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[S]earch [T]odos' },
+    { '<leader>sc', '<cmd>TodoTelescope<cr>', desc = '[S]earch TODO-[C]omments' },
+    { '<leader>sC', '<cmd>TodoTelescope keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[S]earch TODO-[C]omments (err|warn)' },
     { '<leader>Lt', '<cmd>Trouble todo<cr>', desc = '[L]ist [T]odos' },
-    { '<leader>LT', '<cmd>TodoTrouble keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[L]ist [T]odos (errors|warnings)' },
+    { '<leader>LT', '<cmd>TodoTrouble keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[L]ist [T]odos (err|warn)' },
     {
-      '<leader>Tt',
+      '<leader><leader>tC',
       function()
         local comments = require 'todo-comments'
         local log_level = (vim.g.todo_comments and vim.log.levels.WARN or vim.log.levels.INFO)
@@ -20,7 +20,7 @@ return {
         vim.g.todo_comments = not vim.g.todo_comments
         vim.notify('set todo-comments to ' .. tostring(vim.g.todo_comments), log_level)
       end,
-      desc = '[T]oggle [T]odo-comments',
+      desc = '[T]oggle TODO-[C]omments',
     },
   },
   opts = {

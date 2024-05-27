@@ -102,7 +102,7 @@ return { -- LSP Configuration & Plugins
       'taplo',
       -- ansible
       'ansiblels',
-      -- 'ansible-lint',
+      'ansible-lint',
       -- markdown
       'marksman',
       -- go

@@ -15,8 +15,9 @@ return { -- Useful plugin to show you pending keybinds.
       ['<leader>b'] = { name = '[B]uffer', _ = 'which_key_ignore' },
       ['<leader>g'] = { name = '[G]it', _ = 'which_key_ignore' },
       ['<leader>t'] = { name = '[T]treesitter', _ = 'which_key_ignore' },
-      ['<leader>T'] = { name = '[T]oggle', _ = 'which_key_ignore' },
+      ['<leader>u'] = { name = '[U]nittest', _ = 'which_key_ignore' },
       ['<leader><leader>'] = { name = 'Keymap Layer 2', _ = 'which_key_ignore' },
+      ['<leader><leader>t'] = { name = '[T]oggle', _ = 'which_key_ignore' },
     }
   end,
 }

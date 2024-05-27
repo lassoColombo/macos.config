@@ -11,7 +11,7 @@ return {
   },
   keys = {},
   opts = function()
-    vim.keymap.set('n', '<leader>Tn', function()
+    vim.keymap.set('n', '<leader><leader>tn', function()
       local loglevel = nil
       if vim.g.noice then
         require('noice').disable()

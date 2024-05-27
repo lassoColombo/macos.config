@@ -19,7 +19,7 @@ return {
     ft = { 'sql', 'mysql', 'plsql', 'mongo' },
     keys = {
       {
-        '<leader>Tu',
+        '<leader><leader>tu',
         '<cmd>DBUIToggle<cr>',
         mode = 'n',
         desc = '[T]oggle DB [U]I',
