@@ -81,4 +81,17 @@ return {
       }
     )
   ),
+  u.s(
+    'main',
+    u.fmt(
+      [[
+      func main() {{
+        {}
+      }}
+  ]],
+      {
+        u.i(1, 'Body'),
+      }
+    )
+  ),
 }

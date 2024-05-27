@@ -15,7 +15,7 @@ return {
     'Getenv',
     u.fmt(
       [[
-    {} := os.Getenv("{}")
+      {} := os.Getenv("{}")
 	  if {} == "" {{
       {}
 	  }}
