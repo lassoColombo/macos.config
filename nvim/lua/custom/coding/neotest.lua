@@ -88,7 +88,7 @@ return {
       desc = '[U]nittest [X]Abort',
     },
     {
-      '<leader>u',
+      '<leader>us',
       function()
         require('neotest').summary.toggle()
       end,

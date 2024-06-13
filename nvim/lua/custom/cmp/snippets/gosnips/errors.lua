@@ -5,6 +5,19 @@ return {
     'if-err',
     u.fmt(
       [[
+      if err != nil {{
+        {}
+      }}
+  ]],
+      {
+        u.i(1, 'ErrHandling'),
+      }
+    )
+  ),
+  u.s(
+    'if-err-expression',
+    u.fmt(
+      [[
       {}, err, := {}
       if err != nil {{
         {}
