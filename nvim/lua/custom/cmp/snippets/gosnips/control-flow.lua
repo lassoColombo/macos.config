@@ -85,4 +85,35 @@ return {
       }
     )
   ),
+  u.s(
+    'select',
+    u.fmt(
+      [[
+      select {{
+      case {}:
+        {}
+      default:
+        {}
+      }}
+  ]],
+      {
+        u.i(1, 'Case'),
+        u.i(2, 'CaseBody'),
+        u.i(3, 'DefaultBody'),
+      }
+    )
+  ),
+  u.s(
+    'case',
+    u.fmt(
+      [[
+      case {}:
+        {}
+  ]],
+      {
+        u.i(1, 'Case'),
+        u.i(2, 'CaseBody'),
+      }
+    )
+  ),
 }

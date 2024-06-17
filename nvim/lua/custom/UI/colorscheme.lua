@@ -6,7 +6,7 @@ return {
     vim.cmd.colorscheme 'tokyonight-night'
     vim.cmd.hi 'Comment gui=none'
   end,
-  config = {
+  opts = {
     transparent = true,
     styles = {
       sidebars = 'transparent',
