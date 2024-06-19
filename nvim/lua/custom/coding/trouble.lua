@@ -28,7 +28,7 @@ return {
     {
       '<leader>LT',
       function()
-        require('trouble').toggle { mode = 'lsp_type_declarations' }
+        require('trouble').toggle { mode = 'lsp_type_definitions' }
       end,
       desc = '[L]ist [T]ype declarations',
     },
