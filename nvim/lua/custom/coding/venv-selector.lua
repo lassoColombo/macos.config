@@ -1,19 +1,17 @@
 return {
   'linux-cultist/venv-selector.nvim',
-  ft = 'python',
-  drpendencies = {
+  dependencies = {
     'neovim/nvim-lspconfig',
-    'nvim-telescope/telescope.nvim',
-    -- 'mfussenegger/nvim-dap-python' -- :TODO: activate when dap is configured
+    'mfussenegger/nvim-dap',
+    'mfussenegger/nvim-dap-python', --optional
+    { 'nvim-telescope/telescope.nvim', branch = '0.1.x', dependencies = { 'nvim-lua/plenary.nvim' } },
   },
-  opts = function(_, opts)
-    local custom_opts = {
-      -- dap_enabled = true, -- :TODO: activate when dap is configured
-      name = { 'venv', '.venv', 'env', '.env', '*_venv' },
-    }
-    return vim.tbl_deep_extend('force', opts, custom_opts)
+  lazy = false,
+  branch = 'regexp', -- This is the regexp branch, use this for the new version
+  config = function()
+    require('venv-selector').setup()
   end,
   keys = {
-    { '<leader>lv', '<cmd>VenvSelect<cr>', desc = '[L]SP select [V]env', ft = 'python' },
+    { '<leader>lv', '<cmd>VenvSelect<cr>' },
   },
 }
