@@ -80,7 +80,7 @@ return {
     'forii',
     u.fmt(
       [[
-     for i := 0; i < {} - 1; i++ {{
+     for i := 0; i < {} ; i++ {{
       {}
      }}
   ]],

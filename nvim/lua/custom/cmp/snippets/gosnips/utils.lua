@@ -16,7 +16,6 @@ return {
     u.fmt(
       [[
       {} := os.Getenv("{}")
-
 	  if {} == "" {{
       {}
 	  }}
@@ -28,6 +27,26 @@ return {
           return args[1][1]
         end, { 1 }),
         u.i(3, 'IfNotSetBody'),
+      }
+    )
+  ),
+  u.s(
+    'print-point',
+    u.fmt(
+      [[
+        fmt.Println("{}")
+      ]],
+      {
+        u.c(1, {
+          u.t '$$$$',
+          u.t '####',
+          u.t '@@@@',
+          u.t '!!!!',
+          u.t '%%%%',
+          u.t '^^^^',
+          u.t '&&&&',
+          u.t '****',
+        }),
       }
     )
   ),

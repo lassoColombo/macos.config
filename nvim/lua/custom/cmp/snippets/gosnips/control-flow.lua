@@ -85,6 +85,29 @@ return {
       }
     )
   ),
+  -- u.s(
+  --   'type-switch',
+  --   u.fmt(
+  --     [[
+  --     switch {} := {}.(type) {
+  --     default:
+  --       {}
+  --     case {}:
+  --       {}
+  --     }
+  --     }}
+  -- ]],
+  --     {
+  --       u.i(1, 'Var'),
+  --       u.f(function(args, parent, user_args)
+  --         return args[1][1]
+  --       end, { 1 }),
+  --       u.i(2, 'DefaultBody'),
+  --       u.i(3, 'Case'),
+  --       u.i(4, 'CaseBody'),
+  --     }
+  --   )
+  -- ),
   u.s(
     'select',
     u.fmt(
@@ -113,6 +136,32 @@ return {
       {
         u.i(1, 'Case'),
         u.i(2, 'CaseBody'),
+      }
+    )
+  ),
+  u.s(
+    'if-ok',
+    u.fmt(
+      [[
+      if ok {{
+        {}
+      }}
+  ]],
+      {
+        u.i(1, 'Expression'),
+      }
+    )
+  ),
+  u.s(
+    'if-not-ok',
+    u.fmt(
+      [[
+      if !ok {{
+        {}
+      }}
+  ]],
+      {
+        u.i(1, 'Expression'),
       }
     )
   ),
