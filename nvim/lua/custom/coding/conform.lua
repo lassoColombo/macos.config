@@ -58,6 +58,7 @@ return {
         lua = { 'stylua' },
         python = { 'isort', 'black' },
         sql = { 'sqlfmt' },
+        mysql = { 'sqlfmt' },
         yaml = { 'prettier' },
         json = { 'prettier' },
         go = { 'gofmt', 'goimports' },
