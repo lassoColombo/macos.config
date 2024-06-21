@@ -9,10 +9,10 @@ return {
       }}
   ]],
       {
-        u.i(1, 'key'),
-        u.i(2, 'value'),
+        u.c(1, { u.i 'key', u.t '_' }),
+        u.c(2, { u.i 'value', u.t '_' }),
         u.i(3, 'Map'),
-        u.i(4, 'Body'),
+        u.i(4, ''),
       }
     )
   ),
@@ -20,29 +20,15 @@ return {
     'for-range-slice',
     u.fmt(
       [[
-      for i, {} := range {} {{
+      for {}, {} := range {} {{
         {}
       }}
   ]],
       {
-        u.i(1, 'Value'),
-        u.i(2, 'Slice'),
-        u.i(3, 'Body'),
-      }
-    )
-  ),
-  u.s(
-    'whilei',
-    u.fmt(
-      [[
-      i := 0
-      for i < {} {{
-        {}
-      }}
-  ]],
-      {
-        u.i(1, 'End'),
-        u.i(2, 'Body'),
+        u.c(1, { u.i 'Counter', u.t '_' }),
+        u.i(2, 'Value'),
+        u.i(3, 'Slice'),
+        u.i(4, ''),
       }
     )
   ),
@@ -55,7 +41,7 @@ return {
      }}
   ]],
       {
-        u.i(1, 'Body'),
+        u.i(1, ''),
       }
     )
   ),
@@ -64,29 +50,22 @@ return {
     'fori',
     u.fmt(
       [[
-     for i := {}; i < {}; i+={} {{
+     for {} := {}; {} < {}; {}{} {{
       {}
      }}
   ]],
       {
-        u.i(1, 'Start'),
-        u.i(2, 'End'),
-        u.i(3, 'Increment'),
-        u.i(4, 'Body'),
-      }
-    )
-  ),
-  u.s(
-    'forii',
-    u.fmt(
-      [[
-     for i := 0; i < {} ; i++ {{
-      {}
-     }}
-  ]],
-      {
-        u.i(1, 'Limit'),
-        u.i(2, 'Body'),
+        u.i(1, 'Counter'),
+        u.i(2, 'Start'),
+        u.f(function(args, parent, user_args)
+          return args[1][1]
+        end, { 1 }),
+        u.i(3, 'End'),
+        u.f(function(args, parent, user_args)
+          return args[1][1]
+        end, { 1 }),
+        u.i(4, 'Increment'),
+        u.i(5, ''),
       }
     )
   ),

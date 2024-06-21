@@ -10,10 +10,10 @@ return {
       }}({})
   ]],
       {
-        u.i(1, 'Args'),
-        u.i(2, 'Return'),
-        u.i(3, 'Body'),
-        u.i(4, 'Input'),
+        u.i(1, ''),
+        u.i(2, ''),
+        u.i(3, ''),
+        u.i(4, ''),
       }
     )
   ),
@@ -26,10 +26,10 @@ return {
       }}({})
   ]],
       {
-        u.i(1, 'Args'),
-        u.i(2, 'Return'),
-        u.i(3, 'Body'),
-        u.i(4, 'Input'),
+        u.i(1, ''),
+        u.i(2, ''),
+        u.i(3, ''),
+        u.i(4, ''),
       }
     )
   ),
@@ -43,9 +43,9 @@ return {
   ]],
       {
         u.i(1, 'FuncName'),
-        u.i(2, 'Args'),
-        u.i(3, 'Return'),
-        u.i(4, 'Body'),
+        u.i(2, ''),
+        u.i(3, ''),
+        u.i(4, ''),
       }
     )
   ),
@@ -58,9 +58,9 @@ return {
       }}
   ]],
       {
-        u.i(1, 'Args'),
-        u.i(2, 'Return'),
-        u.i(3, 'Body'),
+        u.i(1, ''),
+        u.i(2, ''),
+        u.i(3, ''),
       }
     )
   ),
@@ -68,16 +68,17 @@ return {
     'method',
     u.fmt(
       [[
-      func ({}) {}({}) {} {{
+      func ({} *{}) {}({}) {} {{
         {}
       }}
   ]],
       {
         u.i(1, 'Receiver'),
-        u.i(2, 'FuncName'),
-        u.i(3, 'Args'),
-        u.i(4, 'Return'),
-        u.i(5, 'Body'),
+        u.i(2, 'Type'),
+        u.i(3, 'FuncName'),
+        u.i(4, ''),
+        u.i(5, ''),
+        u.i(6, ''),
       }
     )
   ),

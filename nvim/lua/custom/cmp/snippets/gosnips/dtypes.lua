@@ -45,6 +45,13 @@ return {
   ),
   u.s(
     'slice',
+    u.fmt('[]{}{{{}}}', {
+      u.i(1, 'VarType'),
+      u.i(2, 'Content'),
+    })
+  ),
+  u.s(
+    'slice-declaration',
     u.fmt('{} := []{}{{{}}}', {
       u.i(1, 'VarName'),
       u.i(2, 'VarType'),
@@ -53,6 +60,14 @@ return {
   ),
   u.s(
     'array',
+    u.fmt('[{}]{}{{{}}}', {
+      u.i(1, 'Length'),
+      u.i(2, 'VarType'),
+      u.i(3, 'Content'),
+    })
+  ),
+  u.s(
+    'array-declaration',
     u.fmt('{} := [{}]{}{{{}}}', {
       u.i(1, 'VarName'),
       u.i(2, 'Length'),
@@ -62,6 +77,22 @@ return {
   ),
   u.s(
     'map',
+    u.fmt(
+      [[
+      map[{}]{}{{
+        {}
+      }}
+
+      ]],
+      {
+        u.i(1, 'VarType'),
+        u.i(2, 'VarType'),
+        u.i(3, 'Content'),
+      }
+    )
+  ),
+  u.s(
+    'map-declaration',
     u.fmt(
       [[
       {} := map[{}]{}{{
