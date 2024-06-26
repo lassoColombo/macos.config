@@ -122,16 +122,6 @@ source $(brew --prefix)/share/zsh-autopair/autopair.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(fzf --zsh)"
 
-# to set golang path with asdf
-. ~/.asdf/plugins/golang/set-env.zsh
-
-if [[ -z "$ZELLIJ" ]]; then
-    zellij list-sessions | grep -q home && zellij attach home  || zellij --layout ~/.config/zellij/layouts/home.kdl  attach --create home 
-    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
-        exit
-    fi
-fi
-
 # setup ansible autocompletion
 eval $(register-python-argcomplete ansible)
 eval $(register-python-argcomplete ansible-config)
@@ -142,3 +132,14 @@ eval $(register-python-argcomplete ansible-inventory)
 eval $(register-python-argcomplete ansible-playbook)
 eval $(register-python-argcomplete ansible-pull)
 eval $(register-python-argcomplete ansible-vault)
+
+# to set golang path with asdf
+. ~/.asdf/plugins/golang/set-env.zsh
+
+if [[ -z "$ZELLIJ" ]]; then
+    zellij list-sessions | grep -q home && zellij attach home  || zellij --layout ~/.config/zellij/layouts/home.kdl  attach --create home 
+    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+        exit
+    fi
+fi
+
