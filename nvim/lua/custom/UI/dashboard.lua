@@ -30,6 +30,7 @@ return {
           { action = "Telescope live_grep",                                                           desc = " Find text",       icon = "🕵 ", key = "g" },
           { action = 'lua require("telescope.builtin").find_files { cwd = vim.fn.stdpath "config"}',  desc = " Config",          icon = "⚙️ ", key = "c" },
           { action = 'lua require("persistence").load()',                                             desc = " Restore Session", icon = "🔙 ", key = "s" },
+          { action = 'DBUIToggle',                                                                    desc = " DBUI",            icon = "💽 ", key = "d" },
           { action = "qa",                                                                            desc = " Quit",            icon = "🚪 ", key = "q" },
 
         },
