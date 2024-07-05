@@ -21,6 +21,13 @@ return {
     })
   ),
   u.s(
+    'inspect',
+    u.fmt('fmt.Printf("{} %+v\\n", {})', {
+      u.i(1, ''),
+      u.i(2, ''),
+    })
+  ),
+  u.s(
     'Print-type',
     u.fmt('fmt.Printf("%T\\n", {})', {
       u.i(1, 'var'),
