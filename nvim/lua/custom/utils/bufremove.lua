@@ -18,19 +18,7 @@ return { -- Collection of various small independent plugins/modules
   version = false,
   keys = {
     {
-      '<leader>bq',
-      close_prompt_saving,
-      desc = '[B]uffer [Q]uit',
-    },
-    {
-      '<leader>bQ',
-      function()
-        require('mini.bufremove').delete(0, true)
-      end,
-      desc = '[B]uffer [Q]uit force',
-    },
-    {
-      '<leader>B',
+      '<leader>b',
       close_prompt_saving,
       desc = '[B]uffer close',
     },

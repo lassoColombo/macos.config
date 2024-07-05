@@ -9,12 +9,11 @@ vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+y', { desc = '[Y]ank to system clip
 
 -- :FIXME: not working
 -- vim.keymap.set('n', '<leader>r', ';.', { desc = '[R]epeat motion and action' })
+--
 -- Buffer keymaps
-vim.keymap.set('n', '<leader>bw', '<cmd>w<CR>', { desc = '[B]uffer [W]rite' })
+-- vim.keymap.set('n', '<leader>bw', '<cmd>w<CR>', { desc = '[B]uffer [W]rite' })
 vim.keymap.set({ 'n', 'i' }, '<C-s>', '<cmd>w<cr><esc>', { desc = '[B]uffer [W]rite' })
-vim.keymap.set('n', '<leader>ww', '<cmd>wa<CR>', { desc = '[W]orkspace [W]rite' })
-vim.keymap.set('n', '<leader>wq', '<cmd>qa<CR>', { desc = '[W]orkspace [Q]quit' })
-vim.keymap.set('n', '<leader>wQ', '<cmd>qa!<CR>', { desc = '[W]orkspace [Q]uit force' })
+vim.keymap.set('n', '<leader>Q', '<cmd>qa!<CR>', { desc = '[Q]uit (qa!)' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -35,7 +34,7 @@ vim.keymap.set('n', '<leader>wQ', '<cmd>qa!<CR>', { desc = '[W]orkspace [Q]uit f
 --  See `:help wincmd` for a list of all window commands
 vim.keymap.set('n', '<leader>|', '<cmd>vsplit<CR>', { desc = 'Split window vertically' })
 vim.keymap.set('n', '<leader>-', '<cmd>hsplit<CR>', { desc = 'Split window horizontally' })
-vim.keymap.set('n', '<leader>W', '<cmd>close<CR>', { desc = '[W]indow close' })
+vim.keymap.set('n', '<leader>w', '<cmd>close<CR>', { desc = '[W]indow close' })
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })

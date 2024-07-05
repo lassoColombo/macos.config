@@ -23,7 +23,9 @@ return { -- Highlight, edit, and navigate code
       ensure_installed = {
         'bash',
         'lua',
+        'http',
         'markdown',
+        'xml',
         'vim',
         'vimdoc',
         'ninja',
@@ -36,6 +38,7 @@ return { -- Highlight, edit, and navigate code
         'sql',
         'dockerfile',
         'gitignore',
+        'graphql',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
