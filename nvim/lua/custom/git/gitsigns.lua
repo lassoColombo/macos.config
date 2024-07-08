@@ -6,14 +6,13 @@ return {
     event = 'BufEnter',
     keys = {},
     opts = function()
-      local symb = require 'custom.globals.icons'
       return {
         signs = {
-          add = { text = symb.git_add_symbol },
-          change = { text = symb.git_change_symbol },
-          delete = { text = symb.git_delete_symbol },
-          topdelete = { text = symb.git_todelete_symbol },
-          changedelete = { text = symb.git_changedelete_symbol },
+          add = { text = '+' },
+          change = { text = '~' },
+          delete = { text = '-' },
+          topdelete = { text = '‾' },
+          changedelete = { text = '~' },
         },
       }
     end,
