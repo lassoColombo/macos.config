@@ -1,10 +1,11 @@
-import = ["~/.config/alacritty/themes/themes/tokyo-night.toml"]
+import = ["~/.config/alacritty/themes/themes/catppuccin_mocha.toml"]
+
 
 [window]
 option_as_alt = "Both"
 padding = { x = 2, y = 2 }
 class = { general = "Alacritty", instance = "Alacritty" }
-opacity = 0.90
+opacity = 0.85
 blur = true
 decorations = "None"
 
