@@ -5,9 +5,9 @@ return {
     name = 'catppuccin',
     priority = 1000,
     opts = {
-      transparent_background = false,
+      transparent_background = true,
       show_end_of_buffer = true,
-      flavour = 'macchiato', -- latte, frappe, macchiato, mocha
+      flavour = 'mocha', -- latte, frappe, macchiato, mocha
       background = { -- :h background
         light = 'latte',
         dark = 'macchiato',
@@ -63,6 +63,10 @@ return {
     'folke/tokyonight.nvim',
     lazy = false,
     priority = 1000, -- make sure to load this before all the other start plugins
+    -- init = function()
+    --   vim.cmd.colorscheme 'tokyionight'
+    --   vim.cmd.hi 'Comment gui=none'
+    -- end,
     opts = {
       transparent = true,
       style = 'night',
