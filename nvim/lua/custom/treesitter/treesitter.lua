@@ -26,6 +26,7 @@ return { -- Highlight, edit, and navigate code
         'http',
         'markdown',
         'xml',
+        'regex',
         'vim',
         'vimdoc',
         'ninja',
