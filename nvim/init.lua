@@ -1,5 +1,6 @@
 require 'custom.opts'
 require 'custom.keymaps'
+require 'custom.commands'
 require 'custom.autocmds'
 require 'custom.filetypes'
 
