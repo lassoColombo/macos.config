@@ -23,7 +23,6 @@ return {
         '<cmd>DBUIToggle<cr>',
         mode = 'n',
         desc = '[T]oggle DB [U]I',
-        ft = { 'sql', 'mysql', 'plsql', 'mongo' },
       },
     },
     cmd = {

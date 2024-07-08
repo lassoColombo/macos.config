@@ -10,6 +10,7 @@ return {
   'mfussenegger/nvim-dap',
   dependencies = {
     'rcarriga/nvim-dap-ui',
+    'theHamsta/nvim-dap-virtual-text',
 
     -- Required dependency for nvim-dap-ui
     'nvim-neotest/nvim-nio',
@@ -29,20 +30,18 @@ return {
       -- Makes a best effort to setup the various debuggers with
       -- reasonable debug configurations
       automatic_installation = true,
-
       -- You can provide additional configuration to the handlers,
       -- see mason-nvim-dap README for more information
       handlers = {},
-
       -- You'll need to check that you have the required things installed
       -- online, please don't ask me how to install them :)
       ensure_installed = {
-        -- Update this to ensure that you have the debuggers for the langs you want
+        'debugpy',
         'delve',
       },
     }
 
-    -- Basic debugging keymaps, feel free to change to your liking!
+    vim.keymap.set('n', '<leader><leader>tD', dapui.toggle, { desc = '[T]oggle [D]AP UI' })
     vim.keymap.set('n', '<leader>dc', dap.continue, { desc = '[D]ebug [C]ontinue/start' })
     vim.keymap.set('n', '<leader>di', dap.step_into, { desc = '[D]ebug step [I]nto' })
     vim.keymap.set('n', '<leader>do', dap.step_over, { desc = '[D]ebug step [O]ver' })
@@ -51,6 +50,9 @@ return {
     vim.keymap.set('n', '<leader>dB', function()
       dap.set_breakpoint(vim.fn.input 'Breakpoint condition: ')
     end, { desc = '[D]ebug conditional [B]reakpoint' })
+    vim.keymap.set('n', '<leader>de', function()
+      dapui.eval(nil, { enter = true })
+    end, { desc = '[D]ebug [E]val' })
 
     -- Dap UI setup
     -- For more information, see |:help nvim-dap-ui|
@@ -81,13 +83,20 @@ return {
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close
     dap.listeners.before.event_exited['dapui_config'] = dapui.close
 
-    -- Install golang specific config
+    require('nvim-dap-virtual-text').setup()
+
+    -- laungage specific configs
     require('dap-go').setup {
       delve = {
-        -- On Windows delve must be run attached or it crashes.
-        -- See https://github.com/leoluz/nvim-dap-go/blob/main/README.md#configuring
-        detached = vim.fn.has 'win32' == 0,
+        detached = true,
       },
     }
+    require('dap-python').setup 'python'
+
+    vim.fn.sign_define('DapBreakpoint', { text = '✋', texthl = '', linehl = '', numhl = '' })
+    vim.fn.sign_define('DapBreakpointCondition', { text = '🤞', texthl = '', linehl = '', numhl = '' })
+    vim.fn.sign_define('DapLogPoint', { text = '👇', texthl = '', linehl = '', numhl = '' })
+    vim.fn.sign_define('DapStopped', { text = '👉', texthl = '', linehl = '', numhl = '' })
+    vim.fn.sign_define('DapBreakpointRejected', { text = '🖕', texthl = '', linehl = '', numhl = '' })
   end,
 }

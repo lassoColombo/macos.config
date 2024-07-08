@@ -9,7 +9,6 @@ if not vim.loop.fs_stat(lazypath) then
   vim.fn.system { 'git', 'clone', '--filter=blob:none', '--branch=stable', lazyrepo, lazypath }
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
-
 require('lazy').setup({
   { import = 'custom.utils' },
   { import = 'custom.UI' },
@@ -39,7 +38,7 @@ require('lazy').setup({
   },
 })
 
-vim.keymap.set({ 'n', 'v' }, '<leader><leader>l', '<cmd>Lazy<cr>', { desc = '[L]azy' })
+vim.keymap.set({ 'n' }, '<leader><leader>l', '<cmd>Lazy<cr>', { desc = '[L]azy' })
 
 vim.cmd.colorscheme 'catppuccin'
 vim.cmd.hi 'Comment gui=none'

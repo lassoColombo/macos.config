@@ -11,12 +11,12 @@ return {
       desc = '[F]ormat [I]nfo',
     },
     {
-      '<leader>fb',
+      '<leader>ff',
       function()
         require('conform').format { async = true, lsp_fallback = true }
       end,
       mode = { 'n', 'v' },
-      desc = '[F]ormat [B]uffer',
+      desc = '[f]ormat',
     },
     {
       '<leader><leader>tf',
@@ -44,7 +44,7 @@ return {
           return
         end
         -- Disable autoformat for files in a certain path
-        local ignore_paths = { '/node_modules/', '/venv/', '/.venv/' }
+        local ignore_paths = { '/node_modules/', '/*venv/', '/.*venv/' }
         local bufname = vim.api.nvim_buf_get_name(bufnr)
         for _, path in ipairs(ignore_paths) do
           if bufname:match(path) then
