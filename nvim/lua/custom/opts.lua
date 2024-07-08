@@ -21,6 +21,11 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
+-- hosts of programming languages installed with shims (asdf in my case)
+vim.g.python3_host_prog = '/Users/colombos/.asdf/shims/python'
+-- :WARNING: the ruby one is not getting detected for some reason
+vim.g.ruby_host_prog = '/Users/colombos/.asdf/shims/neovim-ruby-host'
+
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
 -- Set to true if you have termguicolors

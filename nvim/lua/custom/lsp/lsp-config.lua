@@ -71,7 +71,7 @@ return { -- LSP Configuration & Plugins
     }
 
     require('mason').setup()
-    vim.keymap.set('n', '<leader<leader>m', '<cmd>Mason<CR>', { desc = '[C]ode [M]ason' })
+    vim.keymap.set('n', '<leader><leader>m', '<cmd>Mason<cr>', { desc = '[M]ason' })
 
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {

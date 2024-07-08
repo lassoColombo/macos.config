@@ -10,7 +10,6 @@ if not vim.loop.fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
--- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   { import = 'custom.utils' },
   { import = 'custom.UI' },
@@ -19,6 +18,7 @@ require('lazy').setup({
   { import = 'custom.treesitter' },
   { import = 'custom.lsp' },
   { import = 'custom.cmp' },
+  { import = 'custom.dap' },
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
@@ -38,6 +38,8 @@ require('lazy').setup({
     },
   },
 })
+
+vim.keymap.set({ 'n', 'v' }, '<leader><leader>l', '<cmd>Lazy<cr>', { desc = '[L]azy' })
 
 vim.cmd.colorscheme 'catppuccin'
 vim.cmd.hi 'Comment gui=none'
