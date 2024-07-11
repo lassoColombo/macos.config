@@ -1,8 +1,11 @@
 local function is_private_ssh_key(file)
-  if file:match '.pub$' then
+  if file:match '^config$' then
     return false
   end
-  return true
+  if file:match '^known_hosts' then
+    return false
+  end
+  return not file:match '.pub$'
 end
 
 -- Function to list all private SSH keys in the ~/.ssh directory
