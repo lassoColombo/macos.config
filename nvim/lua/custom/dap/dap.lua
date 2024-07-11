@@ -41,7 +41,7 @@ return {
       },
     }
 
-    vim.keymap.set('n', '<leader><leader>tD', dapui.toggle, { desc = '[T]oggle [D]AP UI' })
+    vim.keymap.set('n', '<leader>du', dapui.toggle, { desc = '[D]ebug [U]I' })
     vim.keymap.set('n', '<leader>dc', dap.continue, { desc = '[D]ebug [C]ontinue/start' })
     vim.keymap.set('n', '<leader>di', dap.step_into, { desc = '[D]ebug step [I]nto' })
     vim.keymap.set('n', '<leader>do', dap.step_over, { desc = '[D]ebug step [O]ver' })
@@ -53,6 +53,17 @@ return {
     vim.keymap.set('n', '<leader>de', function()
       dapui.eval(nil, { enter = true })
     end, { desc = '[D]ebug [E]val' })
+    vim.keymap.set('n', '<leader>dQ', function()
+      dap.disconnect { terminateDebuggee = true }
+      dap.close()
+      dapui.close()
+      vim.notify('quit debug session', vim.log.levels.WARN)
+    end, { desc = '[D]ebug [Q]uit' })
+    vim.keymap.set('n', '<leader>dC', function()
+      dap.clear_breakpoints()
+      vim.notify('clearing dap breakpoints', vim.log.levels.INFO)
+    end, { desc = '[D]ebug [Q]uit' })
+    -- "<cmd>lua require'dap'.disconnect()<CR><cmd>lua require'dap'.close()<CR>",
 
     -- Dap UI setup
     -- For more information, see |:help nvim-dap-ui|
