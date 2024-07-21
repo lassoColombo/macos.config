@@ -87,7 +87,7 @@ return {
     mkdp_filetypes = { 'markdown' },
     -- set default theme (dark or light)
     -- By default the theme is defined according to the preferences of the system
-    mkdp_theme = 'dark',
+    mkdp_theme = 'light',
     -- combine preview window
     -- default: 0
     -- if enable it will reuse previous opened preview window when you preview markdown file.
