@@ -9,7 +9,7 @@ return {
     -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
   },
   keys = {
-    { '<leader><leader>tt', '<cmd>Neotree toggle<cr>', desc = 'Toggle File [T]ree' },
+    { '<leader>1t', '<cmd>Neotree toggle<cr>', desc = '[U]I file [T]ree' },
   },
   config = function()
     -- If you want icons for diagnostic errors, you'll need to define them somewhere:

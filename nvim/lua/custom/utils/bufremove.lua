@@ -20,7 +20,7 @@ return { -- Collection of various small independent plugins/modules
     {
       '<leader>b',
       close_prompt_saving,
-      desc = '[B]uffer close',
+      desc = 'close [B]uffer',
     },
   },
 }

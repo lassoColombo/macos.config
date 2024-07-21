@@ -10,7 +10,6 @@ return {
   'mfussenegger/nvim-dap',
   dependencies = {
     'rcarriga/nvim-dap-ui',
-    'theHamsta/nvim-dap-virtual-text',
 
     -- Required dependency for nvim-dap-ui
     'nvim-neotest/nvim-nio',
@@ -41,7 +40,8 @@ return {
       },
     }
 
-    vim.keymap.set('n', '<leader>du', dapui.toggle, { desc = '[D]ebug [U]I' })
+    -- Toggle to see last session result. Without this, you can't see session output in case of unhandled exception.
+    vim.keymap.set('n', '1d', dapui.toggle, { desc = '[U]I [D]ebugger' })
     vim.keymap.set('n', '<leader>dc', dap.continue, { desc = '[D]ebug [C]ontinue/start' })
     vim.keymap.set('n', '<leader>di', dap.step_into, { desc = '[D]ebug step [I]nto' })
     vim.keymap.set('n', '<leader>do', dap.step_over, { desc = '[D]ebug step [O]ver' })
@@ -86,9 +86,6 @@ return {
         },
       },
     }
-
-    -- Toggle to see last session result. Without this, you can't see session output in case of unhandled exception.
-    vim.keymap.set('n', '<leader>dr', dapui.toggle, { desc = '[D]ebug [R]estore session' })
 
     dap.listeners.after.event_initialized['dapui_config'] = dapui.open
     dap.listeners.before.event_terminated['dapui_config'] = dapui.close

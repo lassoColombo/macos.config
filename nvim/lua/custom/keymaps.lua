@@ -34,7 +34,7 @@ vim.keymap.set('n', '<leader>Q', '<cmd>qa!<CR>', { desc = '[Q]uit (qa!)' })
 --  See `:help wincmd` for a list of all window commands
 vim.keymap.set('n', '<leader>|', '<cmd>vsplit<CR>', { desc = 'Split window vertically' })
 vim.keymap.set('n', '<leader>-', '<cmd>hsplit<CR>', { desc = 'Split window horizontally' })
-vim.keymap.set('n', '<leader>w', '<cmd>close<CR>', { desc = '[W]indow close' })
+vim.keymap.set('n', '<leader>w', '<cmd>close<CR>', { desc = 'close [W]indow' })
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
@@ -46,40 +46,33 @@ vim.keymap.set('n', '<C-down>', '<cmd>horizontal resize -3<CR>', { desc = 'Move 
 
 -- toggle keymaps
 -- toggle word wrap
-vim.keymap.set('n', '<leader><leader>tw', function()
+vim.keymap.set('n', '<leader>1w', function()
   vim.wo.wrap = not vim.wo.wrap
   vim.notify('set line wrap to ' .. tostring(vim.wo.wrap), vim.log.levels.WARN)
-end, { desc = '[T]oggle [W]rap' })
+end, { desc = '[U]I [W]rap' })
+
+-- toggle lines
+vim.keymap.set('n', '<leader>1L', function()
+  vim.opt.number = not vim.opt.number
+  local log_level = (vim.opt.number and vim.log.levels.INFO or vim.log.levels.WARN)
+  vim.notify('set line wrap to ' .. tostring(vim.opt.number), log_level)
+end, { desc = '[U]I [L]ines' })
 
 -- toggle line relativeness
-vim.keymap.set('n', '<leader><leader>tl', function()
+vim.keymap.set('n', '<leader>1l', function()
   vim.opt.relativenumber = not vim.opt.relativenumber
   local log_level = (vim.opt.relativenumber and vim.log.levels.INFO or vim.log.levels.WARN)
   vim.notify('set line wrap to ' .. tostring(vim.opt.relativenumber), log_level)
-end, { desc = '[T]oggle relative [L]ines' })
-
--- toggle lines
-vim.keymap.set('n', '<leader><leader>tL', function()
-  vim.opt.number = not vim.opt.number
-  local log_level = (vim.opt.number and vim.log.levels.INFO or vim.log.levels.WARN)
-  vim.notify('set line wrap to ' .. tostring(vim.opt.number), log_level)
-end, { desc = '[T]oggle [L]ines' })
+end, { desc = '[U]I relative [L]ines' })
 
 -- toggle diagnostics
-vim.keymap.set('n', '<leader><leader>td', function()
-  if vim.diagnostic.is_disabled() then
-    vim.diagnostic.enable()
+vim.keymap.set('n', '<leader>1d', function()
+  if vim.diagnostic.is_enabled() then
+    vim.diagnostic.enable(false)
   else
-    vim.diagnostic.disable()
+    vim.diagnostic.enable(true)
   end
-  local is_disabled = vim.diagnostic.is_disabled()
-  local log_level = (is_disabled and vim.log.levels.WARN or vim.log.levels.INFO)
-  vim.notify('set diagnostics to ' .. tostring(not is_disabled), log_level)
-end, { desc = '[T]oggle [D]iagnostics' })
-
--- toggle lines
-vim.keymap.set('n', '<leader><leader>tL', function()
-  vim.opt.number = not vim.opt.number
-  local log_level = (vim.opt.number and vim.log.levels.INFO or vim.log.levels.WARN)
-  vim.notify('set line wrap to ' .. tostring(vim.opt.number), log_level)
-end, { desc = '[T]oggle [L]ines' })
+  local is_enabled = vim.diagnostic.is_enabled()
+  local log_level = (is_enabled and vim.log.levels.INFO or vim.log.levels.WARN)
+  vim.notify('set diagnostics to ' .. tostring(not is_enabled), log_level)
+end, { desc = '[U]I [D]iagnostics' })

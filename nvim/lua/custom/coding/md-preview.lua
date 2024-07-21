@@ -2,7 +2,7 @@ return {
   'iamcco/markdown-preview.nvim',
   cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
   keys = {
-    { '<leader><leader>tP', '<cmd>MarkdownPreviewToggle<cr>', desc = '[C]ode [P]review', ft = 'markdown' },
+    { '<leader>1P', '<cmd>MarkdownPreviewToggle<cr>', desc = '[U]I [P]review', ft = 'markdown' },
   },
   ft = { 'markdown' },
   build = function()

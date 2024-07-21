@@ -11,7 +11,7 @@ return {
   },
   keys = {},
   opts = function()
-    vim.keymap.set('n', '<leader><leader>tn', function()
+    vim.keymap.set('n', '<leader>1n', function()
       local loglevel = nil
       if vim.g.noice then
         require('noice').disable()
@@ -23,7 +23,7 @@ return {
       vim.g.noice = not vim.g.noice
 
       vim.notify('set noice to ' .. tostring(vim.g.noice), loglevel)
-    end, { desc = '[T]oggle [N]oice' })
+    end, { desc = '[U]I [N]oice' })
     return {
       lsp = {
         -- :FIXME: disabled for terribly annoying errors in sql files. Cannot manage to disable for filetype

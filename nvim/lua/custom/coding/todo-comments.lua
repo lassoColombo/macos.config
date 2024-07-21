@@ -8,7 +8,7 @@ return {
     { '<leader><leader>Tlc', '<cmd>Trouble todo<cr>', desc = '[T]odo-comments [L]ist' },
     { '<leader><leader>TlC', '<cmd>TodoTrouble keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[T]odo-comments [L]ist (err|warn)' },
     {
-      '<leader><leader>tC',
+      '<leader>1C',
       function()
         local comments = require 'todo-comments'
         local log_level = (vim.g.todo_comments and vim.log.levels.WARN or vim.log.levels.INFO)
@@ -20,7 +20,7 @@ return {
         vim.g.todo_comments = not vim.g.todo_comments
         vim.notify('set todo-comments to ' .. tostring(vim.g.todo_comments), log_level)
       end,
-      desc = '[T]oggle TODO-[C]omments',
+      desc = '[U]I TODO-[C]omments',
     },
   },
   opts = {

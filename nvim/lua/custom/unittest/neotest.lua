@@ -8,6 +8,7 @@ return {
     'nvim-treesitter/nvim-treesitter',
     -- adapters
     'nvim-neotest/neotest-go',
+    'nvim-neotest/neotest-python',
   },
   opts = {},
   config = function()
@@ -38,6 +39,7 @@ return {
     require('neotest').setup {
       adapters = {
         require 'neotest-go',
+        require 'neotest-python',
       },
     }
   end,

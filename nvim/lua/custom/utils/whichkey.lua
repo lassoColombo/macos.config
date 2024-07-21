@@ -20,6 +20,7 @@ return { -- Useful plugin to show you pending keybinds.
       ['<leader><leader>T'] = { name = '[T]odo comments', _ = 'which_key_ignore' },
       ['<leader><leader>Tl'] = { name = '[T]odo comments [L]ist', _ = 'which_key_ignore' },
       ['<leader><leader>Ts'] = { name = '[T]odo comments [S]earch', _ = 'which_key_ignore' },
+      ['<leader>1'] = { name = 'UI', _ = 'which_key_ignore' },
     }
   end,
 }

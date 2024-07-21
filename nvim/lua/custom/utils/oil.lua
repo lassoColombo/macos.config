@@ -18,7 +18,6 @@ return {
     keymaps = {
       ['g?'] = 'actions.show_help',
       ['<CR>'] = 'actions.select',
-      ['L'] = 'actions.select',
       ['H'] = 'actions.select',
       ['<C-v>'] = 'actions.select_vsplit',
       ['<C-s>'] = 'actions.select_split',
@@ -27,6 +26,7 @@ return {
       ['<C-c>'] = 'actions.close',
       ['<C-n>'] = 'actions.refresh',
       ['-'] = 'actions.parent',
+      ['L'] = 'actions.parent',
       ['<'] = 'actions.parent',
       ['_'] = 'actions.open_cwd',
       ['`'] = 'actions.cd',

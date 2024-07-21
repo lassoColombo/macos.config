@@ -9,10 +9,10 @@ return {
   end,
   keys = {
     {
-      '<leader><leader>tr',
+      '<leader>1r',
       '<cmd>RenderMarkdown toggle<cr>',
       mode = 'n',
-      desc = '[T]oggle [R]ender markdown',
+      desc = '[U]I [R]ender',
       ft = { 'markdown' },
     },
   },

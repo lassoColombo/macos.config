@@ -12,13 +12,15 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   { import = 'custom.utils' },
-  { import = 'custom.UI' },
-  { import = 'custom.coding' },
-  { import = 'custom.git' },
   { import = 'custom.treesitter' },
   { import = 'custom.lsp' },
   { import = 'custom.cmp' },
+  { import = 'custom.UI' },
+  { import = 'custom.coding' },
+  { import = 'custom.git' },
+  { import = 'custom.unittest' },
   { import = 'custom.dap' },
+  { import = 'custom.dadbod' },
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
@@ -26,7 +28,7 @@ require('lazy').setup({
       config = '🛠',
       event = '📅',
       ft = '📂',
-      init = '▶️',
+      init = '🐣',
       keys = '🗝',
       plugin = '🔌',
       runtime = '💻',
