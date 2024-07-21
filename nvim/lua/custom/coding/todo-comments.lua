@@ -3,10 +3,8 @@ return {
   event = 'VimEnter',
   dependencies = { 'nvim-lua/plenary.nvim' },
   keys = {
-    { '<leader><leader>Tsc', '<cmd>TodoTelescope<cr>', desc = '[T]odo-comments [S]earch' },
-    { '<leader><leader>TsC', '<cmd>TodoTelescope keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[T]odo-comments [S]earch (err|warn)' },
-    { '<leader><leader>Tlc', '<cmd>Trouble todo<cr>', desc = '[T]odo-comments [L]ist' },
-    { '<leader><leader>TlC', '<cmd>TodoTrouble keywords=WARN,WARNING,FIX,FIXME<cr>', desc = '[T]odo-comments [L]ist (err|warn)' },
+    { '<leader><leader>/c', '<cmd>TodoTelescope<cr>', desc = '[T]odo-comments [S]earch' },
+    { '<leader><leader>Lc', '<cmd>Trouble todo<cr>', desc = '[T]odo-comments [L]ist' },
     {
       '<leader>1C',
       function()

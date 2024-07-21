@@ -27,36 +27,36 @@ return { -- Fuzzy Finder (files, lsp, etc)
     local builtin = require 'telescope.builtin'
     -- lsp keymaps
     local telescope = require 'telescope.builtin'
-    vim.keymap.set('n', '<leader>sr', telescope.lsp_references, { desc = '[S]earch [R]eferences' })
-    vim.keymap.set('n', '<leader>st', telescope.lsp_definitions, { desc = '[S]earch [D]efinitions' })
-    vim.keymap.set('n', '<leader>sT', telescope.lsp_type_definitions, { desc = '[S]earch type [D]efinitions' })
-    vim.keymap.set('n', '<leader>si', telescope.lsp_implementations, { desc = '[S]earch [I]mplementation' })
-    vim.keymap.set('n', '<leader>ss', telescope.lsp_document_symbols, { desc = '[S]earc [S]ymbols (document)' })
-    vim.keymap.set('n', '<leader>sS', telescope.lsp_dynamic_workspace_symbols, { desc = '[S]earch [S]ymbols (workspace)' })
-    vim.keymap.set('n', '<leader>sD', telescope.diagnostics, { desc = '[S]earch [D]iagnostics (workspace)' })
-    vim.keymap.set('n', '<leader>sd', function()
+    vim.keymap.set('n', '<leader>/r', telescope.lsp_references, { desc = '[S]earch [R]eferences' })
+    vim.keymap.set('n', '<leader>/t', telescope.lsp_definitions, { desc = '[S]earch [D]efinitions' })
+    vim.keymap.set('n', '<leader>/T', telescope.lsp_type_definitions, { desc = '[S]earch type [D]efinitions' })
+    vim.keymap.set('n', '<leader>/i', telescope.lsp_implementations, { desc = '[S]earch [I]mplementation' })
+    vim.keymap.set('n', '<leader>/s', telescope.lsp_document_symbols, { desc = '[S]earc [S]ymbols (document)' })
+    vim.keymap.set('n', '<leader>/S', telescope.lsp_dynamic_workspace_symbols, { desc = '[S]earch [S]ymbols (workspace)' })
+    vim.keymap.set('n', '<leader>/D', telescope.diagnostics, { desc = '[S]earch [D]iagnostics (workspace)' })
+    vim.keymap.set('n', '<leader>/d', function()
       telescope.diagnostics { bufnr = 0 }
     end, { desc = '[S]earch [D]iagnostics (buffer)' })
     -- grep searches
-    vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
-    vim.keymap.set('n', '<leader>sg', builtin.current_buffer_fuzzy_find, { desc = '[S]earch [G]rep (buffer)' })
-    vim.keymap.set('n', '<leader>sG', builtin.live_grep, { desc = '[S]earch [G]rep (workspace)' })
+    vim.keymap.set('n', '<leader>/w', builtin.grep_string, { desc = '[S]earch current [W]ord' })
+    vim.keymap.set('n', '<leader>/g', builtin.current_buffer_fuzzy_find, { desc = '[S]earch [G]rep (buffer)' })
+    vim.keymap.set('n', '<leader>/G', builtin.live_grep, { desc = '[S]earch [G]rep (workspace)' })
     -- code object searches
-    vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
-    vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
+    vim.keymap.set('n', '<leader>/h', builtin.help_tags, { desc = '[S]earch [H]elp' })
+    vim.keymap.set('n', '<leader>/k', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
     -- file/buffer searches
-    vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
-    vim.keymap.set('n', '<leader>sF', function()
+    vim.keymap.set('n', '<leader>/f', builtin.find_files, { desc = '[S]earch [F]iles' })
+    vim.keymap.set('n', '<leader>/F', function()
       builtin.find_files { hidden = true, no_ignore = true }
     end, { desc = '[S]earch [F]iles (hidden)' })
-    vim.keymap.set('n', '<leader>sb', builtin.buffers, { desc = '[S]earch [B]uffers ' })
+    vim.keymap.set('n', '<leader>/b', builtin.buffers, { desc = '[S]earch [B]uffers ' })
     vim.keymap.set('n', '<leader><leader>s', builtin.buffers, { desc = '[S]earch [B]uffers ' })
     -- other searches
-    vim.keymap.set('n', '<leader>sR', builtin.resume, { desc = '[S]earch [R]esume' })
-    vim.keymap.set('n', '<leader>sn', function()
+    vim.keymap.set('n', '<leader>/R', builtin.resume, { desc = '[S]earch [R]esume' })
+    vim.keymap.set('n', '<leader>/n', function()
       builtin.find_files { cwd = vim.fn.stdpath 'config' }
     end, { desc = '[S]earch [N]eovim files' })
-    vim.keymap.set('n', '<leader>/', function()
+    vim.keymap.set('n', '<leader>//', function()
       builtin.current_buffer_fuzzy_find(require('telescope.themes').get_ivy {
         winblend = 0,
         previewer = true,

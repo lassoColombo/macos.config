@@ -52,18 +52,16 @@ vim.keymap.set('n', '<leader>1w', function()
 end, { desc = '[U]I [W]rap' })
 
 -- toggle lines
-vim.keymap.set('n', '<leader>1L', function()
-  vim.opt.number = not vim.opt.number
-  local log_level = (vim.opt.number and vim.log.levels.INFO or vim.log.levels.WARN)
-  vim.notify('set line wrap to ' .. tostring(vim.opt.number), log_level)
-end, { desc = '[U]I [L]ines' })
+-- :WARNING: bugged
+--
+-- vim.keymap.set('n', '<leader>1L', function()
+--   vim.opt.number = not vim.opt.number
+--   local log_level = (vim.opt.number and vim.log.levels.INFO or vim.log.levels.WARN)
+--   vim.notify('set line wrap to ' .. tostring(vim.opt.number), log_level)
+-- end, { desc = '[U]I [L]ines' })
 
 -- toggle line relativeness
-vim.keymap.set('n', '<leader>1l', function()
-  vim.opt.relativenumber = not vim.opt.relativenumber
-  local log_level = (vim.opt.relativenumber and vim.log.levels.INFO or vim.log.levels.WARN)
-  vim.notify('set line wrap to ' .. tostring(vim.opt.relativenumber), log_level)
-end, { desc = '[U]I relative [L]ines' })
+vim.keymap.set('n', '<leader>1l', '<esc>:set relativenumber!<cr>', { desc = '[U]I relative [L]ines' })
 
 -- toggle diagnostics
 vim.keymap.set('n', '<leader>1d', function()
