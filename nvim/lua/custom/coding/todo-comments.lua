@@ -3,8 +3,8 @@ return {
   event = 'VimEnter',
   dependencies = { 'nvim-lua/plenary.nvim' },
   keys = {
-    { '<leader><leader>/c', '<cmd>TodoTelescope<cr>', desc = '[T]odo-comments [S]earch' },
-    { '<leader><leader>Lc', '<cmd>Trouble todo<cr>', desc = '[T]odo-comments [L]ist' },
+    { '/#', '<cmd>TodoTelescope<cr>', desc = '/[S]earch [T]odo-comments' },
+    { '<leader>s#', '<cmd>Trouble todo<cr>', desc = '[S]earch [T]odo-comments' },
     {
       '<leader>1C',
       function()

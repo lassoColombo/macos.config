@@ -5,9 +5,9 @@ return {
     name = 'catppuccin',
     priority = 1000,
     opts = {
-      transparent_background = true,
+      transparent_background = false,
       show_end_of_buffer = true,
-      flavour = 'mocha', -- latte, frappe, macchiato, mocha
+      flavour = 'macchiato', -- latte, frappe, macchiato, mocha
       background = { -- :h background
         light = 'latte',
         dark = 'macchiato',
@@ -53,7 +53,7 @@ return {
         },
         mini = {
           enabled = true,
-          indentscope_color = '',
+          indentscope_color = 'blue',
         },
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
       },

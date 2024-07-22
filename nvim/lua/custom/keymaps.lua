@@ -9,6 +9,7 @@ vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+y', { desc = '[Y]ank to system clip
 
 -- :FIXME: not working
 -- vim.keymap.set('n', '<leader>r', ';.', { desc = '[R]epeat motion and action' })
+vim.keymap.set('n', '//', '/', { desc = '/[S]earch [B]uffer' })
 --
 -- Buffer keymaps
 -- vim.keymap.set('n', '<leader>bw', '<cmd>w<CR>', { desc = '[B]uffer [W]rite' })
