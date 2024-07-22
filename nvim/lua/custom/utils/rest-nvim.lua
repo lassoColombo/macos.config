@@ -1,5 +1,5 @@
 return {
-  'lassoColombo/rest.nvim',
+  --[[ 'lassoColombo/rest.nvim',
   ft = 'http',
   dependencies = { 'luarocks.nvim' },
   config = function()
@@ -43,5 +43,5 @@ return {
       desc = '[E]nvironment',
       ft = 'http',
     },
-  },
+  }, ]]
 }

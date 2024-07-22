@@ -108,6 +108,8 @@ return { -- LSP Configuration & Plugins
       -- go
       'gopls',
       'goimports',
+      -- html
+      'html',
     })
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

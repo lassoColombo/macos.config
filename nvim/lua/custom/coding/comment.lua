@@ -3,6 +3,9 @@ return {
   {
     'numToStr/Comment.nvim',
     lazy = false,
+    init = function()
+      require('Comment.ft').set('http', '#')
+    end,
     opts = {
       ---Add a space b/w comment and the line
       padding = true,
