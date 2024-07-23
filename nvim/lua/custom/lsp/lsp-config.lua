@@ -21,24 +21,26 @@ return { -- LSP Configuration & Plugins
           vim.keymap.set('n', keys, func, { buffer = event.buf, desc = desc })
         end
 
-        require('which-key').register {
-          ['<leader>l'] = { mode = { 'v', 'n' }, name = '[L]SP', _ = 'which_key_ignore' },
+        require('which-key').add {
+          {
+            { '<leader><leader>', group = '[L]SP' },
+            { '<leader><leader>_', hidden = true },
+          },
         }
-        map('<leader>lR', '<cmd>LspRestart<CR>', '[L]SP [R]estart')
-
-        map('<leader>li', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
-        map('<leader>lr', vim.lsp.buf.rename, '[L]SP [R]ename')
-        map('<leader>la', vim.lsp.buf.code_action, '[L]SP [A]ction')
-        map('<leader>lk', vim.lsp.buf.hover, 'Hover Documentation')
+        map('<leader><leader>R', '<cmd>LspRestart<CR>', '[L]SP [R]estart')
+        map('<leader><leader>i', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
+        map('<leader><leader>r', vim.lsp.buf.rename, '[L]SP [R]ename')
+        map('<leader><leader>a', vim.lsp.buf.code_action, '[L]SP [A]ction')
+        map('<leader><leader>k', vim.lsp.buf.hover, 'Hover Documentation')
+        vim.keymap.set('n', '<leader><leader>d', function()
+          vim.diagnostic.open_float { source = true }
+        end, { desc = '[L]SP (line) [D]iagnostics' })
         vim.keymap.set('n', '[d', function()
           vim.diagnostic.goto_prev { float = { source = true } }
         end, { desc = 'Go to previous [D]iagnostic message' })
         vim.keymap.set('n', ']d', function()
           vim.diagnostic.goto_next { float = { source = true } }
         end, { desc = 'Go to next [D]iagnostic message' })
-        vim.keymap.set('n', '<leader>ld', function()
-          vim.diagnostic.open_float { source = true }
-        end, { desc = '[L]SP (line) [D]iagnostics' })
 
         -- The following two autocommands are used to highlight references of the
         -- word under cursor when your cursor rests there for a little while.

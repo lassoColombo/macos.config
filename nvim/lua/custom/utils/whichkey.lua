@@ -2,21 +2,45 @@ return { -- Useful plugin to show you pending keybinds.
   'folke/which-key.nvim',
   event = 'VimEnter', -- Sets the loading event to 'VimEnter'
   config = function() -- This is the function that runs, AFTER loading
-    require('which-key').setup()
+    require('which-key').setup {
+      icons = {
+        mappings = false,
+      },
+    }
 
     -- Document existing key chains
-    require('which-key').register {
-      ['<leader>c'] = { mode = { 'v', 'n' }, name = '[C]omment line', _ = 'which_key_ignore' },
-      ['<leader>C'] = { mode = { 'v', 'n' }, name = '[C]omment block', _ = 'which_key_ignore' },
-      ['<leader>d'] = { mode = { 'n' }, name = '[D]ebug', _ = 'which_key_ignore' },
-      ['<leader>f'] = { mode = { 'v', 'n' }, name = '[F]ormat', _ = 'which_key_ignore' },
-      ['/'] = { name = '/[S]earch', _ = 'which_key_ignore' },
-      ['<leader>s'] = { name = '[S]earch', _ = 'which_key_ignore' },
-      ['<leader>g'] = { name = '[G]it', _ = 'which_key_ignore' },
-      ['<leader>t'] = { name = '[T]treesitter', _ = 'which_key_ignore' },
-      ['<leader>u'] = { name = '[U]nittest', _ = 'which_key_ignore' },
-      ['<leader>1'] = { name = 'UI', _ = 'which_key_ignore' },
-      ['<leader><leader>'] = { name = 'Keymap Layer 2', _ = 'which_key_ignore' },
+    require('which-key').add {
+      {
+        { ']', group = '[]Next' },
+        { ']_', hidden = true },
+        { '[', group = '[]Prev' },
+        { '[_', hidden = true },
+        { '/', group = '/[S]earch' },
+        { '/_', hidden = true },
+        { '\\', group = '\\[L]ist' },
+        { '\\_', hidden = true },
+        { '-', group = '[D]ebug' },
+        { '-_', hidden = true },
+        { '=', group = '[U]nittest' },
+        { '=_', hidden = true },
+        { '<leader>u', group = '[U]I' },
+        { '<leader>u_', hidden = true },
+        { '<leader>g', group = '[G]it' },
+        { '<leader>g_', hidden = true },
+        { '<leader><leader>', group = '[L]SP' },
+        { '<leader><leader>_', hidden = true },
+        {
+          mode = { 'n', 'v' },
+          { '<leader>C', group = '[C]omment block' },
+          { '<leader>C_', hidden = true },
+          { '<leader>c', group = '[C]omment line' },
+          { '<leader>c_', hidden = true },
+          { '<leader>f', group = '[F]ormat' },
+          { '<leader>f_', hidden = true },
+          { '<leader><leader>', group = '[L]SP', mode = { 'n', 'v' } },
+          { '<leader><leader>_', hidden = true, mode = { 'n', 'v' } },
+        },
+      },
     }
   end,
 }

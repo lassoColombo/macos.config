@@ -4,9 +4,9 @@ return {
   dependencies = { 'nvim-lua/plenary.nvim' },
   keys = {
     { '/#', '<cmd>TodoTelescope<cr>', desc = '/[S]earch [T]odo-comments' },
-    { '<leader>s#', '<cmd>Trouble todo<cr>', desc = '[S]earch [T]odo-comments' },
+    { '\\s#', '<cmd>Trouble todo<cr>', desc = '[S]earch [T]odo-comments' },
     {
-      '<leader>1C',
+      '<leader>uC',
       function()
         local comments = require 'todo-comments'
         local log_level = (vim.g.todo_comments and vim.log.levels.WARN or vim.log.levels.INFO)

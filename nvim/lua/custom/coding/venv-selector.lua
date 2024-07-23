@@ -13,6 +13,6 @@ return {
     require('venv-selector').setup()
   end,
   keys = {
-    { '<leader>lv', '<cmd>VenvSelect<cr>', ft = 'python', { desc = '[L]sp select [V]env' } },
+    { '<leader><leader>V', '<cmd>VenvSelect<cr>', ft = 'python', { desc = '[L]sp select [V]env' } },
   },
 }

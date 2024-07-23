@@ -5,74 +5,74 @@ return {
   cmd = 'Trouble',
   keys = {
     {
-      '<leader>sD',
+      '\\D',
       function()
         require('trouble').toggle { mode = 'diagnostics' }
       end,
-      desc = '[S]earch [D]iagnostics (workspace)',
+      desc = '[L]ist [D]iagnostics (workspace)',
     },
     {
-      '<leader>sd',
+      '\\d',
       function()
         require('trouble').toggle { mode = 'diagnostics', filter = { buf = 0 } }
       end,
-      desc = '[S]earch [D]iagnostics (buffer)',
+      desc = '[L]ist [D]iagnostics (buffer)',
     },
     {
-      '<leader>sL',
+      '\\L',
       function()
         require('trouble').toggle { mode = 'lsp' }
       end,
-      desc = '[S]earch LSP report',
+      desc = '[L]SP report',
     },
     {
-      '<leader>sT',
+      '\\T',
       function()
         require('trouble').toggle { mode = 'lsp_type_definitions' }
       end,
-      desc = '[S]earch [T]ype declarations',
+      desc = '[L]ist [T]ype declarations',
     },
     {
-      '<leader>st',
+      '\\t',
       function()
         require('trouble').toggle { mode = 'lsp_definitions' }
       end,
-      desc = '[S]earch [T]ype definitions',
+      desc = '[L]ist [T]ype definitions',
     },
     {
-      '<leader>si',
+      '\\i',
       function()
         require('trouble').toggle { mode = 'lsp_implementations' }
       end,
-      desc = '[S]earch [I]mplementations',
+      desc = '[L]ist [I]mplementations',
     },
     {
-      '<leader>sr',
+      '\\r',
       function()
         require('trouble').toggle { mode = 'lsp_references' }
       end,
-      desc = '[S]earch [R]eferences',
+      desc = '[L]ist [R]eferences',
     },
     {
-      '<leader>ss',
+      '\\s',
       function()
         require('trouble').toggle { mode = 'lsp_document_symbols' }
       end,
-      desc = '[S]earch LSP [S]ymbols (workspace)',
+      desc = '[L]ist LSP [S]ymbols (workspace)',
     },
     {
-      '<leader>sc',
+      '\\c',
       function()
         require('trouble').toggle { mode = 'lsp_incoming_calls' }
       end,
-      desc = '[S]earch [C]alls incoming',
+      desc = '[L]ist [C]alls incoming',
     },
     {
-      '<leader>sC',
+      '\\C',
       function()
         require('trouble').toggle { mode = 'lsp_outgoing_calls' }
       end,
-      desc = '[S]earch [C]alls outgoing',
+      desc = '[L]ist [C]alls outgoing',
     },
   },
 }

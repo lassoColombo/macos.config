@@ -9,10 +9,10 @@ return { -- Highlight, edit, and navigate code
 
   keys = {
     {
-      '<leader>tt',
+      '<leader><leader>T',
       '<cmd>InspectTree<CR>',
       mode = 'n',
-      desc = '[C]ode [T]elescope [T]ree',
+      desc = '[T]treesitter [T]ree',
     },
   },
   config = function()
@@ -48,7 +48,7 @@ return { -- Highlight, edit, and navigate code
       incremental_selection = {
         enable = true,
         keymaps = {
-          init_selection = '<leader>tv', -- set to `false` to disable one of the mappings
+          init_selection = '<leader><leadee>v', -- set to `false` to disable one of the mappings
           node_incremental = 'gn',
           scope_incremental = 'gs',
           node_decremental = 'gN',

@@ -45,7 +45,7 @@ return {
   end,
   keys = {
     {
-      '<leader>uu',
+      '=t',
       function()
         require('neotest').run.run()
       end,
@@ -53,7 +53,7 @@ return {
       desc = '[U]nittest [O]ne',
     },
     {
-      '<leader>uw',
+      '=w',
       function()
         local file_type = vim.bo.ft
         local neotesting_root = vim.fn.getcwd()
@@ -66,7 +66,7 @@ return {
       desc = '[U]nittest [W]orkspace',
     },
     {
-      '<leader>uf',
+      '=f',
       function()
         require('neotest').run.run(vim.fn.expand '%')
       end,
@@ -74,7 +74,7 @@ return {
       desc = '[U]nittest [F]ile',
     },
     {
-      '<leader>ua',
+      '=a',
       function()
         require('neotest').run.attach { interactive = true }
       end,
@@ -82,7 +82,7 @@ return {
       desc = '[U]nittest [A]ttach',
     },
     {
-      '<leader>ux',
+      '=x',
       function()
         require('neotest').run.stop { interactive = true }
       end,
@@ -90,7 +90,7 @@ return {
       desc = '[U]nittest [X]Abort',
     },
     {
-      '<leader>us',
+      '=s',
       function()
         require('neotest').summary.toggle()
       end,

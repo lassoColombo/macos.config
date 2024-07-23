@@ -3,13 +3,13 @@ return {
   event = 'VeryLazy',
   keys = {
     {
-      '<leader><leader>o',
+      '<leader>o',
       '<cmd>Oil .<cr>',
       mode = 'n',
       desc = '[O]il cwd',
     },
     {
-      '<leader><leader>O',
+      '<leader>O',
       '<cmd>Oil<cr>',
       mode = 'n',
       desc = '[O]il',

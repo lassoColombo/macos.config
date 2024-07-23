@@ -19,7 +19,7 @@ return {
     end,
     keys = {
       {
-        '<leader>ls',
+        '<leader><leader>S',
         function()
           require('yaml-companion').open_ui_select()
         end,

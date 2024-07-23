@@ -13,8 +13,9 @@ return {
       -- default formatters for different content types
       formatters = {
         json = { 'jq', '.' },
-        xml = { 'xmllint', '--format', '-' },
-        html = { 'xmllint', '--format', '--html', '-' },
+        -- :NOTE: install if needed
+        -- xml = { 'xmllint', '--format', '-' },
+        -- html = { 'xmllint', '--format', '--html', '-' },
       },
       -- default icons
       icons = {

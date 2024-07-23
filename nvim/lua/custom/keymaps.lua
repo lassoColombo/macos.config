@@ -13,7 +13,7 @@ vim.keymap.set('n', '//', '/', { desc = '/[S]earch [B]uffer' })
 --
 -- Buffer keymaps
 -- vim.keymap.set('n', '<leader>bw', '<cmd>w<CR>', { desc = '[B]uffer [W]rite' })
-vim.keymap.set({ 'n', 'i' }, '<C-s>', '<cmd>w<cr><esc>', { desc = '[B]uffer [W]rite' })
+vim.keymap.set({ 'n', 'i' }, '<C-s>', '<cmd>w<cr><esc>', { desc = '[S]ave buffer' })
 vim.keymap.set('n', '<leader>Q', '<cmd>qa!<CR>', { desc = '[Q]uit (qa!)' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
@@ -33,9 +33,9 @@ vim.keymap.set('n', '<leader>Q', '<cmd>qa!<CR>', { desc = '[Q]uit (qa!)' })
 -- Keybinds to make split navigation easier.key
 --  Use CTRL+<hjkl> to switch between windows
 --  See `:help wincmd` for a list of all window commands
-vim.keymap.set('n', '<leader>|', '<cmd>vsplit<CR>', { desc = 'Split window vertically' })
-vim.keymap.set('n', '<leader>-', '<cmd>hsplit<CR>', { desc = 'Split window horizontally' })
-vim.keymap.set('n', '<leader>w', '<cmd>close<CR>', { desc = 'close [W]indow' })
+vim.keymap.set('n', '<leader>|', '<cmd>vsplit<CR>', { desc = '[]Split window vertically' })
+vim.keymap.set('n', '<leader>-', '<cmd>hsplit<CR>', { desc = '[]Split window horizontally' })
+vim.keymap.set('n', '<leader>w', '<cmd>close<CR>', { desc = '[W]indow close' })
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
@@ -47,7 +47,7 @@ vim.keymap.set('n', '<C-down>', '<cmd>horizontal resize -3<CR>', { desc = 'Move 
 
 -- toggle keymaps
 -- toggle word wrap
-vim.keymap.set('n', '<leader>1w', function()
+vim.keymap.set('n', '<leader>uw', function()
   vim.wo.wrap = not vim.wo.wrap
   vim.notify('set line wrap to ' .. tostring(vim.wo.wrap), vim.log.levels.WARN)
 end, { desc = '[U]I [W]rap' })
@@ -55,17 +55,17 @@ end, { desc = '[U]I [W]rap' })
 -- toggle lines
 -- :WARNING: bugged
 --
--- vim.keymap.set('n', '<leader>1L', function()
+-- vim.keymap.set('n', '<leader>uL', function()
 --   vim.opt.number = not vim.opt.number
 --   local log_level = (vim.opt.number and vim.log.levels.INFO or vim.log.levels.WARN)
 --   vim.notify('set line wrap to ' .. tostring(vim.opt.number), log_level)
 -- end, { desc = '[U]I [L]ines' })
 
 -- toggle line relativeness
-vim.keymap.set('n', '<leader>1l', '<esc>:set relativenumber!<cr>', { desc = '[U]I relative [L]ines' })
+vim.keymap.set('n', '<leader>ul', '<esc>:set relativenumber!<cr>', { desc = '[U]I relative [L]ines' })
 
 -- toggle diagnostics
-vim.keymap.set('n', '<leader>1d', function()
+vim.keymap.set('n', '<leader>ud', function()
   if vim.diagnostic.is_enabled() then
     vim.diagnostic.enable(false)
   else

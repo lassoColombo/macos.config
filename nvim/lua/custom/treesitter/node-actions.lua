@@ -4,8 +4,8 @@ return {
   event = 'VimEnter',
   dependencies = { 'nvim-treesitter' },
   opts = function()
-    vim.keymap.set('n', '<leader>tA', require('ts-node-action').available_actions, { desc = '[T]reesitter available [A]ctions' })
-    vim.keymap.set('n', '<leader>ta', require('ts-node-action').node_action, { desc = '[T]reesitter [A]ctions' })
+    -- vim.keymap.set('n', '<leader><leader>T', require('ts-node-action').available_actions, { desc = '[T]reesitter available [A]ctions' })
+    vim.keymap.set('n', '<leader><leader>t', require('ts-node-action').node_action, { desc = '[T]reesitter [A]ctions' })
     require('ts-node-action').setup {
       python = require 'custom.treesitter.node-actions.python',
       lua = require 'custom.treesitter.node-actions.lua-actions',
