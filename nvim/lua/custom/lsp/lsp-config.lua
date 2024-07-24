@@ -68,6 +68,7 @@ return { -- LSP Configuration & Plugins
       pyright = require 'custom.lsp.configs.pyright',
       yamlls = require 'custom.lsp.configs.yamlls',
       jsonls = require 'custom.lsp.configs.jsonls',
+      taplo = require 'custom.lsp.configs.taplo',
       sqls = require 'custom.lsp.configs.sqls',
       gopls = {},
     }

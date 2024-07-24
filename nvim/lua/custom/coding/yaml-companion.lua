@@ -1,31 +1,49 @@
 return {
   'someone-stole-my-name/yaml-companion.nvim',
   event = 'BufEnter',
-  opts = {
-    lspconfig = {
-      settings = {
-        yaml = {
-          validate = true,
-          schemaStore = {
-            enable = false,
-            url = '',
-          },
-          schemas = {},
+  ft = 'yaml',
+  config = function()
+    local cfg = require('yaml-companion').setup {
+      -- detect k8s schemas based on file content
+      builtin_matchers = {
+        kubernetes = { enabled = true },
+      },
+      -- schemas available in Telescope picker
+      schemas = {
+        -- not loaded automatically, manually select with
+        -- some schemas below may be automatically loaded in yamlls, but added
+        -- them here so that they show up in the statusline
+        -- :Telescope yaml_schema
+        {
+          name = 'Argo CD Application',
+          uri = 'https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/argoproj.io/application_v1alpha1.json',
+        },
+        {
+          name = 'Gitlab CI',
+          uri = 'https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json',
+        },
+        {
+          name = 'Docker Compose',
+          uri = 'https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json',
         },
       },
+    }
+    require('telescope').load_extension 'yaml_schema'
+    require('lspconfig')['yamlls'].setup(cfg)
+  end,
+  keys = {
+    {
+      '<leader><leader>ys',
+      function()
+        require('yaml-companion').open_ui_select()
+      end,
+      mode = 'n',
+      desc = '[L]SP [Y]AML [S]chema',
     },
+  },
+  opts = {
     config = function()
       require('telescope').load_extension 'yaml_schema'
     end,
-    keys = {
-      {
-        '<leader><leader>S',
-        function()
-          require('yaml-companion').open_ui_select()
-        end,
-        mode = 'n',
-        desc = '[L]SP [Y]AML [S]chema',
-      },
-    },
   },
 }

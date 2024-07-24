@@ -6,37 +6,46 @@ return {
     'nvim-telescope/telescope.nvim', -- optional
   },
   opts = function()
-    require('which-key').add {
-      {
-        { '<leader><leader>y', group = '[Y]aml' },
-        { '<leader><leader>y_', hidden = true },
-      },
-    }
-    require('which-key').register {
-      ['<leader>Y'] = { name = '[Y]aml', _ = 'which_key_ignore' },
-    }
+    vim.api.nvim_create_autocmd({ 'BufEnter', 'CursorMoved' }, {
+      pattern = { '*.yaml' },
+      callback = function()
+        vim.opt_local.winbar = require('yaml_nvim').get_yaml_key_and_value()
+      end,
+    })
+    return {}
   end,
   keys = {
     {
-      '<leader>yv',
-      '<cmd>YAMLView<cr>',
+      '<leader><leader>yv',
+      function()
+        require('yaml_nvim').view()
+      end,
       mode = 'n',
       desc = '[Y]aml [V]view path',
-      ft = 'yaml',
+      ft = { 'yaml', 'yaml.docker-compose' },
     },
     {
-      '<leader>yy',
-      '<cmd>YAMLYank<cr>',
+      '<leader><leader>yy',
+      '<cmd>YAMLYankKey<cr>',
       mode = 'n',
       desc = '[Y]aml [Y]ank [P]ath',
-      ft = 'yaml',
+      ft = { 'yaml', 'yaml.docker-compose' },
     },
     {
-      '<leader>yt',
-      '<cmd>YAMLTelescope<cr>',
+      '<leader><leader>yY',
+      '<cmd>YAMLYankKey +<cr>',
+      mode = 'n',
+      desc = '[Y]aml [Y]ank [P]ath (system clipboard)',
+      ft = { 'yaml', 'yaml.docker-compose' },
+    },
+    {
+      '<leader><leader>yt',
+      function()
+        require('yaml_nvim').telescope()
+      end,
       mode = 'n',
       desc = '[C]ode [Y]aml [T]elescope',
-      ft = 'yaml',
+      ft = { 'yaml', 'yaml.docker-compose' },
     },
   },
 }

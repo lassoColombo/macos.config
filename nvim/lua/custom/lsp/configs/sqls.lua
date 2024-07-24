@@ -3,12 +3,6 @@ return {
   on_attach = function(client, bufnr)
     require('sqls').on_attach(client, bufnr) -- require sqls.nvim
 
-    require('which-key').add {
-      {
-        { '<leader><leader>S', group = '[L]SP [S]chema/[D]atabase' },
-        { '<leader><leader>S_', hidden = true },
-      },
-    }
     vim.keymap.set({ 'n', 'v' }, '<leader><leader>x', '<cmd>SqlsExecuteQuery<CR>', { desc = 'e[X]ecute' })
     -- :NOTE: useless
     -- vim.keymap.set('n', '<leader>lld', '<cmd>SqlsShowDatabases<CR>', { desc = '[L]SP [L]ist [D]atabases' })

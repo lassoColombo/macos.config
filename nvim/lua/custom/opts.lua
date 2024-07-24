@@ -41,6 +41,10 @@ vim.opt.number = true
 -- You can also add relative line numbers, for help with jumping.
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
+
+-- set global fold method
+-- vim.opt.foldmethod = 'indent'
+
 -- wrap lines
 vim.wo.wrap = false
 
