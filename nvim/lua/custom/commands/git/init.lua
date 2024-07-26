@@ -1,1 +1,1 @@
-require 'custom.commands.git.add'
+require 'custom.commands.git.inspect'

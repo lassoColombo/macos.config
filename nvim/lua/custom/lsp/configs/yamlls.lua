@@ -18,22 +18,9 @@ return {
         -- Avoid TypeError: Cannot read properties of undefined (reading 'length')
         url = '',
       },
-      schemas = vim.tbl_deep_extend('force', require('schemastore').yaml.schemas(), {
-        ['https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json'] = {
-          '**/docker-compose.yml',
-          '**/docker-compose.yaml',
-          '**/docker-compose.*.yml',
-          '**/docker-compose.*.yaml',
-          '**/compose.yml',
-          '**/compose.yaml',
-          '**/compose.*.yml',
-          '**/compose.*.yaml',
-        },
-        -- ['https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json'] = {
-        --   '/.gitlab-ci.yml',
-        --   '/.gitlab-ci.yaml',
-        -- },
-      }),
+      schemas = {
+        -- :NOTE: schemas are loaded via yaml-companion
+      },
     },
   },
 }

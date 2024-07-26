@@ -1,6 +1,6 @@
 return {
   'cuducos/yaml.nvim',
-  ft = { 'yaml' },
+  ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
   dependencies = {
     'nvim-treesitter/nvim-treesitter',
     'nvim-telescope/telescope.nvim', -- optional
@@ -22,21 +22,21 @@ return {
       end,
       mode = 'n',
       desc = '[Y]aml [V]view path',
-      ft = { 'yaml', 'yaml.docker-compose' },
+      ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
     },
     {
       '<leader><leader>yy',
       '<cmd>YAMLYankKey<cr>',
       mode = 'n',
       desc = '[Y]aml [Y]ank [P]ath',
-      ft = { 'yaml', 'yaml.docker-compose' },
+      ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
     },
     {
       '<leader><leader>yY',
       '<cmd>YAMLYankKey +<cr>',
       mode = 'n',
       desc = '[Y]aml [Y]ank [P]ath (system clipboard)',
-      ft = { 'yaml', 'yaml.docker-compose' },
+      ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
     },
     {
       '<leader><leader>yt',
@@ -45,7 +45,7 @@ return {
       end,
       mode = 'n',
       desc = '[C]ode [Y]aml [T]elescope',
-      ft = { 'yaml', 'yaml.docker-compose' },
+      ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
     },
   },
 }

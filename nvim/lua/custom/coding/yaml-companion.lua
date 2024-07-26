@@ -1,7 +1,7 @@
 return {
   'someone-stole-my-name/yaml-companion.nvim',
   event = 'BufEnter',
-  ft = 'yaml',
+  ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
   config = function()
     local cfg = require('yaml-companion').setup {
       -- detect k8s schemas based on file content
@@ -10,10 +10,6 @@ return {
       },
       -- schemas available in Telescope picker
       schemas = {
-        -- not loaded automatically, manually select with
-        -- some schemas below may be automatically loaded in yamlls, but added
-        -- them here so that they show up in the statusline
-        -- :Telescope yaml_schema
         {
           name = 'Argo CD Application',
           uri = 'https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/argoproj.io/application_v1alpha1.json',

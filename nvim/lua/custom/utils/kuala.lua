@@ -1,5 +1,6 @@
 return {
   'mistweaverco/kulala.nvim',
+  ft = 'http',
   -- event = 'VeryLazy',
   config = function()
     require('kulala').setup {
@@ -31,7 +32,6 @@ return {
       additional_curl_options = {},
     }
   end,
-  ft = 'http',
   keys = {
     {
       '<leader>x',
