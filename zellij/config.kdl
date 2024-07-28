@@ -18,6 +18,7 @@ keybinds {
         bind "Alt f" { SwitchToMode "search"; }
         bind "Alt s" { SwitchToMode "scroll"; }
         bind "Alt t" { SwitchToMode "tmux"; }
+        bind "Alt e" { EditScrollback; SwitchToMode "Normal"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
         bind "Alt b" { ToggleFloatingPanes; SwitchToMode "Normal"; }

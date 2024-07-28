@@ -2,6 +2,9 @@ layout name="config" {
     tab name="pegasus" cwd="~/projects/work/pegasus/pegasus/" focus=true{
         pane name="editor" command="nvim"
     }
+    tab name="horses" cwd="~/projects/work/pegasus/pegasus/" {
+        pane name="gitops" 
+    }
     tab name="gitops" cwd="~/projects/work/pegasus/pegasus-gitops.git/" {
         pane name="gitops" 
     }
