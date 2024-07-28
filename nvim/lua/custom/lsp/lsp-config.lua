@@ -69,8 +69,8 @@ return { -- LSP Configuration & Plugins
       jsonls = require 'custom.lsp.configs.jsonls',
       taplo = require 'custom.lsp.configs.taplo',
       sqls = require 'custom.lsp.configs.sqls',
+      ansiblels = require 'custom.lsp.configs.ansiblels',
       gopls = {},
-      ansiblels = {},
     }
 
     require('mason').setup()
