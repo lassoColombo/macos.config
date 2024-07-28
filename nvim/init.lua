@@ -16,11 +16,15 @@ require('lazy').setup({
   { import = 'custom.lsp' },
   { import = 'custom.cmp' },
   { import = 'custom.UI' },
-  { import = 'custom.coding' },
   { import = 'custom.git' },
+  { import = 'custom.coding' },
   { import = 'custom.unittest' },
   { import = 'custom.dap' },
-  { import = 'custom.dadbod' },
+  { import = 'custom.langs.python' },
+  { import = 'custom.langs.yaml' },
+  { import = 'custom.langs.json' },
+  { import = 'custom.langs.markdown' },
+  { import = 'custom.langs.sql' },
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
