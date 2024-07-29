@@ -63,7 +63,7 @@ return {
     vim.keymap.set('n', '-C', function()
       dap.clear_breakpoints()
       vim.notify('clearing dap breakpoints', vim.log.levels.INFO)
-    end, { desc = '[D]ebug [Q]uit' })
+    end, { desc = '[D]ebug [C]lear breakpoints' })
     -- "<cmd>lua require'dap'.disconnect()<CR><cmd>lua require'dap'.close()<CR>",
 
     -- Dap UI setup

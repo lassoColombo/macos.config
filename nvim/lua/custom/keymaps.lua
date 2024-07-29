@@ -34,7 +34,7 @@ vim.keymap.set('n', '<leader>Q', '<cmd>qa!<CR>', { desc = '[Q]uit (qa!)' })
 --  Use CTRL+<hjkl> to switch between windows
 --  See `:help wincmd` for a list of all window commands
 vim.keymap.set('n', '<leader>|', '<cmd>vsplit<CR>', { desc = '[]Split window vertically' })
-vim.keymap.set('n', '<leader>-', '<cmd>hsplit<CR>', { desc = '[]Split window horizontally' })
+vim.keymap.set('n', '<leader>-', '<cmd>split<CR>', { desc = '[]Split window horizontally' })
 vim.keymap.set('n', '<leader>w', '<cmd>close<CR>', { desc = '[W]indow close' })
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
