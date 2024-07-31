@@ -23,6 +23,17 @@ if vim.filetype then
 else
   vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
     pattern = {
+      '.*/*ansible*/.*%.ya?ml',
+      '.*/.*/*ansible*/.*%.ya?ml',
+      '.*/.*/.*/*ansible*/.*%.ya?ml',
+      '.*/.*/.*/.*/*ansible*/.*%.ya?ml',
+      '.*/.*/.*/.*/.*/*ansible*/.*%.ya?ml',
+      '.*/.*/.*/.*/.*/.*/*ansible*/.*%.ya?ml',
+      '.*/.*/.*/.*/.*/.*/.*/*ansible*/.*%.ya?ml',
+      '.*/.*/.*/.*/.*/.*/.*/.*/*ansible*/.*%.ya?ml',
+      '.*/.*/.*/.*/.*/.*/.*/.*/.*/*ansible*/.*%.ya?ml',
+      '.*/.*/.*/.*/.*/.*/.*/.*/.*/.*/*ansible*/.*%.ya?ml',
+
       '*/host_vars/*.yml',
       '*/host_vars/*.yaml',
       '*/group_vars/*.yml',
