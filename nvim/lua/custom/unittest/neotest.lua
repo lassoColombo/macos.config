@@ -24,7 +24,6 @@ return {
     -- :NOTE: The below config is optional but recommended if you enabled the diagnostic option of neotest.
     -- Especially testify makes heavy use of tabs and newlines in the error messages,
     -- which reduces the readability of the generated virtual text otherwise.
-
     -- get neotest namespace (api call creates or returns namespace)
     local neotest_ns = vim.api.nvim_create_namespace 'neotest'
     vim.diagnostic.config({
@@ -38,7 +37,9 @@ return {
 
     require('neotest').setup {
       adapters = {
-        require 'neotest-go',
+        require 'neotest-go' {
+          recursive_run = true,
+        },
         require 'neotest-python',
       },
     }
@@ -50,25 +51,12 @@ return {
         require('neotest').run.run()
       end,
       mode = 'n',
-      desc = '=[U]nittest [O]ne',
+      desc = '=[U]nittest [N]earest',
     },
     {
-      '=0',
+      '=+',
       function()
-        require('neotest').run.run()
-      end,
-      mode = 'n',
-      desc = '=[U]nittest [O]ne',
-    },
-    {
-      '=w',
-      function()
-        local file_type = vim.bo.ft
-        local neotesting_root = vim.fn.getcwd()
-        if file_type == 'go' then
-          neotesting_root = neotesting_root .. '/src/'
-        end
-        require('neotest').run.run(neotesting_root)
+        require('neotest').run.run(vim.fn.getcwd())
       end,
       mode = 'n',
       desc = '=[U]nittest [W]orkspace',
@@ -80,6 +68,38 @@ return {
       end,
       mode = 'n',
       desc = '=[U]nittest [F]ile',
+    },
+    {
+      '=s',
+      function()
+        require('neotest').summary.toggle()
+      end,
+      mode = 'n',
+      desc = '=[U]nittest [S]ummary',
+    },
+    {
+      '=o',
+      function()
+        require('neotest').output.open { enter = true, auto_close = true }
+      end,
+      mode = 'n',
+      desc = '=[U]nittest [O]utput panel',
+    },
+    {
+      '=O',
+      function()
+        require('neotest').output_panel.toggle()
+      end,
+      mode = 'n',
+      desc = '=[U]nittest [O]utput window',
+    },
+    {
+      '=w',
+      function()
+        require('neotest').watch.toggle()
+      end,
+      mode = 'n',
+      desc = '=[U]nittest [W]atch',
     },
     {
       '=a',
@@ -96,14 +116,6 @@ return {
       end,
       mode = 'n',
       desc = '=[U]nittest [X]Abort',
-    },
-    {
-      '=s',
-      function()
-        require('neotest').summary.toggle()
-      end,
-      mode = 'n',
-      desc = '=[U]nittest [S]ummary',
     },
   },
 }
