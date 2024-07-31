@@ -48,6 +48,7 @@ return {
     vim.keymap.set('n', '-o', dap.step_over, { desc = '[D]ebug step [O]ver' })
     vim.keymap.set('n', '-O', dap.step_out, { desc = '[D]ebug step [O]ut' })
     vim.keymap.set('n', '-b', dap.toggle_breakpoint, { desc = '[D]ebug [B]reakpoint' })
+    vim.keymap.set('n', '--', dap.toggle_breakpoint, { desc = '[D]ebug [B]reakpoint' })
     vim.keymap.set('n', '-B', function()
       dap.set_breakpoint(vim.fn.input 'Breakpoint condition: ')
     end, { desc = '[D]ebug conditional [B]reakpoint' })

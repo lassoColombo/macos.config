@@ -27,7 +27,7 @@ return { -- LSP Configuration & Plugins
           },
         }
         map('<leader><leader>R', '<cmd>LspRestart<CR>', '[L]SP [R]estart')
-        map('<leader><leader>i', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
+        map('<leader><leader>I', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
         map('<leader><leader>r', vim.lsp.buf.rename, '[L]SP [R]ename')
         map('<leader><leader>a', vim.lsp.buf.code_action, '[L]SP [A]ction')
         map('<leader><leader>k', vim.lsp.buf.hover, 'Hover Documentation')

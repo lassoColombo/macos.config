@@ -45,12 +45,20 @@ return {
   end,
   keys = {
     {
-      '=t',
+      '==',
       function()
         require('neotest').run.run()
       end,
       mode = 'n',
-      desc = '[U]nittest [O]ne',
+      desc = '=[U]nittest [O]ne',
+    },
+    {
+      '=0',
+      function()
+        require('neotest').run.run()
+      end,
+      mode = 'n',
+      desc = '=[U]nittest [O]ne',
     },
     {
       '=w',
@@ -63,7 +71,7 @@ return {
         require('neotest').run.run(neotesting_root)
       end,
       mode = 'n',
-      desc = '[U]nittest [W]orkspace',
+      desc = '=[U]nittest [W]orkspace',
     },
     {
       '=f',
@@ -71,7 +79,7 @@ return {
         require('neotest').run.run(vim.fn.expand '%')
       end,
       mode = 'n',
-      desc = '[U]nittest [F]ile',
+      desc = '=[U]nittest [F]ile',
     },
     {
       '=a',
@@ -79,7 +87,7 @@ return {
         require('neotest').run.attach { interactive = true }
       end,
       mode = 'n',
-      desc = '[U]nittest [A]ttach',
+      desc = '=[U]nittest [A]ttach',
     },
     {
       '=x',
@@ -87,7 +95,7 @@ return {
         require('neotest').run.stop { interactive = true }
       end,
       mode = 'n',
-      desc = '[U]nittest [X]Abort',
+      desc = '=[U]nittest [X]Abort',
     },
     {
       '=s',
@@ -95,7 +103,7 @@ return {
         require('neotest').summary.toggle()
       end,
       mode = 'n',
-      desc = '[U]nittest [S]ummary',
+      desc = '=[U]nittest [S]ummary',
     },
   },
 }

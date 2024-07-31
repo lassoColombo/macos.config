@@ -21,6 +21,7 @@ require('lazy').setup({
   { import = 'custom.unittest' },
   { import = 'custom.dap' },
   { import = 'custom.langs.python' },
+  { import = 'custom.langs.golang' },
   { import = 'custom.langs.sql' },
   { import = 'custom.langs.markdown' },
   { import = 'custom.langs.json' },
