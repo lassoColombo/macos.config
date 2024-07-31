@@ -4,6 +4,15 @@ return {
     'numToStr/Comment.nvim',
     lazy = false,
     init = function()
+      require('which-key').add {
+        {
+          mode = { 'n', 'v' },
+          { '<leader>C', group = '[C]omment block' },
+          { '<leader>C_', hidden = true },
+          { '<leader>c', group = '[C]omment line' },
+          { '<leader>c_', hidden = true },
+        },
+      }
       require('Comment.ft').set('http', '#')
     end,
     opts = {

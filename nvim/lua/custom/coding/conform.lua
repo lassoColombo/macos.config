@@ -2,7 +2,15 @@ return {
   'stevearc/conform.nvim',
   event = { 'BufWritePre' },
   cmd = { 'ConformInfo' },
-
+  init = function()
+    require('which-key').add {
+      {
+        mode = { 'n', 'v' },
+        { '<leader>f', group = '[F]ormat' },
+        { '<leader>f_', hidden = true },
+      },
+    }
+  end,
   keys = {
     {
       '<leader>fi',

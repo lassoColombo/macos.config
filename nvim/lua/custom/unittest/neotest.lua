@@ -46,7 +46,7 @@ return {
   end,
   keys = {
     {
-      '==',
+      '=1',
       function()
         require('neotest').run.run()
       end,
@@ -54,15 +54,7 @@ return {
       desc = '=[U]nittest [N]earest',
     },
     {
-      '=+',
-      function()
-        require('neotest').run.run(vim.fn.getcwd())
-      end,
-      mode = 'n',
-      desc = '=[U]nittest [W]orkspace',
-    },
-    {
-      '=f',
+      '=2',
       function()
         require('neotest').run.run(vim.fn.expand '%')
       end,
@@ -70,7 +62,15 @@ return {
       desc = '=[U]nittest [F]ile',
     },
     {
-      '=s',
+      '=3',
+      function()
+        require('neotest').run.run(vim.fn.getcwd())
+      end,
+      mode = 'n',
+      desc = '=[U]nittest [W]orkspace',
+    },
+    {
+      '=0',
       function()
         require('neotest').summary.toggle()
       end,
