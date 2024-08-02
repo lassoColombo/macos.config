@@ -47,12 +47,13 @@ return { -- Fuzzy Finder (files, lsp, etc)
     vim.keymap.set('n', '/k', builtin.keymaps, { desc = '/[S]earch [K]eymaps' })
     -- file/buffer searches
     vim.keymap.set('n', '/f', builtin.find_files, { desc = '/[S]earch [F]iles' })
+    vim.keymap.set('n', '<C-space>', builtin.find_files, { desc = '/[S]earch [F]iles' })
     vim.keymap.set('n', '/F', function()
       builtin.find_files { hidden = true, no_ignore = true }
     end, { desc = '/[S]earch [F]iles (hidden)' })
-    vim.keymap.set('n', '/b', builtin.buffers, { desc = '/[S]earch [B]uffers ' })
-    vim.keymap.set('n', '/<space>', builtin.buffers, { desc = '[S]earch [B]uffers ' })
-    vim.keymap.set('n', '<C-space>', builtin.buffers, { desc = '[S]earch [B]uffers ' })
+    vim.keymap.set('n', '/b', builtin.buffers, { desc = '/[S]earch [B]uffers' })
+    vim.keymap.set('n', '<C-b>', builtin.buffers, { desc = '/[S]earch [B]uffers' })
+    vim.keymap.set('n', '/<space>', builtin.buffers, { desc = '[S]earch [B]uffers' })
     -- other searches
     vim.keymap.set('n', '/R', builtin.resume, { desc = '/[S]earch [R]esume' })
     vim.keymap.set('n', '/n', function()
