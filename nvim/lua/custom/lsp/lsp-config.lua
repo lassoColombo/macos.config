@@ -30,8 +30,8 @@ return { -- LSP Configuration & Plugins
         map('<leader><leader>I', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
         map('<leader><leader>r', vim.lsp.buf.rename, '[L]SP [R]ename')
         map('<leader><leader>a', vim.lsp.buf.code_action, '[L]SP [A]ction')
-        map('<leader><leader>k', vim.lsp.buf.hover, 'Hover Documentation')
-        vim.keymap.set('n', '<leader><leader>d', function()
+        map('<leader><leader>k', vim.lsp.buf.hover, '[L]SP [D]ocumentation')
+        vim.keymap.set('n', '<leader><leader><leader>', function()
           vim.diagnostic.open_float { source = true }
         end, { desc = '[L]SP (line) [D]iagnostics' })
         vim.keymap.set('n', '[d', function()
