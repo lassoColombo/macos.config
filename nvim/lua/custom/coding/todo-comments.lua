@@ -6,7 +6,7 @@ return {
     { '/#', '<cmd>TodoTelescope<cr>', desc = '/[S]earch [T]odo-comments' },
     { '\\s#', '<cmd>Trouble todo<cr>', desc = '[S]earch [T]odo-comments' },
     {
-      '<leader>uC',
+      '<leader>0C',
       function()
         local comments = require 'todo-comments'
         local log_level = (vim.g.todo_comments and vim.log.levels.WARN or vim.log.levels.INFO)
@@ -18,7 +18,7 @@ return {
         vim.g.todo_comments = not vim.g.todo_comments
         vim.notify('set todo-comments to ' .. tostring(vim.g.todo_comments), log_level)
       end,
-      desc = '[U]I TODO-[C]omments',
+      desc = '[T]oggle TODO-[C]omments',
     },
   },
   opts = {

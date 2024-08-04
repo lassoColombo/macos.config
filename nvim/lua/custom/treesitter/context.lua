@@ -6,7 +6,7 @@ return {
       require('treesitter-context').go_to_context(vim.v.count1)
     end, { silent = true }),
 
-    vim.keymap.set('n', '<leader>uc', function()
+    vim.keymap.set('n', '<leader>0c', function()
       local context = require 'treesitter-context'
       if context.enabled() then
         context.disable()
@@ -14,7 +14,7 @@ return {
         context.enable()
       end
       vim.notify('set treesitter context to ' .. tostring(context.enabled()), vim.log.levels.INFO)
-    end, { desc = '[U]I [C]ontext' }),
+    end, { desc = '[T]oggle [C]ontext' }),
   },
   opts = {
     enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)

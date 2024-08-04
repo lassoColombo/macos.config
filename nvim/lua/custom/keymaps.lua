@@ -47,10 +47,10 @@ vim.keymap.set('n', '<C-down>', '<cmd>horizontal resize -3<CR>', { desc = 'Move 
 
 -- toggle keymaps
 -- toggle word wrap
-vim.keymap.set('n', '<leader>uw', function()
+vim.keymap.set('n', '<leader>0w', function()
   vim.wo.wrap = not vim.wo.wrap
   vim.notify('set line wrap to ' .. tostring(vim.wo.wrap), vim.log.levels.WARN)
-end, { desc = '[U]I [W]rap' })
+end, { desc = '[T]oggle line [W]rap' })
 
 -- toggle lines
 -- :WARNING: bugged
@@ -62,10 +62,10 @@ end, { desc = '[U]I [W]rap' })
 -- end, { desc = '[U]I [L]ines' })
 
 -- toggle line relativeness
-vim.keymap.set('n', '<leader>ul', '<esc>:set relativenumber!<cr>', { desc = '[U]I relative [L]ines' })
+vim.keymap.set('n', '<leader>0l', '<esc>:set relativenumber!<cr>', { desc = '[T]oggle relative [L]ines' })
 
 -- toggle diagnostics
-vim.keymap.set('n', '<leader>ud', function()
+vim.keymap.set('n', '<leader>0d', function()
   if vim.diagnostic.is_enabled() then
     vim.diagnostic.enable(false)
   else
@@ -74,4 +74,4 @@ vim.keymap.set('n', '<leader>ud', function()
   local is_enabled = vim.diagnostic.is_enabled()
   local log_level = (is_enabled and vim.log.levels.INFO or vim.log.levels.WARN)
   vim.notify('set diagnostics to ' .. tostring(not is_enabled), log_level)
-end, { desc = '[U]I [D]iagnostics' })
+end, { desc = '[T]oggle [D]iagnostics' })

@@ -20,4 +20,12 @@ return {
       },
     }
   end,
+  keys = {
+    {
+      '<leader>0b',
+      'DBUIToggle',
+      mode = 'n',
+      desc = '[T]oggle [D]ata[B]ase UI',
+    },
+  },
 }

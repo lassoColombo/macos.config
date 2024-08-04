@@ -41,7 +41,7 @@ return {
     }
 
     -- Toggle to see last session result. Without this, you can't see session output in case of unhandled exception.
-    vim.keymap.set('n', 'rD', dapui.toggle, { desc = '[U]I [D]ebugger' })
+    vim.keymap.set('n', '<leader>0D', dapui.toggle, { desc = '[T]oggle [D]ebugger ui' })
     vim.keymap.set('n', '-u', dapui.toggle, { desc = '[D]ebug [U]I' })
     vim.keymap.set('n', '-c', dap.continue, { desc = '[D]ebug [C]ontinue/start' })
     vim.keymap.set('n', '-i', dap.step_into, { desc = '[D]ebug step [I]nto' })

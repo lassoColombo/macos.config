@@ -8,9 +8,10 @@ return { -- Useful plugin to show you pending keybinds.
       },
     }
 
-    -- Document existing key chains
     require('which-key').add {
       {
+        { '<leader>0', group = '[T]oggle' },
+        { '<leader>0_', hidden = true },
         { ']', group = '[]Next' },
         { ']_', hidden = true },
         { '[', group = '[]Prev' },

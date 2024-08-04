@@ -59,16 +59,16 @@ return {
       desc = '[G]it [B]lame line',
     },
     {
-      '<leader>uB',
+      '<leader>0B',
       '<cmd>Gitsigns toggle_current_line_blame<cr>',
       mode = 'n',
-      desc = '[U]i git [B]lame line',
+      desc = '[T]oggle git [B]lame line',
     },
     {
-      '<leader>ug',
+      '<leader>0g',
       '<cmd>Gitsigns toggle_signs<cr>',
       mode = 'n',
-      desc = '[U]i [G]it signs',
+      desc = '[T]oggle [G]it signs',
     },
     {
       ']g',

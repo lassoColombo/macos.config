@@ -9,7 +9,7 @@ return {
     -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
   },
   keys = {
-    { '<leader>ut', '<cmd>Neotree toggle<cr>', desc = '[U]I file [T]ree' },
+    { '<leader>0t', '<cmd>Neotree toggle<cr>', desc = '[T]oggle file [T]ree' },
     { '<leader>t', '<cmd>Neotree toggle<cr>', desc = '[]file[T]ree' },
   },
   config = function()
