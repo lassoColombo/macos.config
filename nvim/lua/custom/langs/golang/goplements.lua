@@ -17,12 +17,12 @@ return {
   },
   keys = {
     {
-      '<leader>ui',
+      '<leader>0i',
       function()
         require('goplements').toggle()
       end,
       mode = 'n',
-      desc = '[U]i [I]mplement virtualtext',
+      desc = '[T]oggle [I]mplement virtualtext',
       ft = { 'go' },
     },
   },
