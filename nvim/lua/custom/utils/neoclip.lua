@@ -10,7 +10,7 @@ return {
       history = 1000,
       enable_persistent_history = true,
       length_limit = 1048576,
-      continuous_sync = false,
+      continuous_sync = true,
       db_path = vim.fn.stdpath 'data' .. '/databases/neoclip.sqlite3',
       filter = nil,
       preview = false,
@@ -71,23 +71,15 @@ return {
   end,
   keys = {
     {
-      '<leader>1',
+      '<leader>r',
       function()
         require('telescope').extensions.neoclip.default()
       end,
       mode = 'n',
-      desc = 'main register manager',
+      desc = '[R]egister " [H]istory',
     },
     {
-      '<leader>2',
-      function()
-        require('telescope').extensions.macroscope.default()
-      end,
-      mode = 'n',
-      desc = 'macro manager',
-    },
-    {
-      '<leader>0r',
+      '<leader>1r',
       function()
         require('neoclip').toggle()
       end,

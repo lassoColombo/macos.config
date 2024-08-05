@@ -1,3 +1,41 @@
+local function closeBuffer(force)
+  -- Define the options
+  local choices = { 'this', 'all', 'other', 'hidden', 'nameless', 'regex', 'glob' }
+  local prompt = 'close buffers on conditions'
+  if force then
+    prompt = '💀 forcefully ' .. prompt
+  else
+    prompt = '🌺 gracefully ' .. prompt
+  end
+  -- Prompt the user to select an option
+  vim.ui.select(choices, {
+    prompt = prompt,
+    format_item = function(item)
+      return item
+    end,
+  }, function(choice)
+    -- Call the appropriate function based on user choice
+    if choice == 'this' or choice == 'all' or choice == 'other' or choice == 'hidden' or choice == 'nameless' then
+      require('close_buffers').delete { type = choice, force = force }
+      return
+    end
+    if choice == 'regex' then
+      vim.ui.input({ prompt = 'regex: ' }, function(input)
+        if input then
+          require('close_buffers').delete { regex = input, force = force }
+        end
+      end)
+    end
+    if choice == 'glob' then
+      vim.ui.input({ prompt = 'glob: ' }, function(input)
+        if input then
+          require('close_buffers').delete { glob = input, force = force }
+        end
+      end)
+    end
+  end)
+end
+
 return {
   'kazhala/close-buffers.nvim',
   opts = {
@@ -19,75 +57,28 @@ return {
   },
   keys = {
     {
-      '<leader>b',
+      '<leader>q',
       function()
         require('close_buffers').delete { type = 'this' } -- Delete the current buffer
       end,
       mode = 'n',
-      desc = '[B]uffer [C]lose',
+      desc = '[]close buffer',
+    },
+    {
+      '<leader>b',
+      function()
+        closeBuffer(false)
+      end,
+      mode = 'n',
+      desc = '[]close buffers on condition',
     },
     {
       '<leader>B',
       function()
-        -- Define the options
-        local choices = { 'all', 'all-force', 'other', 'hidden', 'nameless', 'regex', 'glob' }
-
-        -- Prompt the user to select an option
-        vim.ui.select(choices, {
-          prompt = 'Select condition:',
-          format_item = function(item)
-            return item
-          end,
-        }, function(choice)
-          -- Call the appropriate function based on user choice
-          if choice == 'all' or choice == 'other' or choice == 'hidden' or choice == 'nameless' then
-            require('close_buffers').delete { type = choice }
-            return
-          end
-          if choice == 'all-force' then
-            require('close_buffers').delete { type = choice, force = true }
-          end
-          if choice == 'regex' then
-            vim.ui.input({ prompt = 'regex: ' }, function(input)
-              if input then
-                require('close_buffers').delete { regex = input }
-              end
-            end)
-          end
-          if choice == 'glob' then
-            vim.ui.input({ prompt = 'glob: ' }, function(input)
-              if input then
-                require('close_buffers').delete { glob = input }
-              end
-            end)
-          end
-        end)
+        closeBuffer(true)
       end,
       mode = 'n',
-      desc = '[B]uffer [C]lose on condition',
+      desc = '[]close buffers on condition!',
     },
-    -- {
-    --   '<leader>B',
-    --   function()
-    --     -- Define the options
-    --     local choices = { 'numbered', 'list' }
-    --     -- Prompt the user to select an option
-    --     vim.ui.select(choices, {
-    --       prompt = 'Select TOC format:',
-    --       format_item = function(item)
-    --         return 'Generate ' .. item .. ' TOC'
-    --       end,
-    --     }, function(choice)
-    --       -- Call the appropriate function based on user choice
-    --       if choice == 'numbered' then
-    --         require('nvim-toc').generate_md_toc 'numbered'
-    --       elseif choice == 'list' then
-    --         require('nvim-toc').generate_md_toc 'list'
-    --       end
-    --     end)
-    --   end,
-    --   mode = 'n',
-    --   desc = '[C]lose [B]uffers by condition',
-    -- },
   },
 }

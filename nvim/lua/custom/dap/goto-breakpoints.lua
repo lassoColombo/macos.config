@@ -4,7 +4,7 @@ return {
   lazy = false,
   keys = {
     {
-      ']b',
+      ']B',
       function()
         require('goto-breakpoints').next()
       end,
@@ -12,7 +12,7 @@ return {
       desc = ']Next breakpoint',
     },
     {
-      '[b',
+      '[B',
       function()
         require('goto-breakpoints').prev()
       end,

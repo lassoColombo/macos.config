@@ -5,7 +5,7 @@ return {
   dependencies = { 'hrsh7th/nvim-cmp' },
   -- Keymap to toggle autopair.
   keys = {
-    vim.keymap.set('n', '<leader>0p', function()
+    vim.keymap.set('n', '<leader>1p', function()
       local pairs = require 'nvim-autopairs'
       local log_level = nil
       if pairs.state.disabled then

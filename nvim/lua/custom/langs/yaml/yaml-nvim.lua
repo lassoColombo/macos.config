@@ -7,7 +7,7 @@ return {
   },
   opts = function()
     vim.api.nvim_create_autocmd({ 'BufEnter', 'CursorMoved' }, {
-      pattern = { '*.yaml' },
+      pattern = { '*.yaml', '*.yml' },
       callback = function()
         vim.opt_local.winbar = require('yaml_nvim').get_yaml_key_and_value()
       end,
@@ -16,7 +16,7 @@ return {
   end,
   keys = {
     {
-      '<leader><leader>yv',
+      '<Space><Space>v',
       function()
         require('yaml_nvim').view()
       end,
@@ -25,21 +25,21 @@ return {
       ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
     },
     {
-      '<leader><leader>yy',
+      '<Space><Space>y',
       '<cmd>YAMLYankKey<cr>',
       mode = 'n',
       desc = '[Y]aml [Y]ank [P]ath',
       ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
     },
     {
-      '<leader><leader>yY',
+      '<Space><Space>Y',
       '<cmd>YAMLYankKey +<cr>',
       mode = 'n',
       desc = '[Y]aml [Y]ank [P]ath (system clipboard)',
       ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
     },
     {
-      '<leader><leader>yt',
+      '<Space><Space>t',
       function()
         require('yaml_nvim').telescope()
       end,

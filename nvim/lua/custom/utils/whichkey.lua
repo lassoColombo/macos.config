@@ -10,15 +10,17 @@ return { -- Useful plugin to show you pending keybinds.
 
     require('which-key').add {
       {
-        { '<leader>0', group = '[T]oggle' },
-        { '<leader>0_', hidden = true },
+        { '<leader>1', group = '[T]oggle' },
+        { '<leader>1_', hidden = true },
+        { '<leader>r', group = '[R]egisters' },
+        { '<leader>r_', hidden = true },
+        { '<Space><Space>', group = '[L]SP specific' },
+        { '<Space><Space>_', hidden = true },
         { ']', group = '[]Next' },
         { ']_', hidden = true },
         { '[', group = '[]Prev' },
         { '[_', hidden = true },
-        { '/', group = '/[S]earch' },
-        { '/_', hidden = true },
-        { '\\', group = '\\[L]ist' },
+        { '\\', group = '\\S]earch' },
         { '\\_', hidden = true },
         {
           mode = { 'n', 'v' },

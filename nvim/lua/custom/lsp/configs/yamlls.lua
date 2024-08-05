@@ -1,6 +1,6 @@
 return {
   -- activate only for plain yaml files
-  filetypes = { 'yaml', 'yaml.docker-compose' },
+  filetypes = { 'yaml' },
   event = 'BufEnter',
 
   -- lazy-load schemastore when needed

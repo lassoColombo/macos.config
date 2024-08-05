@@ -8,7 +8,7 @@ return {
     'nvim-treesitter/nvim-treesitter',
     -- adapters
     'nvim-neotest/neotest-go',
-    'nvim-neotest/neotest-python',
+    -- 'nvim-neotest/neotest-python',
   },
   opts = {},
   config = function()
@@ -40,7 +40,7 @@ return {
         require 'neotest-go' {
           recursive_run = true,
         },
-        require 'neotest-python',
+        -- require 'neotest-python' {},
       },
     }
   end,

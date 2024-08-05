@@ -11,8 +11,10 @@ return {
   end,
   keys = {
     {
-      '<leader><leader>i',
-      [[<cmd>lua require'telescope'.extensions.goimpl.goimpl{}<CR>]],
+      '<Space><Space>I',
+      function()
+        require('telescope').extensions.goimpl.goimpl {}
+      end,
       mode = 'n',
       desc = '[I]mplement [I]interface',
       ft = { 'go' },

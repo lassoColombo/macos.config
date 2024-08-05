@@ -63,7 +63,7 @@ return {
   end,
   keys = {
     {
-      '<leader>00',
+      '<leader>10',
       '<cmd>Dashboard<cr>',
       mode = 'n',
       desc = '[T]oggle [D]ashboard',

@@ -15,6 +15,17 @@ return {
     )
   ),
   u.s(
+    'if-err-return-err',
+    u.fmt(
+      [[
+      if err != nil {{
+        return err
+      }}
+  ]],
+      {}
+    )
+  ),
+  u.s(
     'if-err-expression',
     u.fmt(
       [[

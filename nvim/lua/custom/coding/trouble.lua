@@ -5,82 +5,82 @@ return {
   cmd = 'Trouble',
   keys = {
     {
-      '<leader><leader>D',
+      '<Space>D',
       function()
         require('trouble').toggle { mode = 'diagnostics', win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [D]iagnostics (workspace)',
+      desc = '[D]iagnostics (workspace)',
     },
     {
-      '<leader><leader>d',
+      '<Space>d',
       function()
         require('trouble').toggle { mode = 'diagnostics', filter = { buf = 0 }, win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [D]iagnostics (buffer)',
+      desc = '[D]iagnostics (buffer)',
     },
     -- {
-    --   '<leader><leader>L',
+    --   '<Space>L',
     --   function()
     --     require('trouble').toggle { mode = 'lsp', win = { relative = 'win', position = 'right' } }
     --   end,
-    --   desc = '[L]SP report',
+    --   desc = ' report',
     -- },
     {
-      '<leader><leader>T',
+      '<Space>T',
       function()
         require('trouble').toggle { mode = 'lsp_type_definitions', pinned = true, win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [T]ype declarations',
+      desc = '[T]ype declarations',
     },
     {
-      '<leader><leader>t',
+      '<Space>t',
       function()
         require('trouble').toggle { mode = 'lsp_definitions', pinned = true, win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [T]ype definitions',
+      desc = '[T]ype definitions',
     },
     {
       '<C-g>',
       function()
         require('trouble').toggle { mode = 'lsp_definitions', pinned = true, win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [T]ype definitions',
+      desc = '[T]ype definitions',
     },
     {
-      '<leader><leader>i',
+      '<Space>i',
       function()
         require('trouble').toggle { mode = 'lsp_implementations', pinned = true, win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [I]mplementations',
+      desc = '[I]mplementations',
     },
     {
-      '<leader><leader>r',
+      '<Space>r',
       function()
         require('trouble').toggle { mode = 'lsp_references', pinned = true, win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [R]eferences',
+      desc = '[R]eferences',
     },
     {
-      '<leader><leader>s',
+      '<Space>s',
       function()
         -- Trouble symbols toggle pinned=true win.relative=win win.position=right
         require('trouble').toggle { mode = 'lsp_document_symbols', pinned = true, win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [S]ymbols (document)',
+      desc = '[S]ymbols (document)',
     },
     {
-      '<leader><leader>c',
+      '<Space>c',
       function()
         require('trouble').toggle { mode = 'lsp_incoming_calls', pinned = true, win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [C]alls incoming',
+      desc = '[C]alls incoming',
     },
     {
-      '<leader><leader>C',
+      '<Space>C',
       function()
         require('trouble').toggle { mode = 'lsp_outgoing_calls', pinned = true, win = { relative = 'win', position = 'right' } }
       end,
-      desc = '[L]SP [C]alls outgoing',
+      desc = '[C]alls outgoing',
     },
   },
 }

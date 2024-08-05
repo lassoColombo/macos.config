@@ -1,0 +1,7 @@
+{
+  "macros": [
+    { "name": "expand list ,", "raw": "ZixhDRs=", "content": "f,a<CR><Esc>" },
+    { "name": "append ,", "raw": "QSwbMGo=", "content": "A,<Esc>0j" }
+  ]
+}
+

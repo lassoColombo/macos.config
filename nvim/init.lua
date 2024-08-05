@@ -46,7 +46,7 @@ require('lazy').setup({
   },
 })
 
-vim.keymap.set({ 'n' }, '<leader><leader>l', '<cmd>Lazy<cr>', { desc = '[L]azy' })
+vim.keymap.set({ 'n' }, '<Space>l', '<cmd>Lazy<cr>', { desc = '[L]azy' })
 
 vim.cmd.colorscheme 'catppuccin'
 vim.cmd.hi 'Comment gui=none'

@@ -61,7 +61,7 @@ return {
       ft = 'http',
     },
     {
-      '<leader>0P',
+      '<leader>1P',
       function()
         require('kulala').toggle_view()
       end,

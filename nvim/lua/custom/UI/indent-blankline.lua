@@ -27,7 +27,7 @@ return {
   -- :TODO: find a way to toggle
   -- keys = {
   --   {
-  --     '<leader>0i',
+  --     '<leader>1i',
   --     function()
   --     :TODO:
   --     end,

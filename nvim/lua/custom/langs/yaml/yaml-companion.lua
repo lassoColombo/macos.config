@@ -29,13 +29,13 @@ return {
   end,
   keys = {
     {
-      '<leader><leader>ys',
+      '<Space><Space>s',
       function()
         require('yaml-companion').open_ui_select()
       end,
       mode = 'n',
       ft = { 'yaml', 'yaml.docker-compose', 'yaml.ansible' },
-      desc = '[L]SP [Y]AML [S]chema',
+      desc = '[Y]AML [S]chema',
     },
   },
   opts = {

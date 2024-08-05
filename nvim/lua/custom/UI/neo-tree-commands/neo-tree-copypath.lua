@@ -6,7 +6,7 @@ return {
     filepath = modify(filepath, ':.')
 
     if filepath then
-      vim.fn.setreg('', filepath)
+      vim.fn.setreg('+', filepath)
       vim.notify('Copied: ' .. filepath)
     end
   end,
@@ -15,7 +15,7 @@ return {
     local filepath = node:get_id()
     if filepath then
       vim.notify('Copied: ' .. filepath)
-      vim.fn.setreg('', filepath)
+      vim.fn.setreg('+', filepath)
     end
   end,
   copy_filename = function(state)
@@ -23,7 +23,7 @@ return {
     local filename = node.name
 
     if filename then
-      vim.fn.setreg('', filename)
+      vim.fn.setreg('+', filename)
       vim.notify('Copied: ' .. filename)
     end
   end,
@@ -54,7 +54,7 @@ return {
         local i = tonumber(choice:sub(1, 1))
         if i then
           local result = results[i]
-          vim.fn.setreg('', result)
+          vim.fn.setreg('+', result)
 
           vim.notify('Copied: ' .. result)
         else

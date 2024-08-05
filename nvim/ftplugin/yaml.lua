@@ -7,7 +7,7 @@ vim.opt_local.foldlevel = 2
 
 require('which-key').add {
   {
-    { '<leader><leader>y', group = '[Y]aml' },
-    { '<leader><leader>y_', hidden = true },
+    { '<Space>y', group = '[Y]aml' },
+    { '<Space>y_', hidden = true },
   },
 }

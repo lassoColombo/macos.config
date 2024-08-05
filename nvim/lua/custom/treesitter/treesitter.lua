@@ -9,7 +9,7 @@ return { -- Highlight, edit, and navigate code
 
   keys = {
     {
-      '<leader><leader>T',
+      '<leader>1',
       '<cmd>InspectTree<CR>',
       mode = 'n',
       desc = '[T]treesitter [T]ree',

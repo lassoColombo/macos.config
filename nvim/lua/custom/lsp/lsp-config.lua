@@ -6,7 +6,6 @@ return { -- LSP Configuration & Plugins
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
-
     -- Useful status updates for LSP.
     -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
     { 'j-hui/fidget.nvim', opts = {} },
@@ -22,24 +21,24 @@ return { -- LSP Configuration & Plugins
 
         require('which-key').add {
           {
-            { '<leader><leader>', group = '[L]SP' },
-            { '<leader><leader>_', hidden = true },
+            { '<Space>', group = '' },
+            { '<Space>_', hidden = true },
           },
         }
-        map('<leader><leader>R', '<cmd>LspRestart<CR>', '[L]SP [R]estart')
-        map('<leader><leader>I', '<cmd>LspInfo<cr>', '[L]SP [I]nfo')
-        map('<leader><leader>r', vim.lsp.buf.rename, '[L]SP [R]ename')
-        map('<leader><leader>a', vim.lsp.buf.code_action, '[L]SP [A]ction')
-        map('<leader><leader>k', vim.lsp.buf.hover, '[L]SP [D]ocumentation')
-        vim.keymap.set('n', '<leader><leader><leader>', function()
+        map('<Space>R', '<cmd>LspRestart<CR>', '[R]estart')
+        map('<Space>I', '<cmd>LspInfo<cr>', '[I]nfo')
+        map('<Space>r', vim.lsp.buf.rename, '[R]ename')
+        map('<Space>a', vim.lsp.buf.code_action, '[A]ction')
+        map('<Space>k', vim.lsp.buf.hover, '[D]ocumentation')
+        vim.keymap.set('n', '<Space>v', function()
           vim.diagnostic.open_float { source = true }
-        end, { desc = '[L]SP (line) [D]iagnostics' })
+        end, { desc = '[V]iew line diagnostics' })
         vim.keymap.set('n', '[d', function()
           vim.diagnostic.goto_prev { float = { source = true } }
-        end, { desc = 'Go to previous [D]iagnostic message' })
+        end, { desc = '[Prev [D]iagnostic message' })
         vim.keymap.set('n', ']d', function()
           vim.diagnostic.goto_next { float = { source = true } }
-        end, { desc = 'Go to next [D]iagnostic message' })
+        end, { desc = ']Next [D]iagnostic message' })
 
         -- The following two autocommands are used to highlight references of the
         -- word under cursor when your cursor rests there for a little while.
@@ -74,7 +73,7 @@ return { -- LSP Configuration & Plugins
     }
 
     require('mason').setup()
-    vim.keymap.set('n', '<leader><leader>m', '<cmd>Mason<cr>', { desc = '[M]ason' })
+    vim.keymap.set('n', '<Space>m', '<cmd>Mason<cr>', { desc = '[M]ason' })
 
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {

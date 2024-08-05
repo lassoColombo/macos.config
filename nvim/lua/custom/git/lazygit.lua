@@ -13,7 +13,7 @@ return {
   },
   keys = {
     { '<leader>gl', '<cmd>LazyGit<cr>', desc = '[G]it [L]azy' },
-    { '<leader>G', '<cmd>LazyGit<cr>', desc = '[L]azyGit' },
+    { '<leader>G', '<cmd>LazyGit<cr>', desc = '[]Lazy[G]it' },
     { '<leader>gc', '<cmd>LazyGitFilter<cr>', desc = '[G]it [C]ommits' },
   },
   opts = {

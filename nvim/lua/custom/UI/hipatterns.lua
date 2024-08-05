@@ -23,7 +23,7 @@ return {
   end,
   keys = {
     {
-      '<leader>0h',
+      '<leader>1h',
       function()
         require('mini.hipatterns').toggle()
       end,

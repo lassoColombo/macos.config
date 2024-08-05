@@ -3,16 +3,16 @@ return {
   event = 'VeryLazy',
   keys = {
     {
-      '<leader>o',
+      '<leader>e',
       '<cmd>Oil .<cr>',
       mode = 'n',
-      desc = '[O]il cwd',
+      desc = '[]Oil[E]xplorer cwd',
     },
     {
-      '<leader>O',
+      '<leader>E',
       '<cmd>Oil<cr>',
       mode = 'n',
-      desc = '[O]il',
+      desc = '[]Oil[E]xplorer',
     },
   },
   opts = {
