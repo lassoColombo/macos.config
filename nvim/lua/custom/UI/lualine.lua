@@ -16,17 +16,7 @@ return {
       sections = {
         lualine_a = { 'mode' },
         lualine_b = { 'branch' },
-
         lualine_c = {
-          {
-            'diagnostics',
-            symbols = {
-              error = '❗',
-              warn = '❕',
-              info = '🔎',
-              hint = '🕯',
-            },
-          },
           {
             'filename',
             file_status = false, -- Displays file status (readonly status, modified status)
@@ -38,6 +28,17 @@ return {
               readonly = '[-]', -- Text to show when the file is non-modifiable or readonly.
               unnamed = '[No Name]', -- Text to show for unnamed buffers.
               newfile = '[New]', -- Text to show for newly created file before first write
+            },
+          },
+          { 'progress', separator = ' ', padding = { left = 1, right = 0 } },
+          { 'location', padding = { left = 0, right = 1 } },
+          {
+            'diagnostics',
+            symbols = {
+              error = '❗',
+              warn = '❕',
+              info = '🔎',
+              hint = '🕯',
             },
           },
         },
@@ -79,21 +80,13 @@ return {
           -- stylua: ignore
         },
         lualine_y = {
-          { 'progress', separator = ' ', padding = { left = 1, right = 0 } },
-          { 'location', padding = { left = 0, right = 1 } },
+          { 'filetype', icon_only = false, separator = '', padding = { left = 1, right = 1 } },
         },
         lualine_z = {
-          { 'filetype', icon_only = false, separator = '', padding = { left = 1, right = 0 } },
           {
             function()
-              local clients = vim.lsp.get_clients()
-              local n = #clients
-              local s = ''
-              for i = 1, n - 1 do
-                s = s .. '⚙︎ ' .. clients[i]['name'] .. ' '
-              end
-              s = s .. '⚙︎ ' .. clients[n]['name']
-              return s
+              local clients = require 'custom.UI.lualine-commands.get_clients'()
+              return clients
             end,
             cond = function()
               return #vim.lsp.get_clients() > 0
