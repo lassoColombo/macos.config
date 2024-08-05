@@ -83,7 +83,22 @@ return {
           { 'location', padding = { left = 0, right = 1 } },
         },
         lualine_z = {
-          { 'filetype', icon_only = true, separator = '', padding = { left = 1, right = 0 } },
+          { 'filetype', icon_only = false, separator = '', padding = { left = 1, right = 0 } },
+          {
+            function()
+              local clients = vim.lsp.get_clients()
+              local n = #clients
+              local s = ''
+              for i = 1, n - 1 do
+                s = s .. '⚙︎ ' .. clients[i]['name'] .. ' '
+              end
+              s = s .. '⚙︎ ' .. clients[n]['name']
+              return s
+            end,
+            cond = function()
+              return #vim.lsp.get_clients() > 0
+            end,
+          },
         },
       },
       extensions = { 'neo-tree', 'lazy' },

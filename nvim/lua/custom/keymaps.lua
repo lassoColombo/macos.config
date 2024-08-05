@@ -73,5 +73,5 @@ vim.keymap.set('n', '<leader>0d', function()
   end
   local is_enabled = vim.diagnostic.is_enabled()
   local log_level = (is_enabled and vim.log.levels.INFO or vim.log.levels.WARN)
-  vim.notify('set diagnostics to ' .. tostring(not is_enabled), log_level)
+  vim.notify('set diagnostics to ' .. tostring(is_enabled), log_level)
 end, { desc = '[T]oggle [D]iagnostics' })

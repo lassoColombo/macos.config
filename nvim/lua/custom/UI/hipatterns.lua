@@ -21,4 +21,14 @@ return {
       },
     }
   end,
+  keys = {
+    {
+      '<leader>0h',
+      function()
+        require('mini.hipatterns').toggle()
+      end,
+      mode = 'n',
+      desc = '[T]oggle [H]ighlight patterns',
+    },
+  },
 }

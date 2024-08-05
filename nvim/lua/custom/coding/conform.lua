@@ -27,6 +27,16 @@ return {
       desc = '[f]ormat',
     },
     {
+      '<leader>0f',
+      function()
+        local log_level = (vim.g.autoformat_on_save and vim.log.levels.WARN or vim.log.levels.INFO)
+        vim.g.autoformat_on_save = not vim.g.autoformat_on_save
+        vim.notify('set autoformat on save to ' .. tostring(vim.g.autoformat_on_save), log_level)
+      end,
+      mode = 'n',
+      desc = '[T]oggle auto[F]ormat',
+    },
+    {
       '<leader>ft',
       function()
         local log_level = (vim.g.autoformat_on_save and vim.log.levels.WARN or vim.log.levels.INFO)

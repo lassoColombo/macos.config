@@ -61,12 +61,12 @@ return {
       ft = 'http',
     },
     {
-      '<leader>hv',
+      '<leader>0P',
       function()
         require('kulala').toggle_view()
       end,
       mode = 'n',
-      desc = '[H]ttp toggle [V]iew',
+      desc = 'toggle [P]review',
       ft = 'http',
     },
     {

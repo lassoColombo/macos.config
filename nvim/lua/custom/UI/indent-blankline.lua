@@ -1,6 +1,6 @@
 return {
   'lukas-reineke/indent-blankline.nvim',
-  event = "BufEnter",
+  event = 'BufEnter',
   opts = {
     indent = {
       char = '│',
@@ -24,4 +24,15 @@ return {
     },
   },
   main = 'ibl',
+  -- :TODO: find a way to toggle
+  -- keys = {
+  --   {
+  --     '<leader>0i',
+  --     function()
+  --     :TODO:
+  --     end,
+  --     mode = 'n',
+  --     desc = '[T]oggle [I]ndent highlight',
+  --   },
+  -- },
 }

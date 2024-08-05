@@ -61,4 +61,12 @@ return {
 
     return opts
   end,
+  keys = {
+    {
+      '<leader>00',
+      '<cmd>Dashboard<cr>',
+      mode = 'n',
+      desc = '[T]oggle [D]ashboard',
+    },
+  },
 }

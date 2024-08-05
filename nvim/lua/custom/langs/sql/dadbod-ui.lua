@@ -23,7 +23,7 @@ return {
   keys = {
     {
       '<leader>0b',
-      'DBUIToggle',
+      '<cmd>DBUIToggle<cr>',
       mode = 'n',
       desc = '[T]oggle [D]ata[B]ase UI',
     },
