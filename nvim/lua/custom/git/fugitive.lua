@@ -26,5 +26,11 @@ return {
       mode = 'n',
       desc = '[G]it [P]ush force',
     },
+    {
+      '<leader>gl',
+      '<cmd>Git log<cr>',
+      mode = 'n',
+      desc = '[G]it [L]og',
+    },
   },
 }
