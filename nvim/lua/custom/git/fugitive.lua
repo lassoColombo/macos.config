@@ -14,5 +14,17 @@ return {
       mode = 'n',
       desc = '[G]it [I]nspect',
     },
+    {
+      '<leader>gp',
+      '<cmd>Git push<cr>',
+      mode = 'n',
+      desc = '[G]it [P]ush',
+    },
+    {
+      '<leader>gP',
+      '<cmd>Git push --force<cr>',
+      mode = 'n',
+      desc = '[G]it [P]ush force',
+    },
   },
 }
