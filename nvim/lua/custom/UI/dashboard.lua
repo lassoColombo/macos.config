@@ -23,15 +23,15 @@ return {
         header = vim.split(logo, '\n'),
         -- stylua: ignore
         center = {
-          { action = 'lua require("telescope.builtin").find_files()',                                 desc = " Find file",       icon = "🔎 ", key = "f" },
-          { action = 'Neotree toggle',                                                                desc = " Toggle Tree",     icon = "🌳 ", key = "t" },
+          { action = "Oil",                                                                           desc = "Oil explorer",     icon = "🛢️ ", key = "o" },
           { action = "ene | startinsert",                                                             desc = " New file",        icon = "📝 ", key = "n" },
-          { action = "Telescope oldfiles",                                                            desc = " Recent files",    icon = "🕐 ", key = "r" },
-          { action = "LazyGit",                                                                       desc = " LazyGit",         icon = "📌 ", key = "l" },
+          { action = 'lua require("telescope.builtin").find_files()',                                 desc = " Find file",       icon = "🔎 ", key = "f" },
           { action = "Telescope live_grep",                                                           desc = " Find text",       icon = "🕵 ", key = "g" },
+          { action = "Telescope oldfiles",                                                            desc = " Recent files",    icon = "🕐 ", key = "r" },
+          { action = 'Neotree toggle',                                                                desc = " Toggle Tree",     icon = "🌳 ", key = "t" },
+          { action = "LazyGit",                                                                       desc = " LazyGit",         icon = "📌 ", key = "l" },
           { action = 'lua require("telescope.builtin").find_files { cwd = vim.fn.stdpath "config"}',  desc = " Config",          icon = "⚙️ ",  key = "c" },
           { action = 'lua require("persistence").load()',                                             desc = " Restore Session", icon = "🔙 ", key = "s" },
-          { action = "Oil",                                                                           desc = "Oil explorer",     icon = "🛢️ ", key = "o" },
           { action = 'DBUIToggle',                                                                    desc = " DBUI",            icon = "💽 ", key = "d" },
           { action = "qa",                                                                            desc = " Quit",            icon = "🚪 ", key = "q" },
 
