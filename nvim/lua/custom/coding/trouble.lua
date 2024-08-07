@@ -3,6 +3,13 @@ return {
   event = 'BufEnter',
   opts = {}, -- for default options, refer to the configuration section for custom setup.
   cmd = 'Trouble',
+  init = function()
+    vim.api.nvim_create_autocmd('QuickFixCmdPost', {
+      callback = function()
+        vim.cmd [[Trouble qflist open]]
+      end,
+    })
+  end,
   keys = {
     {
       '<Space>D',
