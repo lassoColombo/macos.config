@@ -1,7 +1,1 @@
-{
-  "macros": [
-    { "name": "expand list ,", "raw": "ZixhDRs=", "content": "f,a<CR><Esc>" },
-    { "name": "append ,", "raw": "QSwbMGo=", "content": "A,<Esc>0j" }
-  ]
-}
-
+{"macros": [{"name": "expand list ,", "raw": "ZixhDRs=", "content": "f,a<CR><Esc>"}, {"name": "append ,", "raw": "QSwbMGo=", "content": "A,<Esc>0j"}, {"name": "append , to objects by matching with %", "raw": "JWEsG2Z7", "content": "%a,<Esc>f{"}, {"name": "listify [] whole file", "raw": "Z2dnZ0lbG0dBXRtnZ2dn", "content": "ggggI[<Esc>GA]<Esc>gggg"}]}
