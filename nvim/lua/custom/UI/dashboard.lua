@@ -27,6 +27,7 @@ return {
           { action = 'Neotree toggle',                                                                desc = " Toggle Tree",     icon = "🌳 ", key = "t" },
           { action = "ene | startinsert",                                                             desc = " New file",        icon = "📝 ", key = "n" },
           { action = "Telescope oldfiles",                                                            desc = " Recent files",    icon = "🕐 ", key = "r" },
+          { action = "LazyGit",                                                                       desc = " LazyGit",         icon = "📌 ", key = "l" },
           { action = "Telescope live_grep",                                                           desc = " Find text",       icon = "🕵 ", key = "g" },
           { action = 'lua require("telescope.builtin").find_files { cwd = vim.fn.stdpath "config"}',  desc = " Config",          icon = "⚙️ ",  key = "c" },
           { action = 'lua require("persistence").load()',                                             desc = " Restore Session", icon = "🔙 ", key = "s" },
