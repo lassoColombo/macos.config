@@ -1,0 +1,36 @@
+lowercaseKeywords: true
+connections:
+  - alias: traho-prod
+    driver: mysql
+    proto: tcp
+    user: traho
+    passwd: ...
+    host: mysql.elmec.ad
+    port: 3306
+    dbName: traho
+  - alias: traho-dev
+    driver: mysql
+    proto: tcp
+    user: traho
+    passwd: ...
+    host: 127.0.0.1
+    port: 3306
+    dbName: traho
+  - alias: clopin
+    driver: mysql
+    proto: tcp
+    user: clopin
+    passwd: ...
+    host: elmec-mysql-cluster03.elmec.ad
+    port: 3306
+    dbName: clopin
+  - alias: secproj-prod
+    driver: mysql
+    proto: tcp
+    user: securityproject
+    passwd: ...
+    host: 172.22.128.104
+    port: 3306
+    dbName: sec-securityproject-production
+    # params:
+    #  tls: skip-verify
