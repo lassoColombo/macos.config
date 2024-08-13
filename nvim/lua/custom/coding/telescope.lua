@@ -18,14 +18,14 @@ return { -- Fuzzy Finder (files, lsp, etc)
   config = function()
     require('telescope').setup {
       defaults = {
-        mappings = {
-          i = {
-            ['<C-q>'] = require('trouble.sources.telescope').open,
-          },
-          n = {
-            ['<C-q>'] = require('trouble.sources.telescope').open,
-          },
-        },
+        -- mappings = {
+        --   i = {
+        --     ['<C-q>'] = require('trouble.sources.telescope').open,
+        --   },
+        --   n = {
+        --     ['<C-q>'] = require('trouble.sources.telescope').open,
+        --   },
+        -- },
       },
       extensions = {
         ['ui-select'] = {
@@ -76,7 +76,6 @@ return { -- Fuzzy Finder (files, lsp, etc)
     end, { desc = '[S]earch fuzzy buffer' })
 
     -- examples
-    --
     -- Also possible to pass additional configuration options.
     --  See `:help telescope.builtin.live_grep()` for information about particular keys
     -- vim.keymap.set('n', '<leader>s/', function()

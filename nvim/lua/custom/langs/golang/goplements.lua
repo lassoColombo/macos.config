@@ -1,6 +1,9 @@
 return {
   'maxandron/goplements.nvim',
   ft = 'go',
+  init = function()
+    require('goplements').toggle()
+  end,
   opts = {
     -- The prefixes prepended to the type names
     prefix = {

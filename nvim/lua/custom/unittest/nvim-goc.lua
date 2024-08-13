@@ -1,10 +1,11 @@
 return {
   'rafaelsq/nvim-goc.lua',
+  ft = 'go',
   init = function()
     require('which-key').add {
       {
-        { '==', group = '[U]nittest [C]overage' },
-        { '==_', hidden = true },
+        { '=c', group = '[U]nittest [C]overage' },
+        { '=c_', hidden = true },
       },
     }
   end,
@@ -13,7 +14,7 @@ return {
   },
   keys = {
     {
-      '==1',
+      '=cc',
       function()
         require('nvim-goc').CoverageFunc()
       end,
@@ -35,7 +36,7 @@ return {
     --   desc = '[U]nittest func [C]overage browser',
     -- },
     {
-      '==2',
+      '=cc',
       function()
         require('nvim-goc').Coverage()
       end,
@@ -56,7 +57,7 @@ return {
     --   desc = '[U]nittest file [C]overage browser',
     -- },
     {
-      '==0',
+      '=cp',
       function()
         require('nvim-goc').ClearCoverage()
       end,

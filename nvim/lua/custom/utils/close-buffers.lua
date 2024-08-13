@@ -65,6 +65,22 @@ return {
       desc = '[]close buffer',
     },
     {
+      'X',
+      function()
+        require('close_buffers').delete { type = 'this' } -- Delete the current buffer
+      end,
+      mode = 'n',
+      desc = '[]close buffer',
+    },
+    {
+      '<C-x>',
+      function()
+        require('close_buffers').delete { type = 'this' } -- Delete the current buffer
+      end,
+      mode = 'n',
+      desc = '[]close buffer',
+    },
+    {
       '<leader>b',
       function()
         closeBuffer(false)

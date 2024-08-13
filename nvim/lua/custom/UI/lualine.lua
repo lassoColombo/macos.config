@@ -7,6 +7,18 @@ return {
 
     vim.o.laststatus = vim.g.lualine_laststatus
 
+    local trouble = require 'trouble'
+    local symbols = trouble.statusline {
+      mode = 'lsp_document_symbols',
+      groups = {},
+      title = false,
+      filter = { range = true },
+      format = '{kind_icon}{symbol.name:Normal}',
+      -- The following line is needed to fix the background color
+      -- Set it to the lualine section you want to use
+      hl_group = 'lualine_c_normal',
+    }
+
     return {
       options = {
         theme = 'auto',
@@ -16,6 +28,7 @@ return {
       sections = {
         lualine_a = { 'mode' },
         lualine_b = {
+          { 'branch' },
           {
             'filename',
             file_status = false,
@@ -29,11 +42,11 @@ return {
               newfile = '[New]', -- Text to show for newly created file before first write
             },
           },
-          { 'branch' },
         },
         lualine_c = {
           { 'location', padding = { left = 0, right = 1 } },
           { 'progress', padding = { left = 1, right = 1 } },
+          { symbols.get, cond = symbols.has },
           {
             'diagnostics',
             symbols = {

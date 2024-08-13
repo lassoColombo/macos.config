@@ -6,8 +6,8 @@ vim.opt.hlsearch = true
 vim.keymap.set({ 'n', 'v' }, '<Esc>', "<cmd>execute 'nohlsearch | NoiceDismiss'<CR>", { desc = '[]dismiss hilight and notifications' })
 
 -- not needed since i am using unnamedplus vim.opt.clipboard = 'unnamedplus'
--- vim.keymap.set({ 'n', 'v' }, '<Space>p', '"+p', { desc = '[P]aste from system clipboard' })
--- vim.keymap.set({ 'n', 'v' }, '<Space>y', '"+y', { desc = '[Y]ank to system clipboard' })
+vim.keymap.set({ 'n', 'v' }, '<C-p>', '"+p', { desc = '[P]aste from system clipboard' })
+vim.keymap.set({ 'n', 'v' }, '<C-y>', '"+y', { desc = '[Y]ank to system clipboard' })
 -- :FIXME: not working
 -- vim.keymap.set('n', '<leader>r', function()
 --   vim.cmd 'normal ;'

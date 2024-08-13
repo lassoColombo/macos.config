@@ -2,7 +2,6 @@ require 'custom.opts'
 require 'custom.keymaps'
 require 'custom.commands'
 require 'custom.autocmds'
-require 'custom.filetypes'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
@@ -47,6 +46,3 @@ require('lazy').setup({
 })
 
 vim.keymap.set({ 'n' }, '<Space>l', '<cmd>Lazy<cr>', { desc = '[L]azy' })
-
-vim.cmd.colorscheme 'catppuccin'
-vim.cmd.hi 'Comment gui=none'

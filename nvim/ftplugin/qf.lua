@@ -17,4 +17,4 @@ vim.keymap.set('n', 'dd', function()
   -- Restore the window and cursor position
   vim.api.nvim_set_current_win(current_win)
   vim.fn.setpos('.', current_pos)
-end, { desc = '[D]elete quickfix entry' })
+end, { desc = '[D]elete quickfix entry', buffer = true })

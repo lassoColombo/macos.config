@@ -78,7 +78,7 @@ return {
       desc = '=[U]nittest [S]ummary',
     },
     {
-      '=o',
+      '=-',
       function()
         require('neotest').output.open { enter = true, auto_close = true }
       end,
@@ -86,7 +86,7 @@ return {
       desc = '=[U]nittest [O]utput panel',
     },
     {
-      '=O',
+      '==',
       function()
         require('neotest').output_panel.toggle()
       end,

@@ -36,7 +36,7 @@ return {
   },
   keys = {
     {
-      '-v',
+      '<F12>v',
       '<cmd>DapVirtualTextToggle<cr>',
       mode = 'n',
       desc = '[D]ebug [V]irtualText toggle',
