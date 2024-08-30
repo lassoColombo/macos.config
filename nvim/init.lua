@@ -1,3 +1,4 @@
+require 'custom.rtp'
 require 'custom.opts'
 require 'custom.keymaps'
 require 'custom.commands'

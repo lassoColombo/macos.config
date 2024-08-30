@@ -55,6 +55,9 @@ return {
     vim.keymap.set('n', '<F7>', function()
       dapui.eval(nil, { enter = true })
     end, { desc = '[]debugger Eval' })
+    vim.keymap.set('n', '<F12>e', function()
+      dapui.eval(nil, { enter = true })
+    end, { desc = '[]debugger Eval' })
     vim.keymap.set('n', '<F12><F12>', function()
       dap.disconnect { terminateDebuggee = true }
       dap.close()
