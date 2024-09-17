@@ -1,39 +1,78 @@
 layout name="pegasus" {
-    tab name="pegasus" focus=true {
+    tab name="editor" focus=true {
         pane command="nvim" name="editor" cwd="/Users/colombos/projects/work/pegasus/pegasus/" {
             start_suspended false
         }
     }
     tab name="horses" hide_floating_panes=true {
-        pane command="source ./devutils/environment/envs.dev.pegasus" name="horses" cwd="/Users/colombos/projects/work/pegasus/pegasus/" {
+        pane name="horses" cwd="/Users/colombos/projects/work/pegasus/pegasus/" {
+            // command "source" 
+            // args "./devutils/environment/envs.dev.pegasus"
             start_suspended false
         }
     }
-    tab name="graph-azure" focus=true hide_floating_panes=true {
-        pane size="50%" split_direction="vertical" {
-            pane command="source ./devutils/scripts/graphs/venv/bin/activate" name="riskyuser" cwd="/Users/colombos/projects/work/pegasus/pegasus/" size="50%" {
-                start_suspended false
-            }
-            pane command="source ./devutils/scripts/graphs/venv/bin/activate" name="riskdetection" cwd="/Users/colombos/projects/work/pegasus/pegasus/" size="50%" {
-                start_suspended false
-            }
-        }
-        pane size="50%" split_direction="vertical" {
-            pane command="source ./devutils/scripts/graphs/venv/bin/activate" name="securityalert" cwd="/Users/colombos/projects/work/pegasus/pegasus/" size="50%" {
-                start_suspended false
-            }
-            pane command="source ./devutils/scripts/graphs/venv/bin/activate" name="signin" cwd="/Users/colombos/projects/work/pegasus/pegasus/" size="50%" {
-                start_suspended false
-            }
-        }
-    }
-    tab name="graph-sophos" hide_floating_panes=true {
-        pane size="50%" split_direction="vertical" command="source ./devutils/scripts/graphs/venv/bin/activate" cwd="/Users/colombos/projects/work/pegasus/pegasus/", name="event" {
-                start_suspended false
-            }
-        }
-        pane size="50%" split_direction="vertical" command="source ./devutils/scripts/graphs/venv/bin/activate" cwd="/Users/colombos/projects/work/pegasus/pegasus/", name="alert" {
-                start_suspended false
+    // tab name="graph-azure" focus=true hide_floating_panes=true {
+    //     pane size="50%" split_direction="vertical" {
+    //         pane command="source ./devutils/scripts/graphs/venv/bin/activate" name="riskyuser" cwd="/Users/colombos/projects/work/pegasus/pegasus/" size="50%" {
+    //             start_suspended false
+    //         }
+    //         pane command="source ./devutils/scripts/graphs/venv/bin/activate" name="riskdetection" cwd="/Users/colombos/projects/work/pegasus/pegasus/" size="50%" {
+    //             start_suspended false
+    //         }
+    //     }
+    //     pane size="50%" split_direction="vertical" {
+    //         pane command="source ./devutils/scripts/graphs/venv/bin/activate" name="securityalert" cwd="/Users/colombos/projects/work/pegasus/pegasus/" size="50%" {
+    //             start_suspended false
+    //         }
+    //         pane command="source ./devutils/scripts/graphs/venv/bin/activate" name="signin" cwd="/Users/colombos/projects/work/pegasus/pegasus/" size="50%" {
+    //             start_suspended false
+    //         }
+    //     }
+    // }
+    // tab name="graph-sophos" hide_floating_panes=true {
+    //     pane size="50%" split_direction="vertical" command="source ./devutils/scripts/graphs/venv/bin/activate" cwd="/Users/colombos/projects/work/pegasus/pegasus/", name="event" {
+    //             start_suspended false
+    //         }
+    //     }
+    //     pane size="50%" split_direction="vertical" command="source ./devutils/scripts/graphs/venv/bin/activate" cwd="/Users/colombos/projects/work/pegasus/pegasus/", name="alert" {
+    //             start_suspended false
+    //         }
+    //     }
+    // }
+   default_tab_template {
+        children
+        pane size=1 borderless=true {
+            plugin location="file:./.config/zellij/plugins/zjstatus.wasm" {
+                format_left   "{mode} "
+                format_center "{tabs}"
+                format_right  "#[fg=#7aa2f7,bold]{session}"
+                format_space  ""
+
+                border_enabled  "true"
+                border_char     "|"
+                border_format   "#[fg=#1d202f]{char}"
+                border_position "top"
+
+                hide_frame_for_single_pane "false"
+
+                mode_normal        "#[bg=#394b70,fg=#7aa2f7] {name} "
+                mode_session       "#[bg=#f7768e,fg=#1d202f] {name} "
+                mode_tab           "#[bg=#e0af68,fg=#1d202f] {name} "
+                mode_pane          "#[bg=#9ece6a,fg=#1d202f] {name} "
+                mode_locked        "#[bg=#db4b4b,fg=#1d202f] {name} "
+                mode_move          "#[bg=#ff9e64,fg=#1d202f] {name} "
+                mode_resize        "#[bg=#ff007c,fg=#1d202f] {name} "
+                mode_scroll        "#[bg=#9ece6a,fg=#1d202f] {name} "
+                mode_search        "#[bg=#9ece6a,fg=#1d202f] {name} "
+                mode_enter_search  "#[bg=#87CC3D,fg=#1d202f] {name} "
+                mode_rename_tab    "#[bg=#b2555b,fg=#c0caf5] {name} "
+                mode_rename_pane   "#[bg=#b2555b,fg=#c0caf5] {name} "
+                mode_prompt        "#[bg=#b2555b,fg=#c0caf5] {name} "
+                mode_tmux          "#[bg=#ffc387,fg=#c0caf5] {name} "
+                mode_default_to_mode "normal"
+
+                tab_normal   "#[fg=#394b70] {name} "
+                tab_active   "#[fg=#e0af68,bold,italic] {name} "
             }
         }
     }

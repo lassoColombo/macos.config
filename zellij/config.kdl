@@ -18,7 +18,7 @@ keybinds {
         bind "Alt f" { SwitchToMode "search"; }
         bind "Alt s" { SwitchToMode "scroll"; }
         bind "Alt t" { SwitchToMode "tmux"; }
-        bind "Alt e" { EditScrollback; SwitchToMode "Normal"; }
+        bind "Alt e" { EditScrollback;  SwitchToMode "Normal";}
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
         bind "Alt b" { ToggleFloatingPanes; SwitchToMode "Normal"; }
@@ -102,7 +102,7 @@ keybinds {
     }
     scroll {
         bind "Alt s" { SwitchToMode "Normal"; }
-        bind "e" { EditScrollback; SwitchToMode "Normal"; }
+        bind "e" { EditScrollback;  SwitchToMode "Normal";}
         bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }
         bind "Alt c" { ScrollToBottom; SwitchToMode "Normal"; }
         bind "j" "Down" { ScrollDown; }
@@ -219,7 +219,6 @@ keybinds {
 plugins {
     tab-bar { path "tab-bar"; }
     status-bar { path "status-bar"; }
-    strider { path "strider"; }
     compact-bar { path "compact-bar"; }
     session-manager { path "session-manager"; }
 }
@@ -253,7 +252,7 @@ plugins {
 //   - true (default)
 //   - false
 //
-// pane_frames true
+// pane_frames false
 
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
@@ -345,7 +344,7 @@ copy_on_select false
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-scrollback_editor "/usr/bin/nvim"
+// scrollback_editor "/opt/homebrew/bin/nvim"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
