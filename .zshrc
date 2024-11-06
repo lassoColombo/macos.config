@@ -76,7 +76,6 @@ plugins=(
     vi-mode
     asdf
     docker
-    docker-machine
     docker-compose
     kubectl
     redis-cli
@@ -143,3 +142,6 @@ if [[ -z "$ZELLIJ" ]]; then
     fi
 fi
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+nu

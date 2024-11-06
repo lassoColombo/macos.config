@@ -1,0 +1,1436 @@
+ls
+ls | where type=dir
+ls | where type dir
+ls | where type
+l
+ls -lah
+la
+ls -l
+ls -a
+ls -a | where type == dir
+find
+find .
+find . -type d
+find -h
+z `.Documents OneDrive (1)/`
+cd projects/
+ls
+ls -a
+find --regex "*.json"
+ls */** 
+ls */** | find --regex "*.json"
+ls *.json
+ls **/*.json
+open  work/test/asd/1/two.json
+open  work/test/asd/1/two.json | get location
+open  work/test/asd/1/two.json | get location.state
+cd
+ls
+date now | format date '%Y-%m'
+date now | format date '%Y-%m' | into glob 
+let current_month = (date now | format date '%Y-%m')
+let glob_pattern = ($"*($current_month)*" | into glob)<\n>
+ls $glob_pattern<\n>
+ls | length
+ls
+[one two three] | to yaml
+cd projects/
+ls
+cd work/
+ls
+cd pegasus/extractions/
+ls
+ls **/*.json
+ls
+cd data/
+ls
+ls **/*.json
+ls **/*.json | get name
+open sophos/1/peg.json | to yaml 
+open sophos/1/peg.json | to csv
+open sophos/1/peg.json | to md 
+open sophos/1/peg.json | describe
+2 > 1
+cd 
+cd .config/nu
+cd .config/nushell/
+ls
+v
+nvim
+ls
+open config.nu
+open config.nu | describe
+vi config.nu
+ls
+nvim env.nu
+ls
+cat history.txt
+ls config.nu
+ls config.nu | get type
+ls | where type == file
+awk
+env
+which python
+which python | describe
+which python | get path | describe
+which python | get path 
+which python | get path | first
+which python | get path | first | describe
+0.5kB
+0.5kB | describe
+let compare_closure = {|a| $a > 5 }
+echo $compare_closure
+let original_list = [ 40 -4 0 8 12 16 -16 ]
+echo $original_list
+$original_list
+ls
+z .config/
+cd .config/
+ls
+cd nushell/
+ls
+cd ..
+l
+ls
+ls -
+ls -a
+ls | where type == file
+ls -a | where type == file
+open .zshrc
+open .zshrc | describe
+nvim .zshrc
+l
+ls
+ls | get type
+ls | get name
+ls | where type == file 
+docker container ls
+docker container ls | from ssv
+docker container ls | detect columns 
+doc stop redis-commander
+docker container stop redis-commander
+docker container ls | detect columns 
+docker container ls | detect columns  | wc
+docker container ls | detect columns  | wc -l
+docker container ls | wc -l
+docker container ls 
+brew install zoxide
+z projects/work/pegasus/pegasus/
+z
+zoxide
+zoxide w pe pe
+zoxidei
+zoxide -h
+zoxide query
+cd .config/nushell/
+ls
+vi config.nu
+nvim config.nu
+cd .config/nushell/
+ls
+ls -D 
+ls
+open job.yaml
+open job.yaml | get metadata.annotations
+open job.yaml | get spec.template
+open job.yaml | get spec.template.spec.containers
+open job.yaml | get spec.template.spec.containers | column 
+open job.yaml | get spec.template.spec.containers | columns 
+nvim config.nu
+nu
+ls
+date
+date now 
+date to-table 
+date to-table $(date now)
+date now | date to-table 
+date now | date to-table  | get hour * 3
+date now | date to-table  | get hour | * 4
+date now | date to-table  | get hour | math product 4
+date now | date to-table  | get hour | math product
+date now | date to-table  | get hour 
+ls 
+vi .config/nushell/config.nu
+fish
+brew install fish
+fish
+z config
+zoxide .config/nushell/
+cd .config/nushell/
+ls
+vi config.nu
+_zoxide
+__zoxide_z
+z projects/
+zoxide projects/
+z projects/
+z -h
+zoxide `.Documents OneDrive (1)/`
+cmatriz
+l
+ls --du 
+cd projects/work/pegasus/
+ls --du
+ls --all
+l
+l | get type == file
+l | where type -- file
+l | where type == file
+cd projects/work/pegasus/
+ls
+kubectl -n sec-securityproject-production get po
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-69975fb895-dbmxb -f
+nu
+fish
+z /Users/colombos/projects/work/secproj/securityproject
+cd projects/casshome/ansibles/collections
+ls
+open requirements.yml
+open requirements.yml | get collecrtions
+open requirements.yml | get collections
+open requirements.yml | get collections[0]
+open requirements.yml | get collections
+nu
+describe 
+ls
+ls --all
+nu
+ls
+kub
+kubectl-ctx 
+kubectl -n minicon get po
+kubectl -n sec-securityproject-production get po
+kubectl-ctx 
+kubectl -n sec-securityproject-production get po
+kubectl -n sec-securityproject-production get po | generate 
+kubectl -n sec-securityproject-production get po | columns 
+kubectl -n sec-securityproject-production get po | detect columns 
+k
+ls
+ansi 
+docker-index 
+doco
+z pr /Users/colombos/projects/
+cd pr ca ans
+ls 
+rm sanitaria-*
+ls
+lf
+ld
+cd projects/work/pegasus/
+ld
+lf
+if
+kubectl -n sec-securityproject-production get po
+k -n sec-se
+ku
+kubectl -n sec-securityproject-production logs api-sec-securityproject-production-5d79c7dd59-9stf8 -f
+cd projects/work/pegasus/
+ls
+lf
+ls | where type == file 
+which http
+http clopin.k8s.elmec.ad/api/v1/customers
+http
+http get clopin.k8s.elmec.ad/api/v1/customers
+https
+which https
+which http
+ls /opt/homebrew/bin 
+ls /opt/homebrew/bin | where name =~ http
+httpie
+ls
+http
+which http
+which https
+http get clopin.k8s.elmec.ad/api/v1/customers
+http get https://clopin.k8s.elmec.ad/api/v1/customers
+http get https://clopin.k8s.elmec.ad/api/v1/customers/
+https get https://clopin.k8s.elmec.ad/api/v1/customers/
+cd
+echo ciao
+echo ciao | pbcopy
+echo (ciao)
+echo $(ls)
+let asd = asd
+let asd=asd
+let asd="asd"
+let asd "asd"
+let asd asd
+let asd = 'ads'
+asd
+$asd
+echo $asd
+brew install starship
+cd .config/nushell/
+nvim config.nu
+nvim 
+v
+reload config
+cd .config/nushell/
+ls
+ls | get name
+v config.nu
+ls
+cd projects/work/pegasus/pegasus/
+ls
+cd src/pegasus/
+z
+z add .
+cd
+zi
+zoxide 
+ls
+brew remove zoxide
+asdf plugin add zoxide 
+cd
+asdf plugin add zoxide asdf plugin add zoxide https://github.com/nyrst/asdf-zoxide.git
+asdf plugin add zoxide https://github.com/nyrst/asdf-zoxide.git
+asdf install zoxide latest<\n>
+z /Users/colombos/projects/work/secproj/securityproject
+z
+zi
+z
+l
+z /Users/colombos/projects/work/pegasus/pegasus
+ls
+la
+l
+l | get zize
+l | get size
+l | sort-by size
+brew install carapace<\n>
+mkdir ~/.cache/carapace
+l
+ls
+l
+carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
+l
+l | where type == dir
+ld
+L
+l
+L
+lf
+doc ls
+docker container port 
+kubectl -n sec-securityproject-production get po
+kub
+kubectl -n sec-securityproject-production get po
+doc ls
+docker container  stop redis-commander traho-mysql 
+lf
+zi
+l
+ls **/*.yaml
+ls **/*.yaml | open
+open devutils/configs/alessi01.yaml
+open devutils/configs/alessi01.yaml | get identities
+ls **/*.yaml | open
+ls **/*.yaml 
+cat devutils/configs/alessi01.yaml 
+cat devutils/configs/alessi01.yaml  | from yaml 
+cat devutils/configs/alessi01.yaml  | from yaml  | to json 
+l
+nu
+l
+ls
+ls -lah
+ls --all
+ls --all | sort-by size
+rm id-front.jpg
+z w pr pe 
+zi
+l
+du --all
+du --all | sort-by size | get name
+du --all 
+du --all | sort-by phisical | get name
+du --all | sort-by physical | get name
+du --all | sort-by physical | get path
+chsh
+ls | where name =~ shell
+v shells
+sudo nvim shells
+chsh
+l
+zi
+l
+cd nushell/
+l
+v config.nu
+l
+zw pe pe
+z w pe pe
+l
+ls **/*.yaml 
+open devutils/configs/alessi01.yaml 
+open devutils/configs/alessi01.yaml | first 2
+open devutils/configs/alessi01.yaml | flatten
+open devutils/configs/alessi01.yaml | flatten | flatten
+open devutils/configs/alessi01.yaml | flatten 
+open devutils/configs/alessi01.yaml 
+open devutils/configs/alessi01.yaml  | get identities.sophos
+open devutils/configs/alessi01.yaml  | get identities.sophos.stats
+cat devutils/configs/alessi01.yaml  
+cat devutils/configs/alessi01.yaml | from yaml 
+cat devutils/configs/alessi01.yaml | from yaml | to json 
+cat devutils/configs/alessi01.yaml | from yaml | to json | from json | to csv 
+cat devutils/configs/alessi01.yaml | from yaml | to json 
+cat devutils/configs/alessi01.yaml | from yaml | to csv 
+http get https://clopin.k8s.elmec.ad/api/v1/customers/
+https get https://clopin.k8s.elmec.ad/api/v1/customers/
+z w pe pe
+z conf nu
+o
+p
+l
+keybindings  list
+schema 
+schema --help
+l
+z con 
+v .zshrc
+l
+ccp
+z conf oh
+l
+echo $path
+$env.path
+env
+env | where name == path
+$env.path
+$env.path | grep go
+$env.path | grep wuby
+$env.path | grep ruby
+$EDITOR
+$env.EDITOR
+$env.XDG_CONFIG_HOME
+20 / 4
+math sqrt 16
+math sqrt(16)
+usage 
+math sqrt --h
+math sqrt --help
+math sqrt 16
+math sqrt [16]
+math sqrt --help 
+16 | math sqrt 
+[1,2,3,4] | math sum 
+kk
+j9s
+kk
+k9s
+kk
+k9s
+nu
+l
+ls
+l
+nap list
+nap list | fzf 
+nap list | fzf | xargs nap
+napc
+napx
+l
+z w pe pe 
+ls **/*.yaml 
+open devutils/configs/alessi01.yaml  | get identities.sophos.stats
+z w pe pe 
+open devutils/configs/alessi01.yaml  | get identities.sophos.stats
+cat devutils/configs/alessi01.yaml | from yaml 
+z w pe pe 
+open devutils/configs/alessi01.yaml  | get identities.sophos.stats
+z w pe pe 
+open devutils/configs/alessi01.yaml  | get identities.sophos.stats
+z w pe pe 
+open devutils/configs/alessi01.yaml  | get identities.sophos.stats
+z w pe pe 
+open devutils/configs/alessi01.yaml 
+z w pe pe 
+open devutils/configs/alessi01.yaml 
+z w pe pe 
+open devutils/configs/alessi01.yaml 
+z w pe pe 
+open devutils/configs/alessi01.yaml 
+z w pe pe 
+open devutils/configs/alessi01.yaml 
+z w pe pe 
+o
+open devutils/configs/alessi01.yaml 
+zx
+z w pe pe 
+open devutils/configs/alessi01.yaml 
+z w pe pe 
+open devutils/configs/alessi01.yaml 
+true
+false
+khj
+cat isug
+l
+zw proce
+z w proce
+ssh cortici-dmilog03.dmi.elmec.ad
+ssh sicad-dmilog07.dmi.elmec.ad 
+l
+napc
+v
+napc
+napp
+napp | ccp
+v
+napp | ccp
+v
+napp
+napc
+napc | ccp
+ssh enoplastic-dmilog01.dmi.elmec.ad 
+ssh sicad-dmilog05.dmi.elmec.ad 
+ssh sicad-dmilog07.dmi.elmec.ad 
+ls
+z plot
+ls
+z /Users/colombos/projects/work/scripts/plot/drop-rate
+ls
+source venv/bin/activate
+ls
+rm -rf venv/
+p -m venv venv
+which pip
+pip install virtualenv
+virtualenv venv
+source venv/bin/activate.nu
+ls
+overlay use ./venv/bin/activate.nu
+ls
+which python
+ls
+which pip
+pip install matplotlib
+ls
+l
+z w 
+z /Users/colombos/projects/work/secproj/securityproject
+ls
+l
+pip remove virtualenv
+pip uninstall virtualenv
+l
+cd projects/work/
+l
+rm clopin-1.3.13
+cd test/
+ls
+mkdir phenix
+cd phenix/
+touch intro.md
+z w 
+gcl git@git.elmec.com:security/anacleto/anacletocode.git
+cd anacletocode/
+v
+z w
+v intro.md
+mv intro.md intro.yaml
+v intro.yaml
+mv intro.yaml phenix-models.yaml
+cp phenix-models.yaml phenix-models.txt
+ls
+l
+rm phenix-models.txt
+cd //
+cd
+z wo te phe
+l
+z ..
+l
+rm configure-fssh.sh
+cd asd/
+ls
+cd ..
+rmr asd/
+l
+screencapture 
+screencapture go/
+screencapture asd.asd
+screencapture asd.asd
+ls
+open asd.asd
+xdg-open asd.asd
+open asd.asd
+ssh mannesmann-dmilog01.dmi.elmec.ad 
+ssh alessi-dmilog01.dmi.elmec.ad 
+ssh carboter-dmilog02.dmi.elmec.ad 
+ssh balconi-dmilog02.dmi.elmec.ad 
+ssh elmec-dmilog-cust-master.dmi.elmec.ad 
+ssh ircaspa-dmi05.dmi.elmec.ad 
+v
+napc | ccp
+napc | pbcopy
+nap
+napp
+napp | ccp
+v
+napp | ccp
+ssh ircaspa-dmilog04.dmi.elmec.ad 
+ssh rpe-dmilog02.dmi.elmec.ad
+nap
+ls
+z plot
+ls
+l
+z /Users/colombos/projects/work/scripts/plot/drop-rate
+ls
+rm -rf venv
+pip install virtualenv
+virtualenv venv
+overlay use ./venv/bin/activate.nu
+pip install matplotlib
+python traffic-on-span.json 
+p traffic-on-span.py
+ssh enoplastic-dmilog01.dmi.elmec.ad 
+ssh cesarin-dmilog01.dmi.elmec.ad
+ssh cesarin-dmilog01.dmi.elmec.ad -L 8007:172.25.6.51:443
+curl 172.25.6.51
+curl 172.25.6.51:443
+l
+z w
+cd test/
+ls
+cd phenix/
+ls
+view span 
+v phenix-models.yaml
+ssh rchitalia-dmilog02.dmi.elmec.ad 
+ssh rchitalia-dmilog04.dmi.elmec.ad 
+ssh enoplastic-dmilog01.dmi.elmec.ad 
+ssh abkgroup-dmi02.dmi.elmec.ad 
+ssh abkgroup-dmilog02.dmi.elmec.ad 
+l
+l | where name == .config
+l --du  | where name == .config
+cd .config/
+l --du  
+l --du   | sort-by size
+l --du   | sort-by size --reverse 
+l --du   | sort-by size --reverse | head 
+pip remove virtualenv
+pip uninstall virtualenv
+pip install pipenv
+ls
+z
+l
+v
+ls
+rm -rf venv/
+ls
+pipenv --version
+pipenv install
+deactivate
+pipenv install
+pipenv shell
+pipenv instll matplotlib
+pipenv install matplotlib
+deactivate
+ls
+l
+open Pipfile
+asdf local python 3.12
+asdf list python
+asdf local python 3.12.3
+ls
+l
+open Pipfile.lock
+open Pipfile.lock | from json 
+open Pipfile.lock | from json  | get default
+open Pipfile.lock | from json  | get default.matplotlib
+l
+lf
+ld
+lf
+python --version
+pipenv --python 3.9.6 install -r core_requirements.txt core_venv
+asdf list python
+pipenv --python 3.9.6 install -r core_requirements.txt core_venv
+cat  /Users/colombos/projects/work/clopin/clopin/.tool-versions
+pipenv --python 3.9 install -r core_requirements.txt core_venv
+which pip
+pip install pipenv
+pipenv --python 3.9 install -r core_requirements.txt core_venv
+ls
+view core_requirements.txt
+l
+lf
+rm Pipfile Pipfile.lock
+pipenv --python 3.9 install 
+pipenv install django django-jsoneditor django-filter django-rest-framework
+pipenv install libsecurity @ git+ssh://git@git.elmec.com/security/libsecurity.git@ab2ca9443e112b84a05c9ceb5470bf36455d8ede
+pipenv install libsecurity@git+ssh://git@git.elmec.com/security/libsecurity.git@ab2ca9443e112b84a05c9ceb5470bf36455d8ede
+pipenv install mysql-server-has-gone-away mysql-client
+pipenv install git+ssh://git@git.elmec.com/security/libsecurity.git
+pipenv install git+ssh://git@git.elmec.com/security/libsecurity.git@ab2ca9443e112b84a05c9ceb5470bf36455d8ede
+pipenv shell
+v core_requirements.txt
+lf
+ls
+lf
+cat .env 
+l
+cd venv/
+ls
+cd ..
+tree devutils/
+open devutils/
+l
+l | where type == dir
+l | where type == d
+l | where type == dir
+l | where type == file
+lf
+which python
+l
+cd clopin/
+l
+p manage.py runserver
+pipenv install corsheaders
+pipenv shell
+ls
+rm Pipfile*
+l
+lf
+pipenv install
+l
+cd clopin/
+l
+cd ..
+lf
+cd clopin/
+l
+mv ../core_requirements.txt .
+l
+pipenv install
+pipenv shell
+l
+l
+z /Users/colombos/projects/work/clopin/clopin/clopin
+l
+open core_requirements.txt
+pipenv install -r core_requirements.txt
+p manage.py runserver
+pipenv install libsecurity@git+ssh://git@git.elmec.com/security/libsecurity.git@ab2ca9443e112b84a05c9ceb5470bf36455d8ede<\n>
+p manage.py runserver
+cd ..
+ls
+ls devutils/
+open devutils/core_envs.sh
+l
+ls devutils/
+ls devutils/environment/
+doc ls
+doc ls | detect columns 
+doc ls | detect columns | get ID
+doc ls | detect columns | get ID | xargs doc rm
+doc ls | detect columns | get ID | xargs docker container rm
+doc ls | detect columns | get ID | xargs docker container stop
+doc ls
+doco -f devutils/environment/docker-compose.yaml up -d
+doc ls | detect columns | get ID | each { |it| docker container stop $it}
+doc ls
+doco -f devutils/environment/docker-compose.yaml up -d
+p manage.py runserver
+z clopin
+ls
+p manage.py runserver
+ls ../devutils/environment/envs.core.sh
+cat ../devutils/environment/envs.core.sh
+cat ../devutils/environment/envs.core.sh | ccp
+v ../devutils/environment/envs.core.sh 
+exit
+pipenv shell
+ls
+rm Pipfile*
+l
+cd clopin/
+ls
+rm core_requirements.txt
+pipenv install
+ls
+v core_requirements.txt
+pipenv install -r ../devutils/core-requirements.macos
+overlay use ./venv/bin/activate.nu
+pipenv install -r ../devutils/core-requirements.macos
+p manage.py runserver
+pipenv install django django-jsoneditor django-filter django-rest-framework
+pipenv install django 
+exit
+pipenv shell
+rm
+rm Pipfile*
+pipenv install
+pipenv install django
+pipenv install django-jsoneditor
+pipenv install django-rest-framework
+p manage.py runserver
+pipenv install libsecurity @ git+ssh://git@git.elmec.com/security/libsecurity.git@ab2ca9443e112b84a05c9ceb5470bf36455d8ede
+pipenv install libsecurity@git+ssh://git@git.elmec.com/security/libsecurity.git@ab2ca9443e112b84a05c9ceb5470bf36455d8ede
+deactivate
+rm Pipfile*
+z /Users/colombos/.config/nushell
+ls
+lstmeval 
+pipenv shell
+ls **/core_venv
+ls **/core_venv | get name | each { |it| echo $it | pbcopy }
+doc ls
+docker container stop clopin-mariadb 
+l
+doco -f devutils/environment/docker-compose.yaml up -d
+doco -f ../../devutils/docker-compose.yaml up -d
+l
+go
+l
+go run mai.go
+l
+go run main.go
+go run main.go --config ../../devutils/carboter02.yaml
+open ../../devutils/configs/alessi01.yaml | get identities.microsoft
+ls ../../devutils/configs/alessi01.yaml 
+ls ../../devutils/configs/alessi01.yaml  | get name
+ls ../../devutils/configs/alessi01.yaml  | get name | ccp
+ls ../../devutils/configs/alessi01.yaml  | get name | str
+ls ../../devutils/configs/alessi01.yaml  | get name | ccp
+go run main.go --config ../../devutils/configs/alessi01.yaml  
+source ../../devutils/configs/alessi01.nu
+go run main.go --config ../../devutils/configs/alessi01.yaml  
+ssh gros-dmilog01.dmi.elmec.ad 
+k
+l
+ssh gammarec-dmilog02.dmi.elmec.ad
+ssh gammamec-dmilog02
+ssh gammamec-dmilog02.dmi.elmec.ad
+ssh carboter-dmilog02.dmi.elmec.ad 
+ssh elmecspa-dmilog05.dmi.elmec.ad 
+ssh elmec-dmilog05.dmi.elmec.ad 
+ssh gammamec-dmilog02.dmi.elmec.ad
+❯ 〉ssh elmec-dmilog04.dmi.elmec.ad
+❯ ssh elmec-dmilog04.dmi.elmec.ad
+ssh elmec-dmilog04.dmi.elmec.ad
+ssh elmec-dmilog04.dmi.elmec.ad
+ssh elmec-dmilog04.dmi.elmec.ad 
+ssh elmec-dmilog04.dmi.elmec.ad 
+l
+cd clopin/
+l
+pipenv install 
+l
+pipenv install -r ../devutils/core-requirements.macos
+l
+exit
+pipenv shell
+rm Pipfile*
+pipenv install && pipenv shell
+pipenv install django
+pipenv install django-rest-framework
+pipenv install django-jsoneditor
+p manage.py runserver
+pipenv install django-cors-headers
+p manage.py runserver
+pipenv install django-filters
+pipenv install django-filter
+p manage.py runserver
+pipenv install drf_yasg
+p manage.py runserver
+pipenv install django-extensions
+p manage.py runserver
+pipenv install libsecurity@git+ssh://git@git.elmec.com/security/libsecurity.git@ab2ca9443e112b84a05c9ceb5470bf36455d8ede
+pipenv install libsecurity@git+ssh://git@git.elmec.com/security/libsecurity.git
+pipenv install git+ssh://git@git.elmec.com/security/libsecurity.git
+pipenv install git@git.elmec.com/security/libsecurity.git
+l
+cd clopin/
+l
+pipenv install
+p manage.py runserver
+pipenv install mysql-server-has-gone-away mysql-client
+pipenv install mysql-server-has-gone-away 
+pipenv install mysqlclient
+pipenv lock
+p manage.py runserver
+v Pipfile
+p manage.py runserver
+p manage.py makemigrations
+ssh elmec-dmilog05.dmi.elmec.ad 
+ssh carboter-dmilog02.dmi.elmec.ad 
+z w oper
+l
+z /Users/colombos/projects/work/operator/dmilog-operator
+l
+v
+ssh elmec-dmilog04.dmi.elmec.ad
+ssh elmec-dmilog04.dmi.elmec.ad
+v
+v asd.xml
+rm asd.xml
+ssh elmec-dmilog04.dmi.elmec.ad
+z w sk
+ls
+l
+vi .build.envs.sh 
+v .build.envs.sh
+source .build.envs.sh
+z w sk
+v
+napc | pbcopy
+v
+napp | ccp
+k get po -A | grep skipper
+kubectl get po -A | grep skipper
+kx
+kubectl get po -A | grep skipper
+kubectl get ns | grep sk
+kubectl get deployments -n sec-skipper-quality 
+v
+napp | ccp
+ssh elmec-dmilog05.dmi.elmec.ad 
+ssh elmec-dmilog05.dmi.elmec.ad 
+p manage.py makemigrations
+p manage.py migrate
+doco -f ../../devutils/docker-compose.yaml up -d
+docker-compose -f ../devutils/environment/docker-compose.yaml up -d
+p manage.py migrate
+kx
+source ../devutils/environment/envs.core.nu
+p manage.py migrate
+p manage.py runserver
+python  manage.py createsuperuser
+ls
+l
+z w pr
+z w
+l
+cd clopin
+ls
+cd clopin/
+ls
+cd node/
+ls
+l
+z w cl
+l
+z ..
+l
+z /Users/colombos/projects/work/clopin/repos
+l
+z pra
+l
+open pra.csv
+open pra.csv | get data
+open pra.csv | get data | describe
+l
+open pra.csv
+open pra.csv | where DATA == 28/05/2024
+open pra.csv | where DATA == 28/05/2024 | get IDRS
+kbx
+kx
+p manage.py runserver
+p manage.py update_dependencies --customers
+p manage.py sync_dependencies --customers
+l
+which python
+which python | get path
+which python | get path | ccp
+which python | get path | str
+which python | get path | into string
+v
+z w sk
+src .build.envs.sh
+source .build.envs.sh
+z w 
+l
+cd gitops/
+l
+rmr fluentd/
+git clone git@git.elmec.com:security/dmilog-ng/gitops/fluentd.git
+cd fluentd/
+l
+napp | ccp
+git fetch --all
+gb -a
+git checkout  ELMEC
+l
+v
+cd ..
+l
+rmr fluentd/
+gcl git@git.elmec.com:security/anacleto/anacletocode.git
+rmr anacletocode/
+git clone git@git.elmec.com:security/dmilog-ng/gitops/fluentd.git
+l
+cd fluentd/
+l
+git fetch --all
+gco ELMEC
+l
+v
+l
+lzg
+cd ..
+l
+rmr fluentd/
+git clone git@git.elmec.com:security/dmilog-ng/gitops/fluentd.git
+cd fluentd/
+git fetch --all
+gco ELMEC
+napp | ccp
+ssh elmec-dmilog05.dmi.elmec.ad 
+v
+l
+cd clopin/
+l
+p manage.py runserver
+doco -f ../../devutils/docker-compose.yaml up -d
+docker-compose -f ../devutils/environment/docker-compose.yaml up -d
+p manage.py runserver
+source ../devutils/environment/envs.core.nu
+p manage.py runserver
+source ../devutils/environment/envs.core.nu
+cd clopin/
+ls
+source ../devutils/environment/envs.core.nu
+which python
+cd /Users/colombos/.local/share/virtualenvs/clopin-y6xFRDsq/bin/python
+cd /Users/colombos/.local/share/virtualenvs/clopin-y6xFRDsq/bin/
+ls
+cd ..
+l
+cd lib/
+l
+cd python3.9/
+l
+cd site-packages/
+kl
+l
+L
+ls **/*cert.pem
+kubectl -n sec-clopin-production get po
+kubectl -n sec-clopin-production exec cclopin-sec-clopin-production-69975fb895-dbmxb -it -- bash
+kubectl -n sec-clopin-production get po
+kubectl -n sec-clopin-production exec clopin-sec-clopin-production-69975fb895-dbmxb -it -- bash
+ls **/*cert.pem | get name
+ls **/*cert.pem | first |  get name
+kubectl -n sec-clopin-production get po
+ls **/*cert.pem | first |  get name | ccp
+kubectl cp sec-clopin-production/clopin-sec-clopin-production-69975fb895-dbmxb:/usr/lib/python3/dist-packages/certifi/cacert.pem cacert.pem
+cat cacert.pem | ccp
+v certifi/cacert.pem
+pipenv shell
+p manage.py sync_dependencies --customers
+l
+p manage.py sync_dependencies --customers
+source ../devutils/environment/envs.core.nu
+p manage.py sync_dependencies --customers
+z w sk
+l
+b
+z w
+v -d clopin/clopin/deploy/production.yaml skipper/deploy/quality.yaml
+v
+p manage.py sync_dependencies --dmilogs
+kubectl -n
+kx
+kubectl get ns | grep sk
+kub
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality get po | detect columns 
+kubectl -n sec-skipper-quality get po | detect columns | first | get name
+kubectl -n sec-skipper-quality get po | detect columns | first | get name | xargs kubectl -n sec-skipper-quality delete po
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality get po -w
+kubectl -n sec-skipper-quality describe po skipper-sec-skipper-quality-6589555675-v5b8z
+kubectl -n sec-skipper-quality get po -w
+kubectl -n sec-skipper-quality get deployments
+kubectl -n sec-skipper-quality get rs
+kubectl -n sec-skipper-quality delete rs skipper-sec-skipper-quality-798c9b9b4f
+ls
+kubectl -n sec-skipper-quality get rm
+kubectl -n sec-skipper-quality get rs
+kubectl -n sec-skipper-quality get rs | detect columns | first | get name | xargs kubectl -n sec-skipper-quality delete rs
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality delete po skipper-sec-skipper-quality-6c9fbdd9c9-zr46f 
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality describe po skipper-sec-skipper-quality-6c9fbdd9c9-k77bz 
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-6c9fbdd9c9-k77bz 
+v -d clopin/clopin/deploy/production.yaml skipper/deploy/quality.yaml
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality get deployments
+kubectl -n sec-skipper-quality get rs
+kubectl -n sec-skipper-quality get po -w
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality get rs
+kubectl -n sec-skipper-quality get rs | detect columns | where age == 20m
+kubectl -n sec-skipper-quality get rs | detect columns | where age == '20m'
+kubectl -n sec-skipper-quality get rs | detect columns 
+kubectl -n sec-skipper-quality get rs | detect columns | first | get name | xargs kubectl -n sec-skipper-quality delete rs
+kubectl -n sec-skipper-quality 
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality get po | detect columns | first | get name | xargs kubectl -n sec-skipper-quality logs
+v -d projects/work/clopin/clopin/deploy/production.yaml projects/work/skipper/deploy/quality.yaml
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality describe deployments skipper-sec-skipper-quality 
+kubectl -n sec-skipper-quality describe deployments skipper-sec-skipper-quality | less
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality get po -w
+kubectl -n sec-skipper-quality get po | detect columns | first | get name | xargs kubectl -n sec-skipper-quality logs
+docker pull docker.elmec.com/security/skipper@sha256:96dad2bf4c1db8f2376e35abe78e4ed29687ef086508ac61a6e260c0f9c6d2e9
+docker login doker.elmec.com
+docker login docker.elmec.com
+docker pull docker.elmec.com/security/skipper@sha256:96dad2bf4c1db8f2376e35abe78e4ed29687ef086508ac61a6e260c0f9c6d2e9
+docker image ls
+docker image ls | grep sk
+doc ls
+docker exec d3ad150f1ddc -it bash
+z w pe pe
+l
+docker exec -it d3ad150f1ddc bash
+v
+doc ls
+docker run  b2e2e81bda57
+doc ls | detect columns | get ID | each { |it| docker container stop $it}
+doco -f ../../devutils/docker-compose.yaml up -d
+doc ls
+dc
+dc --help
+dd
+dcc
+v
+z c nu
+l
+z
+z conf nu
+l
+doc ls
+doc ls | dtc
+doc ls | dtc | get ID
+doc ls | dtc | get ID | each {|it| docker container stop $it}
+nu
+doc ls
+doco -f ../../devutils/docker-compose.yaml up -d
+z w sk
+v
+z w zsk
+z w sk 
+l
+src .build.envs.sh
+source .build.envs.sh
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality get po | dtc
+kubectl -n sec-skipper-quality get po | dtc | get NAME | each {|it| kubectl describe po $it}
+kubectl -n sec-skipper-quality get po
+brew list | grep docker
+brew list | grep do
+brew list
+brew list | grep -i doc
+docker
+which docker
+which docker | get path | each {|it| rm $it}
+brew install --cask docket
+l
+brew install --cask docker
+1.4Kb + 3Mb
+brew remove docker
+/Applications/Docker.app/Contents/MacOS/uninstall
+rm -rf ~/Library/Group\ Containers/group.com.docker<\n>rm -rf ~/Library/Containers/com.docker.docker<\n>rm -rf ~/.docker
+brew install --cask docker
+sudo rm /Applications/Docker.app
+sudo rm -rf /Applications/Docker.app
+brew install --cask docker
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality get po -w
+4Tb * 16 
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality get po -w
+kubectl -n sec-skipper-quality describe po skipper-sec-skipper-quality-7d8fc6776c-xkltv
+v
+lzg
+git config pull.rebase true
+lzg
+l
+doc ls
+docker container stop elated_cannon 
+kubectl -n sec-skipper-quality get po -w
+kubectl -n sec-skipper-quality 
+ssh besteuro-dmilog01.dmi.elmec.ad 
+kubectl -n sec-skipper-quality  get po -w
+kubectl -n sec-skipper-quality describe po skipper-sec-skipper-quality-664b5f54cf-wdt2x 
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-775cfb8f87-ldwml
+napp
+mysql -u skipper -h 172.16.4.202 -p
+cd .local/share/
+ls
+cd db_ui/
+l
+v connections.json
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-775cfb8f87-ldwml
+napp | ccp
+cal
+z /Users/colombos/projects/work/test
+mkdir extraction
+cd extraction/
+touch asd.json
+v
+l
+napp | ccp
+v asd.json
+mkdir 01
+mkdir 02
+mkdir 03
+l
+v asd.json
+l
+mkdir 0
+mkdir 04
+mkdir 05
+mkdir 06
+rmr 0
+l
+rmr asd.json
+ssh sorin-dmilog01.dmi.elmec.ad 
+ssh sorin-dmilog02.dmi.elmec.ad 
+ssh sorin-dmilog01.dmi.elmec.ad 
+ssh sorin-dmilog03.dmi.elmec.ad 
+ssh sorin-dmilog04.dmi.elmec.ad 
+ssh sorin-dmilog05.dmi.elmec.ad 
+ssh sorin-dmilog06.dmi.elmec.ad 
+ssh sorincrm-dmilog05.dmi.elmec.ad 
+ssh sorincrm-dmilog02.dmi.elmec.ad 
+cd .local/share
+ls
+cd db_ui/
+l
+ls clopin/
+ls mongo-beauty01/
+v
+l
+open connections.json
+open connections.json | get url
+open connections.json | sort-by name
+ssh sorincrm-dmilog03.dmi.elmec.ad 
+v
+c
+v
+napp | ccp
+napc
+napc | ccp
+napc | pbcopy
+napp | ccp
+v
+zip -r .
+z ..
+l
+zip -h
+l
+ls
+128B + 3Gb
+zip
+ssh orr-dmilog02.dmi.elmec.ad 
+open ~/.ssh/known_hosts
+open ~/.ssh/known_hosts | dtc
+open ~/.ssh/known_hosts 
+open ~/.ssh/known_hosts  | head
+open ~/.ssh/known_hosts |<\n>    lines
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column "," "host,sha" 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " "host,sha" 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column  "host,sha" 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " "host,sha" 
+split column --help
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column "\s*" 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column --regex "\s*" 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column --regex '\s*'
+open ~/.ssh/known_hosts |<\n>    lines |<\n>
+open ~/.ssh/known_hosts |<\n>    split column --regex '\s*'
+open ~/.ssh/known_hosts |<\n>    split column " "
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " "
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    fzf
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | fzf
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | input list 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | describe
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | str kebab-case 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | str collect "\n"
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | str-collect "\n"
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | str join "\n"
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | str join "\n" | fzf
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | str join "\n" | fzf | each {|it| ssh $it}
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | str join "\n" | fzf 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | str join "\n" | fzf | str trim 
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | str join "\n" | fzf | str trim | xargs ssh
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    get host | sort-by host --reverse  | str join "\n" | fzf | str trim | xargs ssh
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    sort-by host --reverse  | get host |  str join "\n" | fzf | str trim | xargs ssh
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    sort-by host | get host |  str join "\n" | fzf | str trim | xargs ssh
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    sort-by host | get host |  str join "\n" | fzf | str trim | xargs ssh &&
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    sort-by host | get host |  str join "\n" | fzf | str trim | xargs ssh and
+open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    sort-by host | get host |  str join "\n" | fzf | str trim | each {|it| ssh $it}
+ssh |<\n>    open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    sort-by host | get host |  str join "\n" | fzf | str trim | each {|it| ssh $it}
+ssh |<\n>    open ~/.ssh/known_hosts |<\n>    lines |<\n>    split column " " host algo sha |<\n>    sort-by host | get host |  str join "\n" | fzf | str trim | each {|it| ssh "$it"}
+open ~/.ssh/known_hosts |<\n>lines |<\n>split column " " host algo sha |<\n>sort-by host | <\n>get host |<\n>str join "\n" | <\n>fzf | <\n>str trim | <\n>if $it != "" { ssh -t $it }
+open ~/.ssh/known_hosts |<\n>lines |<\n>split column " " host algo sha |<\n>sort-by host | <\n>get host |<\n>str join "\n" | <\n>fzf | <\n>str trim <\n>
+ssh besteuro-dmilog01.dmi.elmec.ad
+open ~/.ssh/known_hosts |<\n>lines |<\n>split column " " host algo sha |<\n>sort-by host | <\n>get host |<\n>str join "\n" | <\n>fzf | <\n>str trim | ssh<\n>
+open ~/.ssh/known_hosts |<\n>lines |<\n>split column " " host algo sha |<\n>sort-by host |<\n>get host |<\n>str join "\n" |<\n>fzf |<\n>str trim |<\n>each { |host| ssh $host }
+asd = open ~/.ssh/known_hosts |<\n>lines |<\n>split column " " host algo sha |<\n>sort-by host |<\n>get host |<\n>str join "\n" |<\n>fzf |<\n>str trim<\n>
+asd = (open ~/.ssh/known_hosts |<\n>lines |<\n>split column " " host algo sha |<\n>sort-by host |<\n>get host |<\n>str join "\n" |<\n>fzf |<\n>str trim)
+let asd = (open ~/.ssh/known_hosts |<\n>lines |<\n>split column " " host algo sha |<\n>sort-by host |<\n>get host |<\n>str join "\n" |<\n>fzf |<\n>str trim)
+$asd
+ssh $asd
+p manage.py runserver
+ssh (open ~/.ssh/known_hosts |<\n>lines |<\n>split column " " host algo sha |<\n>sort-by host |<\n>get host |<\n>str join "\n" |<\n>fzf |<\n>str trim)
+kubectl --namespace sec-securityproject-quality get po static-sec-securityproject-quality-cc48fd8fb-mzx96 
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-59d6565648-xh6vb 
+kubectl -n sec-skipper-quality describe skipper-sec-skipper-quality-59d6565648-xh6vb 
+kubectl -n sec-skipper-quality describe po skipper-sec-skipper-quality-59d6565648-xh6vb 
+zeh
+2to3-3.9 
+fssh
+help fssh
+fssh
+help fssh
+fssh
+v
+ssh brivaplast-dmilog01.dmi.elmec.ad
+ssh brivaplast-dmilog01
+ssh brivaplast-dmilog01.dmi.elmec.ad
+while true dossh brivaplast-dmilog01.dmi.elmec.ad
+while true (<\n>ssh brivaplast-dmilog01.dmi.elmec.ad<\n>sleep 10<\n>)
+sleep --h
+sleep --help
+while true (<\n>ssh brivaplast-dmilog01.dmi.elmec.ad<\n>sleep 10sec<\n>)
+while true {<\n>ssh brivaplast-dmilog01.dmi.elmec.ad<\n>sleep 10sec<\n>}
+while true {<\n>ssh cofimco-dmilog01.dmi.elmec.ad<\n>sleep 2sec<\n>)
+fssh
+z htt
+l
+z /Users/colombos/http/work
+mkdir skipper
+l
+z /Users/colombos/projects/work/skipper
+z
+z htt w sk
+zi
+l
+cd skipper/
+l
+touch asd.sh
+mv asd.sh asd.nu
+ping https://skipper.k8s.elmec.ad/mole_notify
+ping skipper.k8s.elmec.ad
+ping skipper-quality.k8s.elmec.ad
+ping skipper-uality.k8s.elmec.ad
+ping skipper-kjdhuality.k8s.elmec.ad
+ping idhjed-kjdhuality.k8s.elmec.ad
+nslookup https://skipper.k8s.elmec.ad/mole_notify
+nslookup skipper.k8s.elmec.ad
+nslookup aksdjh
+nslookup xasdkir.k8s.elmec.ad
+while true {<\n>ssh besteuro-dmilog01.dmi.elmec.ad<\n>sleep 2sec<\n>)
+while true {<\n>ssh cofimco-dmilog01.dmi.elmec.ad<\n>sleep 2sec<\n>}
+ssh fontanapi-dmilog01.dmi.elmec.ad 
+5kib * 3
+(5Gib - 332Kib) * 4
+scp besteuro-dmilog01.dmi.elmec.ad:/var/lib/rancher/k3s/server/db/snapshots/manual_backup-besteuro-dmilog01.dmi.elmec.ad-1730904362  snapshot
+z /Users/colombos/http
+l
+z /Users/colombos/projects/worko
+z ht w
+l
+z 
+z ht w
+l
+z /Users/colombos/http/work/pegasus
+l
+zi 
+z /Users/colombos/http/work/pegasus/microsoft
+l
+v
+l
+z ..
+l
+z /Users/colombos/http/work/skipper
+l
+v .env.nu
+source .env.nu
+$env.SKIPPER_TOKEN
+while true {<\n>ssh besteuro-dmilog01.dmi.elmec.ad<\n>sleep 2sec<\n>}
+kubectl -n sec-skipper-quality get svc
+kubectl -n sec-skipper-quality describe svc svc-skipper-quality-skipper-api 
+k9s
+source .env.nu
+$env.SKIPPER_TOKEN
+$env.SKIPPER_URI
+open data.json | from yaml | to json
+open body.yaml | from yaml | to json
+open body.yaml 
+open body.yaml | from yaml 
+open body.yaml | to json 
+v .
+q
+open body.yaml 
+open body.yaml | to csv 
+$env.SKIPPER_URI
+https POST $SKIPPER_URI \<\n>    Content-Type:application/json \<\n>    Authorization:"STATIC $SKIPPER_TOKEN" \<\n>    Client:$client_name < (open data.json | to json)<\n>
+https POST $env.SKIPPER_URI \<\n>    Content-Type:application/json \<\n>    Authorization:"STATIC $env.SKIPPER_TOKEN" \<\n>    Client:$client_name < (open data.json | to json)<\n>
+https POST $env.SKIPPER_URI \<\n>    Content-Type:application/json \<\n>    Authorization:"STATIC $env.SKIPPER_TOKEN" \<\n><     (open data.json | to json)<\n>
+https POST $SKIPPER_URI \<\n>    Content-Type:application/json \<\n>    Authorization:"STATIC $SKIPPER_TOKEN" < (open data.json | to json)<\n>
+https POST $env.SKIPPER_URI \<\n>    Content-Type:application/json \<\n>    Authorization:"STATIC $env.SKIPPER_TOKEN" < (open data.json | to json)<\n>
+https POST $env.SKIPPER_URI \<\n>    Content-Type:application/json \<\n>    Authorization:"STATIC $env.SKIPPER_TOKEN" < (open data.json | to json) --offline<\n>
+https POST "$env.SKIPPER_URI" \<\n>    Content-Type:application/json \<\n>    Authorization:"STATIC $env.SKIPPER_TOKEN" < (open data.json | to json) <\n>
+open body.yaml | to json | save data.json
+z ht w sk
+l
+open body.yaml | to json | save data.json
+open data.json
+v
+kubectl -n sec-skipper-quality exec skipper-sec-skipper-quality-679b66c6b4-cp4xc  -it -- bash
+kubectl -n sec-securityproject-quality exec api-sec-securityproject-quality-594d8f8456-mqh79 -it -- bash
+kubectl -n sec-skipper-quality exec skipper-sec-skipper-quality-679b66c6b4-cp4xc  -it -- sh
+open body.yaml
+open body.yaml | to json 
+v body.yaml
+open body.yaml
+open body.yaml | upsert ci_id=124
+upsert --help
+open body.yaml | upsert ci_id 124
+open body.yaml | upsert ci_id 124 | save body.yaml
+open body.yaml | upsert ci_id 124 | save --force  body.yaml
+open body.yaml
+napp | ccp
+v
+nap
+napp | ccp
+ssh mundys-dmilog01.dmi.elmec.ad 
+z w ope
+v
+z /Users/colombos/projects/work/operator/dmilog-operator
+l
+open roles/dmilog/tasks/main.yml
+ssh mundys-dmilog01.dmi.elmec.ad 
+keybindings list 
+keybindings list | where type == edits
+keybindings list | get type | uniq 
+keybindings list | where type == modes
+keybindings list | where type == edits
+keybindings list | where type == edits and name ~= iads
+keybindings list | where type == edits and name ~= "asd"
+keybindings list | where type == edits && name ~= "asd"
+keybindings list | where type == "edits" && name =~ "asd"
+keybindings list | where type == "edits" and name =~ "asd"
+keybindings list | where type == "edits" and name =~ "acc"
+keybindings list | where type == "edits" and name =~ "sugg"
+keybindings list | where type == "edits" and name =~ "compl"
+keybindings list | get type | uniq 
+keybindings list | where type == "events" and name =~ "compl"
+keybindings list | where type == "events" | get name
+length 
+keybindings list | where type == "events" | get name
+keybindings list | get type | uniq 
