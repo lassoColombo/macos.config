@@ -1,18 +1,10 @@
-local function append_client(s, client, buf, isLast)
+local function get_client_name(s, client, buf)
   local name = client.name
   if name == 'null-ls' then
-    return s
+    return nil
   end
   local bufs = client.attached_buffers
-  if not bufs[buf] then
-    return s
-  end
-
-  s = s .. '🔭' .. name
-  if not isLast then
-    s = s .. ' '
-  end
-  return s
+  return bufs[buf] and name or nil
 end
 
 local function get_clients()
@@ -22,13 +14,11 @@ local function get_clients()
   local buf = vim.api.nvim_get_current_buf()
 
   for i = 1, n - 1 do
-    s = append_client(s, clients[i], buf, false)
+    local name = get_client_name(s, clients[i], buf)
+    s = name and (s .. '🔭 ' .. name) or s
   end
-  s = append_client(s, clients[#clients], buf, true)
-
-  if s == '' then
-    return '🔭 no LSP '
-  end
+  local name = get_client_name(s, clients[#clients], buf)
+  s = name and (s .. ' ' .. name) or s
 
   return s
 end

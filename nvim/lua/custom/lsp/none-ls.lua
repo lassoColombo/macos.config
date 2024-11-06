@@ -10,6 +10,7 @@ return {
       -- null_ls.builtins.diagnostics.pylint,
       -- already included in ansiblels
       -- null_ls.builtins.diagnostics.ansiblelint,
+      null_ls.builtins.diagnostics.djlint,
     }
     null_ls.setup { sources = sources }
   end,

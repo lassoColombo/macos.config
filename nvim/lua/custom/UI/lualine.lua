@@ -99,6 +99,7 @@ return {
               return false
             end,
           },
+          { 'rest' },
         },
       },
       extensions = { 'neo-tree', 'lazy' },
