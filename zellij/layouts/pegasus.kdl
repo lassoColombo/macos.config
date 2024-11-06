@@ -1,16 +1,23 @@
 layout name="pegasus" {
     tab name="editor" focus=true {
-        pane command="nvim" name="editor" cwd="/Users/colombos/projects/work/pegasus/pegasus/" {
+        pane command="nvim" {
+            cwd "/Users/colombos/projects/work/pegasus/pegasus/" 
+            name "editor" 
             start_suspended false
         }
     }
-    tab name="horses" hide_floating_panes=true {
-        pane name="horses" cwd="/Users/colombos/projects/work/pegasus/pegasus/" {
-            // command "source" 
-            // args "./devutils/environment/envs.dev.pegasus"
-            start_suspended false
+    tab name="horses" command="source"{
+        pane name="editor"  {
+            command "source"
+            args "devutils/environment/env.dev.pegasus"
+            cwd "/Users/colombos/projects/work/pegasus/pegasus/" 
         }
     }
+    // tab name="horses" hide_floating_panes=true {
+    //     pane name="horses" cwd="/Users/colombos/projects/work/pegasus/pegasus/" {
+    //         start_suspended false
+    //     }
+    // }
     // tab name="graph-azure" focus=true hide_floating_panes=true {
     //     pane size="50%" split_direction="vertical" {
     //         pane command="source ./devutils/scripts/graphs/venv/bin/activate" name="riskyuser" cwd="/Users/colombos/projects/work/pegasus/pegasus/" size="50%" {

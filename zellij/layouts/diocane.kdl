@@ -1,0 +1,148 @@
+layout {
+    cwd "/Users/colombos/projects/work/pegasus/"
+    tab name="pegasus" focus=true hide_floating_panes=true {
+        pane command="nvim" name="editor" cwd="pegasus" focus=true {
+            start_suspended false
+        }
+        floating_panes {
+            pane command="python" cwd="pegasus" {
+                start_suspended false
+                height 26
+                width 190
+                x 24
+                y 13
+            }
+        }
+    }
+    tab name="pegasus" hide_floating_panes=true {
+        pane command="nvim" name="editor" cwd="pegasus/src/pegasus" {
+            start_suspended false
+        }
+        floating_panes {
+            pane cwd="pegasus/src/pegasus" {
+                height 26
+                width 190
+                x 24
+                y 0
+            }
+            pane command="docker" cwd="pegasus/src/pegasus" {
+                start_suspended false
+                height 26
+                width 190
+                x 24
+                y 24
+                args "exec" "-it" "redis" "redis-cli"
+            }
+            pane cwd="/Users/colombos" command="go" {
+                start_suspended true
+                height 26
+                width 190
+                x 24
+                y 24
+                args "run" "main.go" "--config" "../../devutils/config.yaml"
+            }
+        }
+    }
+    tab name="pgsctl" hide_floating_panes=true {
+        pane command="nvim" cwd="pegasus/src/pgsctl" {
+            start_suspended false
+        }
+        floating_panes {
+            pane command="go" cwd="pegasus/src/pgsctl" {
+                start_suspended true
+                height 26
+                width 190
+                x 24
+                y 0
+                args "run" "main.go"
+            }
+        }
+    }
+    tab name="http-client" hide_floating_panes=true {
+        pane command="nvim" cwd="/Users/colombos/http" {
+            start_suspended true
+        }
+        floating_panes {
+            pane cwd="/Users/colombos/http" {
+                height 26
+                width 190
+                x 24
+                y 3
+            }
+        }
+    }
+    tab name="graphs" hide_floating_panes=true {
+        pane command="python" cwd="pegasus/devutils/scripts/graphs" size="50%" {
+            args "resources.py" "--identity" "gessi-microsoft"
+            start_suspended true
+        }
+        pane command="python" cwd="pegasus/devutils/scripts/graphs" size="25%" {
+            args "tick.py" "--identity" "gessi-microsoft"
+            start_suspended true
+        }
+        pane size="25%" split_direction="vertical" {
+            pane command="python" cwd="pegasus/devutils/scripts/graphs" size="25%" {
+                args "bookmark.py" "--collector" "gessi-microsoft" "--source" "azure.signin"
+                start_suspended true
+            }
+            pane command="python" cwd="pegasus/devutils/scripts/graphs" size="25%" {
+                args "bookmark.py" "--collector" "gessi-microsoft" "--source" "azure.securityalert"
+                start_suspended true
+            }
+            pane command="python" cwd="pegasus/devutils/scripts/graphs" size="25%" {
+                args "bookmark.py" "--collector" "gessi-microsoft" "--source" "azure.riskyuser"
+                start_suspended true
+            }
+            pane command="python" cwd="pegasus/devutils/scripts/graphs" size="25%" {
+                args "bookmark.py" "--collector" "gessi-microsoft" "--source" "azure.riskdetection"
+                start_suspended true
+            }
+        }
+    }
+   default_tab_template {
+        children
+        pane size=1 borderless=true {
+            plugin location="file:./.config/zellij/plugins/zjstatus.wasm" {
+                format_left   "{mode} "
+                format_center "{tabs}"
+                format_right  "#[fg=#7aa2f7,bold]{session}"
+                format_space  ""
+
+                border_enabled  "true"
+                border_char     "|"
+                border_format   "#[fg=#1d202f]{char}"
+                border_position "top"
+
+                hide_frame_for_single_pane "false"
+
+                mode_normal        "#[bg=#394b70,fg=#7aa2f7] {name} "
+                mode_session       "#[bg=#f7768e,fg=#1d202f] {name} "
+                mode_tab           "#[bg=#e0af68,fg=#1d202f] {name} "
+                mode_pane          "#[bg=#9ece6a,fg=#1d202f] {name} "
+                mode_locked        "#[bg=#db4b4b,fg=#1d202f] {name} "
+                mode_move          "#[bg=#ff9e64,fg=#1d202f] {name} "
+                mode_resize        "#[bg=#ff007c,fg=#1d202f] {name} "
+                mode_scroll        "#[bg=#9ece6a,fg=#1d202f] {name} "
+                mode_search        "#[bg=#9ece6a,fg=#1d202f] {name} "
+                mode_enter_search  "#[bg=#87CC3D,fg=#1d202f] {name} "
+                mode_rename_tab    "#[bg=#b2555b,fg=#c0caf5] {name} "
+                mode_rename_pane   "#[bg=#b2555b,fg=#c0caf5] {name} "
+                mode_prompt        "#[bg=#b2555b,fg=#c0caf5] {name} "
+                mode_tmux          "#[bg=#ffc387,fg=#c0caf5] {name} "
+                mode_default_to_mode "normal"
+
+                tab_normal   "#[fg=#394b70] {name} "
+                tab_active   "#[fg=#e0af68,bold,italic] {name} "
+
+                // command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
+                // command_git_branch_format      "#[fg=blue] {stdout} "
+                // command_git_branch_interval    "10"
+                // command_git_branch_rendermode  "static"
+
+                // datetime        "#[fg=#6C7086,bold] {format} "
+                // datetime_format "%A, %d %b %Y %H:%M"
+                // datetime_timezone "Europe/Berlin"
+            }
+        }
+    }
+}
