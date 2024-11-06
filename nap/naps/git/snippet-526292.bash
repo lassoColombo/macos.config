@@ -1,0 +1,1 @@
+nap list | fzf | xargs nap

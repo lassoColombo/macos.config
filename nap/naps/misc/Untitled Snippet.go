@@ -1,0 +1,1 @@
+mongo/get-collectiom.bash
