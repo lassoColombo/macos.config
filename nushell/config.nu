@@ -187,7 +187,7 @@ $env.config = {
         # abbreviated_row_count: 3 # limit data rows from top and bottom after reaching a set point
     }
 
-    error_style: "plain" # "fancy" or "plain" for screen reader-friendly error messages
+    error_style: "fancy" # "fancy" or "plain" for screen reader-friendly error messages
 
     # Whether an error message should be printed if an error of a certain kind is triggered.
     display_errors: {

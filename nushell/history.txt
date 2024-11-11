@@ -1434,3 +1434,1549 @@ keybindings list | where type == "events" | get name
 length 
 keybindings list | where type == "events" | get name
 keybindings list | get type | uniq 
+keybindings list | where type == "keycodes" | get name
+keybindings list | get type | uniq 
+zip
+which zip
+gstat
+gstat .
+which nu
+gstat . --help
+cargo
+cargo install nu_plugin_gstat
+gstat
+which gstat
+gstat .
+plugin list 
+cargo uninstall nu_plugin_gstat
+plugin add gstat
+plugin add --help
+[nu_plugin_gstat] | each { cargo install $in } | ignore
+plugin add /Users/colombos/.asdf/installs/rust/1.82.0/bin/nu_plugin_gstat
+gstat .
+plugin list 
+gstat .
+gstat --help
+plugin rm /Users/colombos/.asdf/installs/rust/1.82.0/bin/nu_plugin_gstat
+cargo uninstall nu_plugin_gstat
+cargo install nu-plugin-bexpand<\n>
+cargo uninstall nu-plugin-bexpand<\n>
+napp | ccp
+v
+cargo install nu_plugin_mongo
+plugin list
+cargo install nu_plugin_net
+which cargo
+which cargo | get path
+ls (which cargo | get path)
+ls which cargo | get path | describe
+which cargo | get path | describe
+ls (which cargo | get path | first)
+which cargo | get path 
+ls  /Users/colombos/.asdf/shims/cargo
+cd  /Users/colombos/.asdf/shims/cargo
+cd  /Users/colombos/.asdf/shims/
+ls
+cd ..
+ls
+cd installs/
+l
+cd rust/
+l
+cd 1.82.0/
+l
+cd downloads/
+l
+cd ..
+ls **/nu_plugin*
+ls **/nu_plugin* | first | get name
+plugin add (ls **/nu_plugin* | first | get name)
+plugin add installs/rust/1.82.0/bin/nu_plugin_net
+cargo uninstall nu_plugin_net
+z h
+l
+z ht
+l | get name | {$it}
+l | get name | {$in}
+l | get name | {echo $in}
+l | get name 
+l | get name | first
+l | first
+l | first 
+l | first | get name
+open(l | first | get name)
+open $(l | first | get name)
+open (l | first | get name)
+lasd
+ls (which cargo | get path | first)
+ls (which cargo | first | get path)
+which cargo | each {$in}
+which cargo | each {open $in}
+which cargo | each {cat $in}
+which cargo 
+which cargo | first | get path
+which cargo | first 
+l
+lf
+L
+napp | ccp
+v
+napp | ccp
+ssh kairos-dmilog01.dmi.elmec.ad 
+l
+pwd
+pwd | str reverse 
+pwd | split row '/'
+pwd | split row '/' | each {$in}
+pwd | split row '/' | each {$in | str upcase }
+pwd | split row '/' | str upcase
+l
+ip a
+ip
+ifconfig 
+heif-convert 
+napp | ccp
+keybindings default 
+ssh sorin-dmilog01.dmi.elmec.ad 
+z w 
+l
+z /Users/colombos/projects/work/gitops
+l
+gcl git@git.elmec.com:cybergon/gitops/custom-ttl.git
+l
+z custom_ttl
+l
+z custom_ttl
+cd custom-ttl/
+l
+napp | ccp
+nap
+napp | ccp
+l
+z ..
+l
+rmr custom-ttl/
+gcl git@git.elmec.com:cybergon/gitops/custom-ttl.git --bare
+l
+z custom-tt
+cd custom-ttl.git/
+l
+napp | ccp
+for remote in (git branch -r | where $it !~ '/HEAD') {<\n>    git checkout --track $remote<\n>}
+git branch -r
+napp | ccp
+git fetch --all
+for remote in (git branch -r | where $it !~ '/HEAD') {<\n>    git checkout --track $remote<\n>}
+git branch -r
+gco MUNDYS
+l
+for remote in (git branch -r | where $it !~ '/HEAD') {<\n>    git worktree add $remote<\n>}
+napp
+ssh sorin-dmilog01.dmi.elmec.ad 
+git for-each-ref --format='%(refname)' refs/heads/ | each { |it| echo $it | split-column '/' | get 2 }
+z w gitops ttl
+git for-each-ref --format='%(refname)' refs/heads/ | each { |it| echo $it | split-column '/' | get 2 }
+for ref in (git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch) {}
+for ref in (git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch) {<\n>  $in<\n>}
+for ref in (git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch) {<\n>  $ref<\n>}
+for ref in (git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch) {<\n>echo $ref<\n>}
+for ref in (git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch) {<\n>  echo ciao<\n>}
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch<\n>
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject $in == main<\n>
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject {|$ref| ref=="main" || ref=="quality" }
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject {|$ref| ref=="main" or ref=="quality" }
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject {|$ref| ref "main" }
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject {|$ref| ref ==  "main" }
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject {|$ref| ref == main }
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject { |branch| $branch == "main" }
+git for-each-ref --format='%(refname)' | lines 
+git for-each-ref --format='%(refname)' | lines | split column '/' ref head branch | get branch
+reject --help
+skip --help
+drop --help
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter $in != "main"
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter $in 
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter "main"
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in == main}
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main}
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality}
+let refs = git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality}
+$refs
+for r in $refs {<\n>$r<\n>}
+for r in $refs {<\n>echo $r}
+let refs = git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject { |branch| $branch == "main" || $branch == "quality" }
+let refs = git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject { |branch| $branch == "main" or $branch == "quality" }
+let refs = git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject { $in == "main" or $in == "quality" }
+$refs
+let refs = git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | reject { |branch| $branch == "main" or $branch == "quality" }
+let refs = git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality}
+$refs
+for b in $refs {echo $b}
+for b in $refs {echo ciao}
+for b in $refs {print ciao}
+for b in $refs {<\n>if (try { cd $b } catch { echo "directory $ref does not exist. skipping" ; continue }) {<\n>print "done with $b"<\n>cd ..<\n>}<\n>}
+for b in $refs {<\n>    print "done with $b"<\n>    cd ..<\n>}
+z w gitops ttl
+l
+let refs = git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality}
+$refs
+du
+glob asd[1-3]
+;
+l
+glob *txt
+tree .
+glob *sample
+glob *.sample
+glob --depth 3 *.sample
+glob --depth 9 *.sample
+port
+url build-query 
+url build-query  --help
+$refs
+$refs | url build-query 
+l
+l | flatten
+l | expand 
+uname
+sys temp
+sys disks
+sys host
+l | explore
+l | table
+l | grid
+cd
+l | explore
+cal
+banner
+inc
+pwd
+ast
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality} | ast
+ast --help
+ast 'git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality}' 
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality} | inspect
+z w gitops ttl
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality} | inspect
+l
+let refs = git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality}
+$refs
+$refs | each {git worktree add $in}
+l
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality} | each {git worktree add $in}
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality} | each {git worktree remove $in}
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality} | each {git worktree add $in}
+git for-each-ref --format='%(refname)' refs/heads | lines | split column '/' ref head branch | get branch | filter {$in != main and $in != quality} | each {git worktree remove $in}
+let exclude = ["quality", "main", "master"]<\n>
+$exclude
+git for-each-ref --format='%(refname)' refs/heads |<\n> lines |<\n> split column '/' ref head branch |<\n> get branch |<\n> filter { |in| $exclude | each { |ex| $in != $ex } } |<\n> each {git worktree add $in}<\n>
+git for-each-ref --format='%(refname)' refs/heads |<\n> lines |<\n> split column '/' ref head branch |<\n> get branch |<\n> filter { |in| $exclude | each { |ex| $in != $ex } }<\n>
+git for-each-ref --format='%(refname)' refs/heads |<\n> lines |<\n> split column '/' ref head branch |<\n> get branch |<\n> filter { |$in| $exclude | each { |$ex| $in != $ex } }<\n>
+fssh
+git for-each-ref --format='%(refname:short)' refs/heads
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree rm $branch }<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree remove $branch }<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree add $branch }<\n>
+l
+git worktree list
+git worktree add TESI
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {<\n>   |branch|<\n>   git worktree add $branch<\n>}<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) }<\n>#   each {<\n>#   |branch|<\n>#   git worktree add $branch<\n>#}<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) }<\n>   each {<\n>   |branch|<\n>   git worktree add $branch<\n>}<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {<\n>   |branch|<\n>   git worktree add $branch<\n>}<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each { |branch|git worktree add $branch}<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each { |branch|git worktree remove $branch}<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each { |branch| git worktree remove $branch }<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {<\n>   |branch|<\n>       cd $branch<\n>pwd<\n>}<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {<\n>   |branch|<\n>       git worktree add $branch<\n>}<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {<\n>   |branch|<\n>       cd $branch<\n>       pwd<\n>}<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {<\n>   |branch|<\n>       cd $branch<\n>       git pull<\n>}<\n>
+git branch
+cd DEACAP/
+git pull
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {<\n>   |branch|<\n>       git worktree remove $branch<\n>}<\n>
+ls
+cd
+z w gitops ttl
+l
+nap
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree add $branch }<\n>
+k
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree remove $branch }<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree add $branch }<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree remove $branch | default ok }<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree add $branch; ok }<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree add $branch; $"ok" }<\n>
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree remove $branch; $"ok" }<\n>
+ssh cesarin-dmilog01.dmi.elmec.ad 
+ssh genfit-dmilog01.dmi.elmec.ad
+ssh cesarin-dmilog01.dmi.elmec.ad 
+l
+rm -rf venv
+pipenv install
+l
+v
+ssh carboter-dmilog02.dmi.elmec.ad 
+l
+z w cl repo
+l
+mv pra/ findings
+l
+z findings
+l
+cd ~/Downloads/
+l
+cd output/
+l
+cd .. 
+cp -r output/ ~/projects/work/clopin/repos/findings
+cd ~/projects/work/clopin/repos/findings
+l
+rm findings.csv
+mv output/* .
+rm output/
+l
+l | get name | sort
+l | get name | sort | filter {$in != git}
+l | get name | sort | filter {$in != .git}
+l | get name | filter {$in != .git} | sort | first
+let exclude = (l | get name | filter {$in != .git} | sort | first)
+$exclude
+let exclude = (l | get name | filter {$in != .git and $in != $exclude} | sort )
+let exclude = (l | get name | filter {$in != .git } | sort )
+$exclude
+let exclude = (l | get name | filter {$in != .git } | sort | first)
+$exclude
+l | get name | filter {$in != .git and $in != $exclude } | sort 
+l | get name | filter {$in != .git and $in != $exclude } | sort | each {}
+l
+mkdir next
+l | get name | filter {$in != .git and $in != $exclude } | sort | each {mv $in next}
+l | get name | filter {$in != .git and $in != $exclude and $in != next } | sort | each {mv $in next}
+l
+rm .git
+rm -rf .git
+v
+l
+git init
+l
+touch domain_findings.csv
+open 2024-03-07_Domain_Findings.csv | save domain_findings.csv
+open 2024-03-07_Domain_Findings.csv | save -f domain_findings.csv
+open domain_findings.csv
+$"" | save -f domain_findings.csv
+open domain_findings.csv
+git add domain_findings.csv 
+git commit -m "first commit"
+open 2024-03-07_Domain_Findings.csv | save -f domain_findings.csv
+l
+open domain_findings.csv
+mkdir done
+mv 2024-03-07_Domain_Findings.csv done
+l
+z w cl node
+l
+rm -f __pycache__/
+rm -r __pycache__/
+l
+open .gitlab-ci.yml
+open .gitlab-ci.yml | get build:docker
+open .gitlab-ci.yml | get build:docker.script
+l
+mv core_requirements.txt clopin/
+l
+ls */.gitlab-ci.yml
+ls */.gitlab-ci.yml | get name
+ls */.gitlab-ci.yml | get name | first
+ls */.gitlab-ci.yml | get name | first | ccp
+rm node/.gitlab-ci.yml
+l
+open .env
+lzg
+mv .env ..
+lzg
+mv ../.env .
+l
+mv node_requirements.txt .gitignore
+lzg
+mv node_requirements.txt node/
+lzg
+l
+pipenv install
+pipenv install -r node_requirements.txt
+l
+v
+v
+l
+pipenv shell
+deactivate
+v
+pipenv shell
+pipenv shell
+pipenv -h
+v
+pipenv shell
+pipenv shell
+pipenv --venv
+pipenv graph
+l
+z w cl repo
+zi
+zi .
+l
+z /Users/colombos/projects/work/clopin/repos/findingsl
+l
+cd findings/
+l
+z w cl core
+z w cl cl
+l
+z /Users/colombos/projects/work/clopin/clopin/clopin
+l
+z w cl cl
+l
+z /Users/colombos/projects/work/clopin/clopin/clopin
+l
+source ../devutils/environment/envs.core.nu
+z w cl no
+l
+p manage.py runserver
+doc ls
+l
+docker-compose -f devutils/docker-compose.yaml up -d
+p manage.py runserver
+doc ls
+docker container logs clopin-mariadb 
+p manage.py runserver
+docker-compose -f devutils/docker-compose.yaml down -v
+docker-compose -f devutils/docker-compose.yaml up -d --force-recreate
+p manage.py makemigrations
+p manage.py migrate
+p manage.py runserver
+p manage.py createsuperuser
+open domain_findings.csv
+open domain_findings.csv | length 
+open domain_findings.csv | get URL | uniq | length 
+open domain_findings.csv | get ' URL' | uniq | length 
+open domain_findings.csv 
+open domain_findings.csv | uniq-by " URL" " Domain" " Username" " Password" " AV"
+open domain_findings.csv | uniq-by " URL" " Domain" " Username" " Password" " AV" | length 
+open domain_findings.csv | length 
+let u = open domain_findings.csv | uniq-by "URL" "Domain" "Username" "Password" "AV"<\n>
+let u = (open domain_findings.csv | uniq-by "URL" "Domain" "Username" "Password" "AV")<\n>
+let u = (open domain_findings.csv | uniq-by " URL" " Domain" " Username" " Password" " AV")<\n>
+u
+$u
+$u | length 
+let o = open domain_findings.csv
+$o
+$o | length 
+$o | where not $u 
+$o | where not ($u | contains $in)
+open domain_findings.csv
+$o
+$u
+$o
+$u
+for ui in $u {<\n>print $ui<\n>}
+$u | sort-by  " Username"
+$u | sort-by  " Username" | save uuu.csv
+$o | sort-by " Username" | save ooo.csv
+ssh cesarin-dmilog01.dmi.elmec.ad 
+kub
+kubectl get ns
+kx
+kubectl get ns
+kubectl -n sec-trahoproject-production get po 
+kubectl -n sec-trahoproject-production get po | detect columns 
+kubectl -n sec-trahoproject-production get po | detect columns | get name
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter {|in| $n ~= pull}
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter { $in | str starts-with "pull" }
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter { $in | str starts-with "pull" } | each {kubectl -n sec-trahoproject-production logs $in | rg BESTEURO }
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter { $in | str starts-with "pull" } | each {kubectl -n sec-trahoproject-production logs $in | grep BESTEURO }
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter { $in | str starts-with "pull" } | each {kubectl -n sec-trahoproject-production logs $in | rg BOTTVER }
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter { $in | str starts-with "pull" } | each {kubectl -n sec-trahoproject-production logs $in | rg BOTTVER | ignore  }
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter { $in | str starts-with "pull" } | each {kubectl -n sec-trahoproject-production logs $in | rg BESTEURO | ignore}
+rg -E --help
+ssh cesarin-dmilog01.dmi.elmec.ad 
+rg -h\
+rg -h
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter { $in | str starts-with "pull" } | each {kubectl -n sec-trahoproject-production logs $in | rg -e "BESTEURO|BOTTVER" | ignore}
+ssh cesarin-dmilog01.dmi.elmec.ad 
+v -d uuu.csv ooo.csv
+l
+rm ooo.csv uuu.csv
+mkdir analisys
+cp domain_findings.csv analisys/
+cd analisys/
+open domain_findings.csv
+open domain_findings.csv | rename url domain username pwd av
+open domain_findings.csv | rename url domain username pwd av | save -f domain_findings.csv
+open domain_findings.csv | rename url domain username pwd av | collecto | save -f domain_findings.csv
+open domain_findings.csv | rename url domain username pwd av | collect | save -f domain_findings.csv
+open domain_findings.csv
+sshssh cesarin-dmilog01.dmi.elmec.ad -L 8007:172.25.6.50:443
+ssh cesarin-dmilog01.dmi.elmec.ad -L 8007:172.25.6.50:443
+ssh    ColomboS@elmecdmi.local@cesarin-dmi01.dmi.elmec.ad -L 8007:172.25.6.50:443
+l
+open domain_findings.csv
+open data.csv | group-by "url" "domain" "username" "pwd" "av" | each { |it| $it | where count > 1 } | flatten
+group-by --help
+open data.csv | group-by 
+open domain_findings.csv | group-by 
+groups --help
+group-by --help
+open data.csv | group-by { |it| $it.url } | each { |it| $it | where count > 1 } | flatten
+open domain_findings.csv | group-by { |it| $it.url } | each { |it| $it | where count > 1 } | flatten
+open domain_findings.csv | group-by { |it| $it.url } 
+open domain_findings.csv | group-by { |it| $"($it.url)-($it.domain)-($it.username)" }
+open domain_findings.csv | group-by { |it| $"($it.url)-($it.domain)-($it.username)" } | to yaml 
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } | each { |it| $it | where count > 1 }
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } | each { |it| $it | where $it | length > 1 }
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } | each { |it| $it | where $it | length  }
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } | each { |in| $in }
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } | each { |in| print $in }
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } | each { |in| print $in.0 }
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } | each { |in| print $in | length }
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } | each { |in| $in | length }
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } 
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)" } | to yaml | save asd.yaml
+l
+v 1.yaml
+v 2.yaml
+v asd.yaml
+l
+v -d 1.yaml 2.yaml
+l
+rm 1.yaml 2.yaml
+open asd.yaml
+open domain_findings.csv
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)-($in.pwd)-($in.av)" } 
+open domain_findings.csv | group-by { |in| $"($in.url)-($in.domain)-($in.username)-($in.pwd)-($in.av)" } | to yaml  | save -f asd.yaml
+z w cl re
+l
+z /Users/colombos/projects/work/clopin/repos/findings
+l
+z /Users/colombos/projects/work/clopin/repos/findings/analisys
+l
+v 1.yaml
+v 2.yaml
+v
+p manage.py runserver
+p manage.py makemigrations
+p manage.pyrun
+p manage.py runserver
+p manage.py migrate
+doco -f ../../devutils/docker-compose.yaml down -v
+l
+z core
+l
+z ..
+l
+doco -f devutils/docker-compose.yaml down -v
+doco -f devutils/docker-compose.yaml up -d --force-recreat
+doco -f devutils/docker-compose.yaml up -d --force-recreate
+p manage.py migrate
+v asd.yaml
+open domain_findings.csv<\n>| group-by { |in| $"($in.url)-($in.domain)-($in.username)-($in.pwd)-($in.av)" }<\n>| where { |group| group.value | length > 1 }
+open domain_findings.csv<\n>| group-by { |in| $"($in.url)-($in.domain)-($in.username)-($in.pwd)-($in.av)" }<\n>| where value | length > 1
+open domain_findings.csv<\n>| group-by { |in| $"($in.url)-($in.domain)-($in.username)-($in.pwd)-($in.av)" }<\n>| each { |row| row | update count { get value | length } }<\n>| where count > 1
+open domain_findings.csv<\n>| group-by { |in| $"($in.url)-($in.domain)-($in.username)-($in.pwd)-($in.av)" }<\n>| each { |row| $row | update count { get value | length } }<\n>| where count > 1
+open domain_findings.csv<\n>| group-by { |in| $"($in.url)-($in.domain)-($in.username)-($in.pwd)-($in.av)" }<\n>
+l
+L
+lf
+open domain_findings.csv<\n>| group-by { |in| $"($in.url)-($in.domain)-($in.username)-($in.pwd)-($in.av)" }<\n>
+p manage.py runserver
+p manage.py createsuperuser
+open domain_findings.csv
+z ..
+open domain_findings.csv
+open domain_findings.csv | tail
+v -d 1.yaml 2.yaml
+l
+v
+l
+z /Users/colombos/projects/work/clopin/repos/findings/analisys
+l
+z ..
+l
+z next
+l
+ls
+ls | get name | each {open $in | columns }
+ls | get name | each {open $in | columns } | to json 
+open 2024-03-14_Domain_Findings.csv --raw 
+open 2024-03-14_Domain_Findings.csv --raw  | head
+k
+l
+z ..
+l
+gs
+git status
+gstat
+z w cl repo
+l
+z /Users/colombos/projects/work/clopin/repos/findings
+l
+z w cl node
+l
+ls devutils/
+source devutils/envs.node.nu
+pwd
+pwd | ccp
+$env.TARGET_BRANCH
+$env.TARGET_FILE
+$env.TARGET_REPO
+git --git-dir=$env.TARGET_REPO/.git --work-tree=$env.TARGET_REPO add $env.TARGET_FILE
+git --git-dir = "$env.TARGET_REPO/.git" --work-tree = "$env.TARGET_REPO" add $env.TARGET_FILE
+git --git-dir = "$env.TARGET_REPO/.git" 
+git --git-dir="$env.TARGET_REPO/.git" 
+git --git-dir="$env.TARGET_REPO/.git" --work-tree="$env.TARGET_REPO" add $env.TARGET_FILE
+"$env.TARGET_REPO"
+$"$env.TARGET_REPO"
+$"($env.TARGET_REPO)"
+git --git-dir="($env.TARGET_REPO)/.git" --work-tree="($env.TARGET_REPO)" add "($env.TARGET_FILE)"
+git --git-dir="($env.TARGET_REPO)/.git" 
+--git-dir="($env.TARGET_REPO)/.git" 
+git --git-dir="($env.TARGET_REPO)/.git" 
+git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) add ($env.TARGET_FILE)
+source devutils/envs.node.nu
+p run.py --target-project $env.TARGET_PROJECT --target-repo $env.TARGET_REPO --target-branch $env.TARGET_BRANCH --target-file $env.TARGET_FILE --taget-commit $env.TARGET_COMMIT
+p run.py --target-project $env.TARGET_PROJECT --target-repo $env.TARGET_REPO --target-branch $env.TARGET_BRANCH --target-file $env.TARGET_FILE --target-commit $env.TARGET_COMMIT
+source devutils/envs.node.nu
+p run.py --target-project $env.TARGET_PROJECT --target-repo $env.TARGET_REPO --target-branch $env.TARGET_BRANCH --target-file $env.TARGET_FILE --target-commit $env.TARGET_COMMIT
+p manage.py runserver
+v
+zw cl cl 
+z w cl cl
+l
+z cl
+l
+v
+cd ../node/
+v
+echo "p run.py --target-project $env.TARGET_PROJECT --target-repo $env.TARGET_REPO --target-branch $env.TARGET_BRANCH --target-file $env.TARGET_FILE --target-commit $env.TARGET_COMMIT"
+echo "p run.py --target-project ($env.TARGET_PROJECT) --target-repo ($env.TARGET_REPO) --target-branch ($env.TARGET_BRANCH) --target-file ($env.TARGET_FILE) --target-commit ($env.TARGET_COMMIT)"
+echo p run.py --target-project $env.TARGET_PROJECT --target-repo $env.TARGET_REPO --target-branch $env.TARGET_BRANCH --target-file $env.TARGET_FILE --target-commit $env.TARGET_COMMIT
+echo p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT
+echo p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT | str join 
+echo p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT | str join  | ccp
+echo p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT | str join  " "
+echo p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT | str join  " " | ccp
+v
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+k
+l
+p manage.py shell
+p manage.py core_requirements.txt
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+p manage.py runserver
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+let current = 1
+ls next/
+ls next | get name.$current
+ls next | get name.1
+cp (ls next | get name.1) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+open domain_findings.csv
+open domain_findings.csv | columns 
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+open domain_findings.csv 
+open domain_findings.csv | where URL = 
+open domain_findings.csv | where URL = "https://www.deagostini.com/gr/myarea/p/activate"
+open domain_findings.csv | where URL == "https://www.deagostini.com/gr/myarea/p/activate"
+open domain_findings.csv | where ' URL' == "https://www.deagostini.com/gr/myarea/p/activate"
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.2) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.3) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+realpath projects/work/clopin/repos/findings | ccp
+l
+p manage.py shell
+p manage.py runserver
+def asd [] {<\n>    let repo_path = /Users/colombos/projects/work/clopin/repos/findings<\n>    let names =  ls $repo_path/next | get name<\n>    $names<\n>}
+asd
+asd()
+$repo_path
+let repo_path = /Users/colombos/projects/work/clopin/repos/findings
+let repo_path = "/Users/colombos/projects/work/clopin/repos/findings"
+l
+l done/
+mv done/2024-03-07_Domain_Findings.csv next/
+l
+let files = ls ($repo_path)/next
+ls ($repo_path)/next
+ls $repo_path/next
+ls $repo_path
+[ $repo_path, "asd" ]  | path join 
+pipenv shell
+z w cl node
+l
+k
+l
+realpath projects/work/clopin/repos/findings | ccp
+realpath ../repos/findings | ccp
+realpath ../../repos/findings | ccp
+let target_path = "/Users/colombos/projects/work/clopin/repos/findings"<\n>
+$target_path
+ls $target_path
+ls $target_path/next
+ls $target_path"/next"
+ls "$target_path/next"
+ls "($target_path)/next"
+ls $target_path)/next"
+ls $target_path)/next
+ls "${target_path}/next"
+ls $"$target_path/next"
+ls $"($target_path)/next"
+each --help
+each  --help
+l
+realpath projects/work/clopin/repos/findings | ccp
+z
+realpath projects/work/clopin/repos/findings | ccp
+z w cl node
+source test.nu
+z w cl cl cl
+v
+napp | ccp
+z w 
+z /Users/colombos/projects/work/gitops
+l
+rmr custom-ttl.git/
+gcl git@git.elmec.com:cybergon/gitops/custom-ttl.git
+cd custom-ttl/
+l
+gco -b DATAMARS
+l
+mkdir datamars-dmilog01.dmi.elmec.ad 
+cd datamars-dmilog01.dmi.elmec.ad/
+touch custom_ttl.lst
+v custom_ttl.lst
+l
+z ..
+;
+l
+lzg
+ssh datamars-dmilog01.dmi.elmec.ad
+ssh iai-dmilog01.dmi.elmec.ad
+while true {<\n>ssh iai-dmilog01.dmi.elmec.ad<\n>sleep 2sec<\n>}
+while true {<\n>ssh iai-dmilog01.dmi.elmec.ad | ignore<\n>sleep 2sec<\n>}
+ssh root@172.16.69.42 
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter { $in | str starts-with "pull" } | each {kubectl -n sec-trahoproject-production logs $in | rg -e "BESTEURO|BOTTVER" | ignore}
+v
+napp | ccp
+kubectl -n sec-trahoproject-production get po | detect columns | get name | filter { $in | str starts-with "pull" } | each {kubectl -n sec-trahoproject-production logs $in | rg -e "ATOS" | ignore}
+brew install openvpn
+openvpn
+brew remove openvpn
+brew install --cask openvpn-connect
+ssh root@172.16.69.42 
+ssh iai-dmi01.dmi.elmec.ad -J 172.16.10.182
+ssh iai-dmi01.dmi.elmec.ad 
+ssh iai-dmilog01.dmi.elmec.ad 
+ssh  ColomboS@elmecdmi.local@iai-dmilog01.dmi.elmec.ad  -J root@iai-dmilog01.dmi.elmec.ad
+ssh  ColomboS@elmecdmi.local@iai-dmi01.dmi.elmec.ad  -J root@iai-dmilog01.dmi.elmec.ad
+ssh  root@iai-dmilog01.dmi.elmec.ad -J ColomboS@elmecdmi.local@iai-dmi01.dmi.elmec.ad
+ssh -J ColomboS@elmecdmi.local@iai-dmi01.dmi.elmec.ad -J root@172.16.10.182
+ssh ColomboS@elmecdmi.local@iai-dmi01.dmi.elmec.ad -J root@172.16.10.182
+ssh root@172.16.10.182 -J ColomboS@elmecdmi.local@iai-dmi01.dmi.elmec.ad
+ssh root@172.16.10.182 -J ColomboS@elmecdmi.local@iai-dmi01.dmi.elmec.ad 
+ssh ColomboS@elmecdmi.local@iai-dmi01.dmi.elmec.ad  -J root@172.16.10.182
+ssh -o ForwardAgent=yes -J ColomboS@iai-dmi01.dmi.elmec.ad root@172.16.10.182
+ssh -J ColomboS@iai-dmi01.dmi.elmec.ad root@172.16.10.182 -vvv
+ssh iai-dmilog01.dmi.elmec.ad 
+fssh
+ssh brivaplast-dmilog01.dmi.elmec.ad 
+ssh bottver-dmilog03.dmi.elmec.ad 
+ssh carboter-dmilog02.dmi.elmec.ad 
+ssh -J ColomboS@iai-dmi01.dmi.elmec.ad root@172.16.10.182 -i ~/.ssh/dmilog
+ssh brivaplast-dmilog01.dmi.elmec.ad 
+l
+cd plot/
+l
+cd drop-rate/
+l
+pipenv shell
+l
+p drop_rate_by_hour.json
+p drop_rate_by_hour.py
+ssh elmec-dmilog05.dmi.elmec.ad 
+ssh elmec-dmilog05.dmi.elmec.ad 
+let threads = 12
+let ring = 550000
+ls
+let ring = 550000
+let threads = 12
+$ring * $threads * 0.000002109
+let ring = 6000000
+let threads = 14
+$ring * $threads * 0.000002109
+let ring = 600000
+$ring * $threads * 0.000002109
+$ring
+$threads
+p manage.py runserver
+doc ls
+p manage.py shell
+p manage.py makemigrations
+p manage.py migrate
+let repo = "/Users/colombos/projects/work/clopin/repos/findings"<\n>let files = ls $"($repo)/next" | get name<\n>$files | each {|file| cp $file $"($repo)/domain_findings.csv" |<\n>    $env.CLOPIN_ENVIRONMENT = "devel";<\n>    $env.DELIVERY_TOKEN = "ww5jmRj3jKRIqE1jtw0DnoIjevmojynA";<\n>    $env.CLOPIN_CORE_TOKEN = $env.DELIVERY_TOKEN;<\n>    $env.CLOPIN_CORE_URL = "http://127.0.0.1:8000";<\n>    $env.CLOPIN_TOKEN_TYPE = "STATIC";<\n>    $env.TARGET_PROJECT = "test";<\n>    $env.TARGET_REPO = "/Users/colombos/projects/work/clopin/repos/findings";<\n>    $env.TARGET_BRANCH = "master";<\n>    $env.TARGET_FILE = "domain_findings.csv";<\n>    git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) add ($env.TARGET_FILE);<\n>    git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) commit $env.TARGET_FILE -m "testing $env.TARGET_FILE";<\n>    $env.TARGET_COMMIT = (git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) rev-parse HEAD);<\n><\n>    p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT;<\n>}<\n>
+p manage.py runserver
+z w cl cl cl
+p manage.py shell
+source devutils/envs.core.nu
+p manage.py shell
+l
+ls done/
+ls next/
+cp (ls next | get name.1) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.2) domain_findings.csv
+<\n>source devutils/envs.node.nu; p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT
+<\n>source devutils/envs.node.nu | ignore; p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT
+<\n>p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT
+doco -f devutils/docker-compose.yaml down -v
+doco -f devutils/docker-compose.yaml up -d --force-recreate
+p manage.py migrate
+p manage.py sync_dependencies --customers --dmilogs
+let repo = "/Users/colombos/projects/work/clopin/repos/findings"<\n>let files = ls $"($repo)/next" | get name<\n>$files | each {|file| cp $file $"($repo)/domain_findings.csv" |<\n>    $env.CLOPIN_ENVIRONMENT = "devel";<\n>    $env.DELIVERY_TOKEN = "ww5jmRj3jKRIqE1jtw0DnoIjevmojynA";<\n>    $env.CLOPIN_CORE_TOKEN = $env.DELIVERY_TOKEN;<\n>    $env.CLOPIN_CORE_URL = "http://127.0.0.1:8000";<\n>    $env.CLOPIN_TOKEN_TYPE = "STATIC";<\n>    $env.TARGET_PROJECT = "test";<\n>    $env.TARGET_REPO = "/Users/colombos/projects/work/clopin/repos/findings";<\n>    $env.TARGET_BRANCH = "master";<\n>    $env.TARGET_FILE = "domain_findings.csv";<\n>    git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) add ($env.TARGET_FILE);<\n>    git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) commit $env.TARGET_FILE -m "testing $env.TARGET_FILE";<\n>    $env.TARGET_COMMIT = (git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) rev-parse HEAD);<\n><\n>    p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT;<\n>}<\n>
+p manage.py runserver
+p manage.py core_requirements.txt
+p manage.py createsuperuser
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.1) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.2) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.3) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.4) domain_findings.csv
+source devutils/envs.node.nu
+p 
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.4) domain_findings.csv
+cp (ls next | get name.5) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.6) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+let repo = "/Users/colombos/projects/work/clopin/repos/findings"<\n>let files = ls $"($repo)/next" | get name<\n>$files | each {|file| cp $file $"($repo)/domain_findings.csv" |<\n>    $env.CLOPIN_ENVIRONMENT = "devel";<\n>    $env.DELIVERY_TOKEN = "ww5jmRj3jKRIqE1jtw0DnoIjevmojynA";<\n>    $env.CLOPIN_CORE_TOKEN = $env.DELIVERY_TOKEN;<\n>    $env.CLOPIN_CORE_URL = "http://127.0.0.1:8000";<\n>    $env.CLOPIN_TOKEN_TYPE = "STATIC";<\n>    $env.TARGET_PROJECT = "test";<\n>    $env.TARGET_REPO = "/Users/colombos/projects/work/clopin/repos/findings";<\n>    $env.TARGET_BRANCH = "master";<\n>    $env.TARGET_FILE = "domain_findings.csv";<\n>    git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) add ($env.TARGET_FILE);<\n>    git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) commit $env.TARGET_FILE -m "testing $env.TARGET_FILE";<\n>    $env.TARGET_COMMIT = (git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) rev-parse HEAD);<\n><\n>    p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT;<\n>}<\n>
+p manage.py runserver
+napp | ccp
+z conf sql
+l
+v
+let repo = "/Users/colombos/projects/work/clopin/repos/findings"<\n>let files = ls $"($repo)/next" | get name<\n>$files | each {|file| cp $file $"($repo)/domain_findings.csv" |<\n>    $env.CLOPIN_ENVIRONMENT = "devel";<\n>    $env.DELIVERY_TOKEN = "ww5jmRj3jKRIqE1jtw0DnoIjevmojynA";<\n>    $env.CLOPIN_CORE_TOKEN = $env.DELIVERY_TOKEN;<\n>    $env.CLOPIN_CORE_URL = "http://127.0.0.1:8000";<\n>    $env.CLOPIN_TOKEN_TYPE = "STATIC";<\n>    $env.TARGET_PROJECT = "test";<\n>    $env.TARGET_REPO = "/Users/colombos/projects/work/clopin/repos/findings";<\n>    $env.TARGET_BRANCH = "master";<\n>    $env.TARGET_FILE = "domain_findings.csv";<\n>    git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) add ($env.TARGET_FILE);<\n>    git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) commit $env.TARGET_FILE -m "testing $env.TARGET_FILE";<\n>    $env.TARGET_COMMIT = (git --git-dir=($env.TARGET_REPO)/.git --work-tree=($env.TARGET_REPO) rev-parse HEAD);<\n><\n>    p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT;<\n>}
+ls next/
+ls next/ | each {open $in | get ' AV'}
+ls next/ | each {open ($in | get name) | get ' AV'}
+ls next/ | each {open ($in | get name) | get ' AV'} | flatten
+ls next/ | each {open ($in | get name) | get ' AV'} | flatten | uniq
+l
+ls next/
+ls done/
+l
+open domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+open domain_findings.csv | get ' AV' | uniq
+open domain_findings.csv | length 
+open domain_findings.csv
+open domain_findings.csv | length 
+open domain_findings.csv | uniq 
+open domain_findings.csv | uniq  | length 
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+ssh quantasys-dmilog01.dmi.elmec.ad 
+git status
+cp (ls next | get name.1) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+open domain_findings.csv | length
+ssh bottver-dmilog03.dmi.elmec.ad 
+ssh cesarin-dmilog01.dmi.elmec.ad 
+cp (ls next | get name.2) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+pipenv shell
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.3) domain_findings.csv
+v test.nu
+pipenv shell
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.4) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.5) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.6) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+cp (ls next | get name.1) domain_findings.csv
+open domain_findings.csv | length
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+vi asd.jsonm
+open domain_findings.csv
+open domain_findings.csv | get ' AV' | uniq
+open domain_findings.csv --raw | head
+cp (ls next | get name.1) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+p manage.py shell
+doco -f devutils/docker-compose.yaml down -v
+doco -f devutils/docker-compose.yaml up -d --force-recreate
+p manage.py runserver
+p manage.py makemigrations
+p manage.py migrate
+p manage.py createsuperuser
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+v domain_findings.csv
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+ls next/*.csv
+ls next | each {open $in}
+ls next | each {open $in.name}
+ls next | each {open $in.name | get ' AV'}
+ls next | each {open $in.name | get ' AV'} | to yaml 
+ls next | each {open $in.name | get ' AV'} | flatten 
+ls next | each {open $in.name | get ' AV'} | flatten  | uniq 
+l
+cd ..
+l
+mkdir dwm
+cd dwm
+touch domains.csv
+v domains.csv
+source devutils/envs.node.nu
+l
+git init .
+git add domains.csv 
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+p manage.py sync_dependencies --customers --dmilogs
+p manage.py runserver
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-69975fb895-dbmxb -f
+ssh cesarin-dmi01.dmi.elmec.ad 
+l
+ls
+l
+ls | where modified > 5 days ago
+ls | where modified > 5 
+ls | where modified > 2024-10-09
+rm asd.json
+rm id-back.jpg
+rm job.yaml
+rm snapshot
+rm traffic-on-span.png
+l
+z conf
+mkdir scripts
+l
+cd scripts/
+l
+cd fuzzy/
+l
+touch fk.nu
+while true {<\n>ssh iai-dmilog01.dmi.elmec.ad | ignore<\n>sleep 2sec<\n>}
+z conf scr
+$env.HOME
+mkdir .cache/fz
+let actions = ["logs", "get", "exec", "edit"]<\n>
+$actions
+let actions = ["logs", "get", "exec", "edit"]<\n>
+$actions
+$actions | path join 
+$actions | str join "\n"
+$actions | str join "\n" |  fzf
+z conf scr
+l
+z /Users/colombos/.config/scripts/fuzzy
+l
+source fk.nu
+z /Users/colombos/.config/scripts/fuzzy
+source fk.nu
+z conf nu
+l
+source fk.nu
+kubectl get ns | detect columns 
+kubectl get ns | detect columns | get NAME
+source fk.nu
+ls ~/.cache/fz/
+source fk.nu
+$"$env.HOME/.cache/fk"
+$"($env.HOME)/.cache/fk"
+source fk.nu
+ls /Users/colombos/.cache
+rmr /Users/colombos/.cache/fz/
+source fk.nu
+ls /Users/colombos/.cache
+rmr /Users/colombos/.cache/fk
+source fk.nu
+ls /Users/colombos/.cache
+source fk.nu
+logs
+source fk.nu
+nu greet.nu 
+source greet.nu
+rmr greet.nu
+nu fk.nu 
+nu test.nu 
+let cache_dir = $"($env.HOME)/.cache/fk"<\n>
+let actions = ["install", "logs", "get", "exec", "edit", "delete", "copy" ]<\n>
+$actions
+def nufzf [l] {<\n>   $l | str join "\n" | fzf<\n>}<\n>
+let action = nufzf $actions<\n>
+$action
+nu fk.nu 
+rmr /Users/colombos/.cache/fk
+nu fk.nu 
+z conf nu
+z ../scripts/fuzzy
+l
+z conf sc fuz
+nu fk.nu 
+ls /Users/colombos/.cache
+nu fk.nu 
+ls /Users/colombos/.cache/fk
+nu fk.nu 
+ls /Users/colombos/.cache/
+nu fk.nu 
+ls /Users/colombos/.cache/fk/
+nu fk.nu 
+rmr /Users/colombos/.cache/fk/*
+nu fk.nu 
+ls /Users/colombos/.cache/fk/
+nu fk.nu 
+l
+nu fk.nu 
+join ["asd"] ["sssdd"]
+join --hel
+join --help
+nu fk.nu 
+kubectl -n sec-clopin-production get po
+input listen 
+nu test.nu 
+nu fk.nu 
+kubectl -n sec-clopin-production get po clopin-sec-clopin-production-69975fb895-dbmxb  -o yaml
+nu fk.nu 
+n
+nu fk.nu 
+ssh bottver-dmilog03.dmi.elmec.ad 
+fssh
+v
+ls
+ls **/*env*
+ls **/*env*core*
+ls **/*core*env*
+l
+source core/devutils/envs.build.nu
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t ${PRJ_NAME}-core-base:latest --build-arg SSH_PRIVATE_KEY="${SSH_PRIVATE_KEY}" .
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t "($PRJ_NAME)-core-base:latest" --build-arg SSH_PRIVATE_KEY="($SSH_PRIVATE_KEY)" .
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t "($env.PRJ_NAME)-core-base:latest" --build-arg "SSH_PRIVATE_KEY=($env.SSH_PRIVATE_KEY)" .
+history
+history | where command =~ "docker"
+history | where command =~ "docker build"
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t $env.PRJ_NAME-core-base:latest --build-arg SSH_PRIVATE_KEY=$env.SSH_PRIVATE_KEY .
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t ($env.PRJ_NAME)-core-base:latest --build-arg SSH_PRIVATE_KEY=$(env.SSH_PRIVATE_KEY) .
+docker build --pull --no-cache \<\n>  -f build/core/Dockerfile.core.baseimage \<\n>  -t $"($env.PRJ_NAME)-core-base:latest" \<\n>  --build-arg SSH_PRIVATE_KEY=$env.SSH_PRIVATE_KEY \<\n>  .
+(docker build --pull --no-cache <\n>  -f build/core/Dockerfile.core.baseimage <\n>  -t $"($env.PRJ_NAME)-core-base:latest" <\n>  --build-arg SSH_PRIVATE_KEY=$env.SSH_PRIVATE_KEY <\n>  . )
+(docker build --pull --no-cache <\n>  -f build/core/Dockerfile.core.baseimage <\n>  -t $"($env.PRJ_NAME)-core-base:latest" <\n>  --build-arg SSH_PRIVATE_KEY=($env.SSH_PRIVATE_KEY)<\n>  . )
+z w ll ll
+l
+source core/devutils/envs.build.nu
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t ${PRJ_NAME}-core-base:latest --build-arg SSH_PRIVATE_KEY="${SSH_PRIVATE_KEY}" .
+(docker build --pull --no-cache <\n>  -f build/core/Dockerfile.core.baseimage <\n>  -t $"($env.PRJ_NAME)-core-base:latest" <\n>  --build-arg SSH_PRIVATE_KEY=($env.SSH_PRIVATE_KEY)<\n>  . )
+docker build --pull --no-cache -f build/node/Dockerfile.node.baseimage -t ${PRJ_NAME}-node-base:latest .
+docker build --pull --no-cache -f build/node/Dockerfile.node.baseimage -t $"($env.PRJ_NAME)-node-base:latest" .
+doc ls
+source core/devutils/envs.dev.nu
+p manage.py runserver
+z core
+p manage.py runserver
+pipenv shell
+p manage.py runserver
+pipenv reinstall
+pipenv --rm
+pipenv install
+l
+z 
+z cl repo find
+l
+v
+v asd.json
+v
+z core
+l
+z code
+z
+z cl cl core
+p manage.py shell
+source core/devutils/envs.dev.nu
+source /devutils/envs.dev.nu
+source devutils/envs.dev.nu
+cp (ls next | get name.1) domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+source devutils/envs.node.nu
+$env.DELIVERY_TOKEN
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+$env.TARGET_BRANCH
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+l
+cal
+z pro
+z w tes
+l
+z /Users/colombos/projects/work/test/phenix
+l
+v phenix-models.yaml
+v asd.asd
+kubectl get ns | grep clop | detect columns 
+kubectl get ns | grep clop 
+p manage.py runserver
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+which python
+which python | first 
+which python | first | get path
+which python | first | get path | ccp
+cd /Users/colombos/.local/share/virtualenvs/
+l
+cd node
+cd node-3jBVzoLj/
+l
+ls **/*.pem
+kubectl cp sec-clopin-production/clopin-sec-clopin-production-69975fb895-dbmxb:/usr/lib/python3/dist-packages/certifi/cacert.pem cacert.pem
+cat cacert.pem | ccp
+rmr cacert.pem
+z w cl cl no
+l
+source devutils/envs.node.nu
+$env.CLOPIN_CORE_TOKEN
+$env.CLOPIN_TOKEN_TYPE
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+p manage.py shell
+pipenv shell
+exit
+pipenv shell
+pipenv --rm
+pipenv install
+source devutils/envs.dev.nu
+l
+source devutils/envs.dev.nu
+z co
+z w cl cl co
+l
+source devutils/envs.dev.nu
+pipenv install
+l
+z core
+l
+cd /Users/colombos/.local/share/virtualenvs/
+l
+..
+--
+z w cl cl co
+which python
+python --version
+which python
+cd /Users/colombos/.local/share/virtualenvs/core-8kQi3kML/
+l
+ls **/*.pem
+nvim (ls **/*.pem | first | get name)
+kubectl cp sec-clopin-production/clopin-sec-clopin-production-69975fb895-dbmxb:/usr/lib/python3/dist-packages/certifi/cacert.pem cacert.pem
+cat cacert.pem | ccp
+rmr cacert.pem
+nvim (ls **/*.pem | first | get name)
+pipenv shell
+p manage.py runserver
+exit
+pipenv shell
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+v 
+l
+z conf sc fuz
+nu fk.nu 
+z conf sc fuz
+nu fk.nu 
+z conf sc fuz
+nu fk.nu 
+kubectl get po -A
+kubectl get po -A -o wide
+nu fk.nu 
+l
+v .gitlab-ci.yml
+v
+nu fk.nu 
+z w cl cl 
+z conf sc fuz
+nu fk.nu 
+z w ll ll
+cat .kube/
+cat .kube/ | ccp
+cat .kube/config  | ccp
+kubectl -n sec-trahoproject-production get po
+kubectl -n sec-trahoproject-production get jobs
+kubectl -n sec-trahoproject-production create job --from=cronjobs/pull-group-0-production test -o yaml --dry-run=client
+kubectl -n sec-trahoproject-production create job --from=cronjobs/pull-group-0-production test -o yaml --dry-run=client | save --force job.yaml
+kub
+kubectl apply -f job.yaml 
+kubectl -n sec-trahoproject-production get po
+kubectl -n sec-trahoproject-production logs test-t65vr 
+cp ~/.kube/config asdasd.yaml
+l
+rm job.yaml asdasd.yaml
+v job.yaml
+z w cl cl
+l
+source core/devutils/envs.build.nu
+docker build --pull --no-cache -f build/node/Dockerfile.node.baseimage -t ${PRJ_NAME}-node-base:latest .
+docker build --pull --no-cache -f build/node/Dockerfile.node.baseimage -t $"($env.PRJ_NAME)-node-base:latest" .
+doi ls
+docker images ls
+docker image ls
+docker pull docker.elmec.com/security/clopin-core-base@sha256:d51708bba3e43ee3ef35e02aead3d6aaad58988672ef6a90f6df2bef37f4c04e
+docker image ls
+docker run -it fd64458ccf1f bash
+docker pull docker.elmec.com/security/clopin-core-base@sha256:4c9135b5f928a12c16ccb3d99f8656c0935aa69cb180f24129807ca3b451386b
+docker image ls
+kubectl -n sec-trahoproject-production create job --from=cronjobs/pull-group-0-production test -o yaml --dry-run=client 
+kubectl -n sec-trahoproject-production create job --from=cronjobs/pull-group-0-production test -o yaml --dry-run=client | save --force job.yaml
+v job.yaml
+kubectl apply -f job.yaml 
+kubectl -n sec-trahoproject-production get po
+kubectl -n sec-trahoproject-production logs test-j95c9  -f
+p manage.py runserver
+docker run -it fd64458ccf1f bash
+ls
+source core/devutils/envs.build.nu
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t ${PRJ_NAME}-core-base:latest --build-arg SSH_PRIVATE_KEY="${SSH_PRIVATE_KEY}" .
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t $"( $env.PRJ_NAME )-core-base:latest" $"--build-arg SSH_PRIVATE_KEY=( $env.SSH_PRIVATE_KEY )" .
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t $"($env.PRJ_NAME)-core-base:latest" $"--build-arg SSH_PRIVATE_KEY=($env.SSH_PRIVATE_KEY)" .
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t $"($env.PRJ_NAME)-core-base:latest" --build-arg SSH_PRIVATE_KEY=$"($env.SSH_PRIVATE_KEY)" .
+docker tag $"($env.PRJ_NAME)-core-base:latest" $"docker.elmec.com/($env.PRJ_HARBOR)/($env.PRJ_NAME)-core-base:latest"
+docker image ls
+docker run -it 900413ff953e   bash
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t $"($env.PRJ_NAME)-core-base:latest" --build-arg SSH_PRIVATE_KEY=$"($env.SSH_PRIVATE_KEY)" .
+docker image ls
+docker run -it 9e04fa5f5035 bash
+docker build --pull --no-cache -f build/core/Dockerfile.core.baseimage -t $"($env.PRJ_NAME)-core-base:latest" --build-arg SSH_PRIVATE_KEY=$"($env.SSH_PRIVATE_KEY)" .
+docker image ls
+docker image ls | detect columns  | where REPOSITORY =~ "clopin"
+docker image ls | detect columns  | where REPOSITORY =~ "clopin" | first
+docker image ls | detect columns  | where REPOSITORY =~ "clopin" | first | get ID
+docker image ls | detect columns  | where REPOSITORY =~ "clopin" | first | get IMAGE
+docker image ls | detect columns  | where REPOSITORY =~ "clopin" | first | get IMAGE | ccp
+docker run -it ab27fcfeaab5 bash
+z
+watch kubectl -n sec-clopin-production get po
+watch (kubectl -n sec-clopin-production get po)
+kubectl -n sec-clopin-production get po -w
+nu ~/.config/scripts/fuzzy/fk.nu 
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-dc6fcf558-2rhpm 
+z w 
+l
+z /Users/colombos/projects/work/gitops
+l
+gcl git@git.elmec.com:security/files-2-db.git
+z /Users/colombos/projects/work/files-2-db
+l
+gb -a
+git checkout dark-web-monitoring
+l
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-dc6fcf558-2rhpm  -f
+l
+v
+l
+ls scripts/
+gco -b findings
+gco findings
+l
+git checkout dark-web-monitoring
+l
+cat .gitlab-ci.yml  | ccp
+gco findings
+v
+z w gitops 2
+z w gitops files2
+z w gitops
+l
+z files-2-db
+l
+gco findings
+l
+open ~/projects/work/
+open ~/projects/work/clopin/repos/findings/
+(ls~/projects/work/clopin/repos/findings/next/ | first | get name)
+ls~/projects/work/clopin/repos/findings/next/ | first | get name
+ls ~/projects/work/clopin/repos/findings/next/ | first | get name
+open (ls ~/projects/work/clopin/repos/findings/next/ | first | get name)
+open (ls ~/projects/work/clopin/repos/findings/next/ | first | get name) --raw
+open ((ls ~/projects/work/clopin/repos/findings/next/).1 | get name) --raw
+ls ~/Downloads/
+ls ~/Downloads/output/
+mkdir /tmp/findings/
+mkdir /tmp/findings/domains/
+mkdir /tmp/findings/usernames/
+ls ~/Downloads/output/ | where name =~ "Domain"
+ls ~/Downloads/output/ | where name =~ "Domain" | each {cp $in /tmp/findings/domains}
+ls ~/Downloads/output/ | where name =~ "Domain" | get name | each {cp $in /tmp/findings/domains}
+ls /tmp/findings/domains/
+ls ~/Downloads/output/ | where name =~ "User" | get name | each {cp $in /tmp/findings/usernames}
+open ( (ls /tmp/findings/domains).1 | get name ) --raw
+open ( (ls /tmp/findings/domains).1 | get name ) --raw | save --force domain-findings.csv
+lzg
+v
+open ( (ls /tmp/findings/domains).1 | get name ) --raw | save --force domain-findings.csv
+l
+open domain-findings.csv
+z w 
+ls **/*files2*
+ls **/*files-2*
+ls **/*files-2* | get name
+rm -rf clopin/files-2-db
+rm -rf files-2-db
+z /Users/colombos/projects/work/gitops
+l
+z /Users/colombos/projects/work/gitops/files-2-db
+l
+z w gitop fil
+l
+open ( (ls /tmp/findings/domains).1 | get name ) --raw | save --force domain-findings.csv
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-dc6fcf558-2rhpm  -f
+source devutils/envs.node.nu
+l
+open ( (ls /tmp/findings/domains).2 | get name ) --raw | save --force domain-findings.csv
+l
+rm domain-findings.csv
+open ( (ls /tmp/findings/domains).2 | get name ) --raw | save --force domain_findings.csv
+source devutils/envs.node.nu
+p run.py "--target-project" $env.TARGET_PROJECT "--target-repo" $env.TARGET_REPO "--target-branch" $env.TARGET_BRANCH "--target-file" $env.TARGET_FILE "--target-commit" $env.TARGET_COMMIT 
+kubectl -n sec-clopin-production exec clopin-sec-clopin-production-dc6fcf558-2rhpm  -it -- bash
+(ls /tmp/findings/domains).1
+(ls /tmp/findings/domains).1 | get name
+open ( (ls /tmp/findings/domains).2 | get name ) --raw | save --force domain_findings.csv
+open ( (ls /tmp/findings/domains).3 | get name ) --raw | save --force domain_findings.csv
+open ( (ls /tmp/findings/domains).2 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).2 | get name\
+(ls /tmp/findings/domains).2 | get name
+(ls /tmp/findings/domains).2 | get name | ccp
+open ( (ls /tmp/findings/domains).3 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).3 | get name 
+open ( (ls /tmp/findings/domains).4 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).4 | get name 
+open ( (ls /tmp/findings/domains).5 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).5 | get name 
+open ( (ls /tmp/findings/domains).6 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).6 | get name 
+open ( (ls /tmp/findings/domains).7 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).7 | get name 
+open ( (ls /tmp/findings/domains).8 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).8 | get name 
+open ( (ls /tmp/findings/domains).9 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).9 | get name 
+open ( (ls /tmp/findings/domains).10 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).10 | get name 
+open ( (ls /tmp/findings/domains).11 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).11 | get name 
+open ( (ls /tmp/findings/domains).12 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).12 | get name 
+open ( (ls /tmp/findings/domains).13 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).13 | get name 
+open ( (ls /tmp/findings/domains).14 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).14 | get name 
+open ( (ls /tmp/findings/domains).15 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).15 | get name 
+open ( (ls /tmp/findings/domains).16 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).16 | get name 
+open ( (ls /tmp/findings/domains).17 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).17 | get name 
+open ( (ls /tmp/findings/domains).18 | get name ) --raw | save --force domain-findings.csv
+ls /tmp/findings/domains | length 
+ls /tmp/findings/domains 
+(ls /tmp/findings/domains).18 | get name 
+open ( (ls /tmp/findings/domains).19 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).19 | get name 
+open ( (ls /tmp/findings/domains).20 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).20 | get name 
+open ( (ls /tmp/findings/domains).21 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).21 | get name 
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-dc6fcf558-2rhpm  -f
+kubectl -n sec-clopin-production exec clopin-sec-clopin-production-dc6fcf558-2rhpm  -it -- bash
+open ( (ls /tmp/findings/domains).1 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).1 | get name 
+(ls /tmp/findings/domains).1 | get name | path split 
+(ls /tmp/findings/domains).1 | get name | path split | last
+(ls /tmp/findings/domains).1 | get name | path split | last | str substring 0 10
+(ls /tmp/findings/domains).1 | get name | path split | last | str substring 10
+(ls /tmp/findings/domains).1 | get name | path split | last | str substring 0...10
+(ls /tmp/findings/domains).1 | get name | path split | last | str substring 0...5
+(ls /tmp/findings/domains).1 | get name | path split | last 
+str substring --help
+(ls /tmp/findings/domains).1 | get name | path split | last | str substring 0..5
+(ls /tmp/findings/domains).1 | get name | path split | last | str substring 0..10
+(ls /tmp/findings/domains).1 | get name | path split | last | str substring 0..9
+(ls /tmp/findings/domains).1 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).2 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).2 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).3 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).3 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).4 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).4 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).5 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).5 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).6 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).6 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).7 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).7 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).8 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).8 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).9 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).9 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).10 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).10 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).11 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).11 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).12 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).12 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).13 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).13 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).14 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).14 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).15 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).15 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).16 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).16 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).17 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).17 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).18 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).18 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).19 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).19 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).10 | get name ) --raw | save --force domain-findings.csv
+open ( (ls /tmp/findings/domains).20 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).20 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).21 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).21 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).22 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).22 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).23 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).23 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).24 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).24 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).25 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).25 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).26 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).26 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).27 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).27 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).28 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).28 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).29 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).29 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).30 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).30 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).31 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).31 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/domains).32 | get name ) --raw | save --force domain-findings.csv
+open ( (ls /tmp/findings/domains).0 | get name ) --raw | save --force domain-findings.csv
+(ls /tmp/findings/domains).0 | get name | path split | last | str substring 0..9 | ccp
+ls /tmp/findings/usernames/ | length 
+ls /tmp/findings/usernames/ 
+ls /tmp/findings/usernames/ | where name ~= "Domain"
+ls /tmp/findings/usernames/ | where name =~ "Domain"
+ls /tmp/findings/usernames/ | where name =~ "Domain" | each {rm $in}
+ls /tmp/findings/usernames/ | where name =~ "Domain" | get name | each {rm $in}
+y
+ls /tmp/findings/usernames/ 
+open ( (ls /tmp/findings/usernames).0 | get name ) --raw | save --force username-findings.csv
+(ls /tmp/findings/usernames).0 | get name | path split | last | str substring 0..9 | ccp
+open ( (ls /tmp/findings/usernames).1 | get name ) --raw | save --force username-findings.csv
+(ls /tmp/findings/usernames).1 | get name | path split | last | str substring 0..9 | ccp
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-dc6fcf558-2rhpm  -f
+z conf sc fuz
+nu ~/.config/scripts/fuzzy/fk.nu 
+z conf sc fuz
+nu ~/.config/scripts/fuzzy/fk.nu 
+kubectl -n sec-clopin-production get po
+v
+touch mail.txt
+v mail.txt
+git checkout dark-web-monitoring
+l
+rmr scripts/ findings/
+l
+rmr amend
+l
+v mail.txt
+l
+v .gitlab-ci.yml
+lzg
+kx
+kubectl -n sec-skipper-quality get cronjobs
+kubectl -n sec-skipper-quality delete cronjobs cleanup-hosts-quality-quality
+kubectl -n sec-skipper-quality delete cronjobs update-database-quality-quality
+v mail.txt
+rmr mail.txt
+v
+nu ~/.config/scripts/fuzzy/fk.nu 
+kubectl -n sec-clopin-quality get po
+kx
+which kbx
+which kx
+kubectl config get-contexts 
+kubectl config get-contexts | detect columns 
+kubectl config get-contexts | detect columns | get NAME
+nu ~/.config/scripts/fuzzy/fk.nu 
+kubectl get ns
+kubectl config get-contexts | detect columns | get NAME
+kubectl config set-context k8s03
+kubectl config set-context k8s01-QA
+kubectl config get-contexts | detect columns | get NAME
+kubectl config  delete-context  k8s01-QA
+nu ~/.config/scripts/fuzzy/fk.nu 
+ls **/asd.pem
+ls
+rmr ~
+cd ~/
+l
+z w 
+ls **/asd.pem
+v
+cd ..
+ls **/asd.pem
+cd ..
+z conf sc fuz
+nu ~/.config/scripts/fuzzy/fk.nu 
+l
+z conf
+ls **/asd.pem
+rmr scripts/fuzzy/~/
+nu ~/.config/scripts/fuzzy/fk.nu 
+kubectl get po -A -o wide
+nu ~/.config/scripts/fuzzy/fk.nu 
+kubectl get pod -A -o wide
+nu ~/.config/scripts/fuzzy/fk.nu 
