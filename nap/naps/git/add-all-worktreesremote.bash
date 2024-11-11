@@ -1,4 +1,4 @@
-git for-each-ref --format='%(refname)' refs/heads/ | while read -r ref; do
-  ref=$(echo "$ref" | cut -d '/' -f 3)
-  git worktree add $ref
-done
+let whitelist = ["main", "master", "quality"]
+git for-each-ref --format='%(refname:short)' refs/heads | lines |
+   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |
+   each {|branch| git worktree add $branch }
