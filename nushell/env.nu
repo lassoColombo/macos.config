@@ -101,3 +101,5 @@ $env.NU_PLUGIN_DIRS = [
 
 # zoxide configuration
 zoxide init nushell | save -f ~/.zoxide.nu
+
+const fk_home_dir = "/Users/colombos/projects/personal/fk/fk/"

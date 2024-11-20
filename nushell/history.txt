@@ -2980,3 +2980,3101 @@ kubectl get po -A -o wide
 nu ~/.config/scripts/fuzzy/fk.nu 
 kubectl get pod -A -o wide
 nu ~/.config/scripts/fuzzy/fk.nu 
+z w gitop fil
+gco PT
+l
+z conf nv
+z w gitop fil
+l
+yarn
+v
+asdf plugin-add yarn
+asdf install yarn latest<\n>
+asdf search yarn
+asdf list yarn
+asdf global yarn 1.22.22
+v
+gb -a
+git branch -a 
+git branch -a | input list 
+git branch -a | lines
+git branch -a | lines | each {$in | str trim "*"}
+git branch -a | lines | each {$in | str trim "\*"}
+str trim --help
+git branch -a | lines | each {$in | str trim --left --char "*"}
+git branch -a | lines | each {$in | str trim --left --char "*" | str trim }
+git checkout (git branch -a | lines | each {$in | str trim --left --char "*" | str trim}).4
+l
+gb
+v .
+git checkout OSINT_DOMINIO
+mv fuzzy/fk.nu ~
+cd 
+ls
+mkdir projects/personal/fk
+mv fk.nu projects/personal/fk/
+z projects/personal/fk
+l
+v
+ssh-add ~/.ssh/github
+gcl git@github.com:lassoColombo/fk.git
+l
+mv fk.nu fk/
+l
+z fk
+l
+lzg
+open $env.HOME/.kube/conf
+open $"($env.HOME)/.kube/conf"
+ls $"($env.HOME)/.kube/"
+open $"($env.HOME)/.kube/config"
+open $"($env.HOME)/.kube/config" | to yaml 
+open $"($env.HOME)/.kube/config" | from yaml 
+open $"($env.HOME)/.kube/config" | from yaml | get 'current-context'
+kk
+kk --asd asd
+kk --install
+k
+l
+_fk_cp 
+kk
+brew list | grep k9
+brew uninstall k9s
+fk 
+greet ciao
+source ~/projects/personal/fk/fk/fk.nu<\n>
+k
+source ~/projects/personal/fk/fk/fk.nu<\n>
+z
+cd 
+cd projects/personal/fk/fk/
+source fk.nu
+fk
+kubectl get po
+fk
+kubectl get ns
+cd
+cd projects/personal/fk/fk/
+source fk.nu
+cd projects/personal/fk/fk/
+vf
+cd
+cd projects/personal/fk/fk/
+source fk.nu
+fk
+z pr per fk fk
+l
+source fk.nu
+fk
+nu fk.nu 
+fk
+source fk.nu
+fk
+return --help
+def f [x: int]: int -> int { let y = $in; return (2 * $x + $y) }
+6 | f 5
+v
+l
+z .local
+l
+z state
+l
+z nvim
+l
+z ..
+l
+z ..
+l
+z share
+l
+z nvim
+l
+cd .
+cd ..
+l
+cd db_ui/
+l
+open connections.json
+open connections.json | sort-by name
+open connections.json --raw
+open connections.json | sort-by name | save --force connections.json
+fk
+f
+fk
+fk --get
+z pr pe fk fk
+source fk.nu
+fk
+source fk.nu
+fk
+fk --get
+source fk.nu
+fk --get
+cd
+cd projects/personal/fk/fk/
+source fk.nu
+cd 
+cd projects/personal/fk/fk/
+source fk.nu
+fk
+fk --get
+[1, 2, 3, 4] | into string 
+[1, 2, 3, 4] | into string | str join "\n"
+[1, 2, 3, 4] | into string | str join "\n" | fzf --multi
+fk
+cd
+cd projects/personal/fk/fk/
+source fk.nu
+fk
+source fk.nu
+z pr pe fk fk
+fk
+open ~/.cache/fk/namespaces.yaml
+cd ~/.cache/fk/
+l
+open namespaces.yaml
+rm namespaces.yaml
+fk
+l
+open namespaces.yaml
+z
+z pr pe fk fk
+source fk.nu
+fk
+source fk.nu
+fk --get
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+fk 
+fk
+source fk.nu
+fk
+kubectl get po   -A
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+kubectl get restores
+fk
+fk | where NAME =~ "sentry"
+let asd = fk
+asd
+$asd
+print $asd
+source fk.nu
+fk
+let asd = fk
+$asd
+$asd | where NAME =~ "sentry"
+source fk.nu
+fk
+source fk.nu
+fk
+which fk
+l
+pwd
+l
+cat fk.nu 
+cat fk.nu  | wc -l
+fk
+kubectl -n sec-llama-production logs api-sec-llama-production-79d877946d-46nb8 
+kubectl -n sec-llama-production logs api-sec-llama-production-79d877946d-46nb8  -f
+fk
+kx
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+fk --get
+source fk.nu
+fk
+fk --get
+any --help 
+source fk.nu
+{} | values 
+source fk.nu
+fk
+fk --get
+source fk.nu
+fk
+kx
+fk
+fk --R
+fk -R
+fk
+source fk.nu
+fk
+fk --install
+fk
+kubectl get ns
+fk
+source fk.nu
+fk
+fk -R
+source fk.nu
+fk
+find --help | grep depth
+find --help | grep max
+find --help 
+source fk.nu
+fk
+source fk.nu
+co
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+l
+open here
+rm here
+l
+source fk.nu
+fk
+l
+rm asd
+l
+source fk.nu
+fk
+open asd/
+l
+cd asd/
+l
+cd ..
+rmr asd/
+source fk.nu
+fk
+source fk.nu
+fk
+rm asd
+so
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+ls /Users/colombos/.cache/fk/
+ls /Users/colombos/.cache/fk/cont*
+source fk.nu
+fk
+ls /Users/colombos/.cache/fk/
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+open asd/
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+{} | keys
+{} | values
+let my_record = { name: "Alice", age: 30, city: "New York" }
+$my_record | keys
+$my_record | to table | get column0
+$my_record | flatten
+$my_record 
+$my_record | flatten | columns
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+rmr asd
+source fk.nu
+fk
+open cacert.pem
+rm cacert.pem
+kubectl -n sec-clopin-production get po
+kubectl -n sec-clopin-production exec clopin-sec-clopin-production-56ff8c95c6-8l4qk  -it -- bash
+l
+z pr pe fk fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+kubectl -n sec-clopin-production exec clopin-sec-clopin-production-56ff8c95c6-8l4qk -it -- bash
+source fk.nu
+fk
+kubectl get ns -o yaml
+source fk.nu
+z pr pe fk fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+open cacert.pem
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+cso
+source fk.nu
+fk
+nu --help 
+source fk.nu
+z pr pe fk fk
+source fk.nu
+nu --help 
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+fk | get items
+so 
+source fk.nu
+fk
+source fk.nu
+fk
+fk | get items.2
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+fk --dry
+fk --dry-run
+source fk.nu
+fk
+fk --dry-run
+source fk.nu
+fk --dry-run
+source fk.nu
+fk
+fk --dry-run
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk --dry-run
+source fk.nu
+fk --dry-run
+source fk.nu
+fk
+fk --dry-run
+source fk.nu
+fk
+fk --dry-run
+source fk.nu
+fk --dry-run
+source fk.nu
+fk
+fk --dry-run
+source fk.nu
+fk
+fk --dry-run
+kubectl -n autom-ac-catalog-production logs backend-autom-ac-catalog-production-b85574c4b-57lbl -f
+kubectl -n autom-ac-catalog-production logs backend-autom-ac-catalog-production-b85574c4b-57lbl -f | nu -c
+nu -c (fk)
+nu -c (fk --dry)
+nu -c (fk --dry-run)
+fk --dry-run
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+z pr pe fk fk
+fk
+z pr pe fk fk
+fk
+fk --dry-run
+z pr pe fk fk
+fk
+z pr pe fk fk
+fk
+nu asd.nu 
+fk
+fk --dry-run
+v -d simple.txt complec.txt
+source fk.nu
+fk
+source fk.nu
+fk
+v
+l
+cd tmp/
+l
+touch asd.yaml
+v asd.yaml
+oepn asd.yaml
+open asd.yaml
+open asd.yaml | to json 
+open asd.yaml | to json  | ccp
+rm asd.yaml
+z htt
+l
+z /Users/colombos/projects/workl
+z 
+z /Users/colombos/http/work/skipper
+l
+fk
+kx
+fk
+z /Users/colombos/http
+l
+z work
+l
+z /Users/colombos/http/work/skipper
+l
+z ht w sk
+l
+source .env.nu
+echo $env.SKIPPER_TOKEN
+nu notify.nu 
+source .env.nu
+nu notify.nu 
+source .env.nu
+nu notify.nu 
+source .env.nu
+nu notify.nu 
+https POST $"( $env.SKIPPER_URI )/mole_notify" "Content-Type:application/json" $"Authorization: STATIC ( $env.SKIPPER_TOKEN )" < (open body.yaml | to json)<\n>
+https POST $"( $env.SKIPPER_URI )/mole_notify/" "Content-Type:application/json" $"Authorization: STATIC ( $env.SKIPPER_TOKEN )" < (open body.yaml | to json)<\n>
+https POST $"( $env.SKIPPER_URI )/mole_notify/" \<\n>    $"Authorization: STATIC ( $env.SKIPPER_TOKEN )" < (open body.yaml | to json)<\n>
+source .env.nu
+nu notify.nu 
+source .env.nun
+source .env.nu
+nu notify.nu 
+source .env.nu
+nu notify.nu 
+source .env.nu
+nu notify.nu 
+source .env.nu
+nu notify.nu 
+source .env.nu
+nu notify.nu 
+v
+kx
+kubectl -n sec-skipper-quality get cronjobs
+kubectl -n sec-skipper-quality edit cronjobs update-database-quality-quality 
+kubectl -n sec-skipper-quality create job --from=cronjobs/update-database-quality-quality test -o yaml --dry-run=client
+kubectl -n sec-skipper-quality create job --from=cronjobs/update-database-quality-quality test -o yaml --dry-run=client | save --force job.yaml
+v job.yaml
+kubectl apply -f job.yaml 
+kubectl -n sec-skipper-quality get po
+kubectl -n sec-skipper-quality logs test-624tk  -f
+fk
+z pr pe fk fk
+lk
+l
+z pr pe fk fk
+l
+fk --edit
+cd projects/personal/fk/fk/
+source fk.nu
+fk
+kx
+fk
+v
+ssh carboter-dmilog02.dmi.elmec.ad 
+fk --edit
+source fk.nu
+z pr pe fk fk
+source fk.nu
+fk
+fk --edit
+source fk.nu
+fk --edit
+source fk.nu
+fk
+fk --edit
+source fk.nu
+fk
+fk --edit
+fk --deletge
+fk
+fk --get --dry-run
+kubectl -n sec-clopin-production get pod | from yaml
+fk --delete
+kubectl -n sec-clopin-production get po
+fk
+fk --delete | each {$in}
+fk
+source fk.nu
+fk
+l
+open asd.pem
+rm asd.nu asd.pem
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+fk 
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+fk | first
+z pr pe fk fk
+fk
+fk | first
+fk --dry 
+fk
+kubectl -n sec-clopin-production get pod -o wide
+kubectl -n sec-clopin-production get pod -o wide | detect columns 
+l
+z pr pe fk fk
+fk
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production  -o yaml | from yaml 
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production  -o yaml | from yaml | get spec.replicas
+cd projects/personal/fk/fk/
+cd 
+cd projects/personal/fk/fk/
+source fk.nu
+z pr pe fk fk
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+ls
+z pr pe fk fk
+v
+z pr pe fk fk
+fk
+source fk.nu
+fk
+fk -C
+$current_contex
+let asd = open $"($env.HOME)/.kube/config" | from yaml | get 'current-context'
+$asd
+let current_context = open $"($env.HOME)/.kube/config" | from yaml | get 'current-context'
+$current_contex
+let asd = open $"($env.HOME)/.kube/config" | from yaml | get 'current-context'
+$asd
+let cache_dir = $"($cache_dir)/contexts.yaml"
+let cache_dir = ~/.cache/fk/contexts.yaml
+let cache_dir = "~/.cache/fk/contexts.yaml"
+open $cache_dir
+ls ~/.cache/fk/
+let cache_dir = "/Users/colombos/.cache/fk/contexts.yaml"
+open $cache_dir
+let contexts = open $cache_dir
+$contexts
+$contexts | flatten | columns | any {$in == $asd}
+let current_namespaces = $contexts | get $asd
+$current_namespaces
+kx
+let asd = open $"($env.HOME)/.kube/config" | from yaml | get 'current-context'
+$asd
+ls $cache_dir | where name =~ "contexts.yaml" | is-empty
+$contexts | flatten | columns | any {$in == $asd}
+let current_namespaces = kubectl get ns | detect columns | get NAME
+$contexts | upsert $asd $current_namespaces 
+fk
+trim --help
+str trim --help
+source fk.nu
+$"( $env.fk_home_dir )/src/utils/cache.nu"
+source $"( $env.fk_home_dir )/src/utils/cache.nu"
+let asd = $"( $env.fk_home_dir )/src/utils/cache.nu"
+$asd
+source $asd
+const asd = $"( $env.fk_home_dir )/src/utils/cache.nu"
+const s =asd
+const s = asd
+const ss = $"( $env.fk_home_dir )/src/utils/cache.nu"
+const ss = $"( fk_home_dir )/src/utils/cache.nu"
+const ss = $"( $fk_home_dir )/src/utils/cache.nu"
+ss
+source $ss
+fk -I
+source $ss
+source fk.nu
+fk -I
+source fk.nu
+fk -I
+source fk.nu
+fk -I
+so 
+source fk.nu
+fk -I
+source fk.nu
+fk -I
+source fk.nu
+fk -I
+sou
+source fk.nu
+v
+fk -I
+source fk.nu
+fk -I
+ansi gradient 
+fk -I
+fk
+fk -I
+source fk.nu
+fk -I
+source fk.nu
+fk -I
+fzf ~/.config
+ls ~/.config/** | where type == dir
+ls ~/.config/** | where type == dir | str join "\n" | fzf
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf --preview {cat $in}
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf --preview 'cat {}'
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf --preview 'ls {}'
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf --preview 'open {}'
+def hello [] {<\n>print hello<\n>}
+hello
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf -b hello
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf --bind=ctrl-t:execute@hello
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf --bind 'ctrl-x:execute(hello {})'
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf --bind 'ctrl-x:execute(echo ciao)'
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf --bind 'ctrl-x:execute(touch spazzatura)'
+l
+fk
+kubectl get po
+kubectl -n sec-securityproject-quality get po
+fk
+kx
+source fk.nu
+fk
+source fk.nu
+fk
+kx
+fk
+source fk.nu
+fk
+fk --dry
+fk
+source fk.nu
+fk
+fj
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+fk | where AGE < 3day
+fk | where (AGE | into datetime) < 3day
+fk | where AGE | into datetime < 3day
+fk
+source fk.nu
+fk
+z pr pe fk fk
+history | where command | str contains "fzf"
+history | where command =~ "fzf"
+def hello [] {<\n>print hello<\n>}
+ls ~/.config/** | where type == dir | get name  | str join "\n" | fzf --bind 'ctrl-x:execute(hello)'
+fk
+fk --dry
+cd projects/personal/fk/fk/
+source fk.nu
+fk
+fk --cp --dry --clip
+fk --copy --dry --clip
+fk --copy --dry 
+fk --copy --clip
+l
+rm asd.pem
+fk
+fk --delete --clip --dry
+fk --delete --dry
+kubectl -n sec-clopin-production get po -w
+fk --delete --clip
+fk
+fk --edit --clip --dry
+fk --edit --dry
+fk --edit --clip
+fk --delete 
+kubectl -n sec-clopin-production get po -w
+fk --edit
+fk --edit --dry
+fk --edit --dry --clip
+fk --edit --dry 
+fk --edit --clip
+fk
+fk --clip
+fk
+fk --clip
+fk
+history | where command =~ "irca"
+history | where command =~ "ssh"
+history | where command =~ "ssh" | where command =~ "-L"
+history | where command =~ "ssh irca"
+ssh ColomboS@elmecdmi.local@ircaspa-dmi04.dmi.elmec.ad     -L 8006:172.25.6.50:443
+ssh ColomboS@elmecdmi.local@ircaspa-dmi03.dmi.elmec.ad     -L 8006:172.25.6.50:443
+fk
+kubectl -n sec-clopin-production exec clopin-sec-clopin-production-56ff8c95c6-l9rp7 -- find /usr -maxdepth 5 -name '*.pem' -type f
+let found = kubectl -n sec-clopin-production exec clopin-sec-clopin-production-56ff8c95c6-l9rp7 -- find /usr -maxdepth 5 -name '*.pem' -type f
+$found
+fk
+l
+rm asd.pem
+z pr pe fk fk
+fk
+rm asd.pem
+fk --copy --dry --clip
+kubectl -n sec-clopin-production exec clopin-sec-clopin-production-56ff8c95c6-l9rp7 -- find /usr -maxdepth 5 -type d
+fk
+ls ASD/
+rmr ASD/
+fk
+fk --get
+fk --get --dry --clip
+fk
+fk --get --dry --clip
+1 | into string 
+cd projects/personal/fk/fk/
+source fk.nu
+fk
+fk --get --dry --clip
+to nuon --help
+fk
+fk --get --dry --clip
+fk --get 
+fk
+fk | get NAME
+fk --clip
+[[NAME, READY, UP-TO-DATE, AVAILABLE, AGE]; [clopin-sec-clopin-production, "1/1", "1", "1", "193d"]] | describe
+[[NAME, READY, UP-TO-DATE, AVAILABLE, AGE]; [clopin-sec-clopin-production, "1/1", "1", "1", "193d"]] | get NAME
+[[NAME, READY, UP-TO-DATE, AVAILABLE, AGE]; [clopin-sec-clopin-production, "1/1", "1", "1", "193d"]] | get READY
+fk --dry
+fk --dry --delete
+fk
+fk | where NAME =~ "clopin"
+let clop = fk | where NAME =~ "clopin"
+$clop
+$clop | get NAME
+$clop | get NAME | first
+$clop | get NAME | first | ccp
+fk
+let asd = fk
+$asd
+$asd | to yaml 
+let asd = fk
+fk --clip
+fk --dry --clip
+kubectl -n sec-securityproject-production get deployment api-sec-securityproject-production
+fk --dry --clip
+fk --clip
+fk
+fk --clip
+fk --clip --dry
+kubectl -n sec-clopin-production get deployment clopin-sec-clopin-production -o yaml
+fk --clip 
+fk
+doc ls
+ls ../../**/docker*.y*ml
+ls ../../**/docker*.y*ml | first | get name
+docker-compose -f (ls ../../**/docker*.y*ml | first | get name) up -d
+source ../../devutils/configs/carboter02.env
+go run main.go --config ../../devutils/configs/carboter01.yaml  
+l
+go run --config ../../devutils/configs/carboter02.yaml
+l
+go run main.go --config ../../devutils/configs/carboter02.yaml
+v
+v
+l
+fk
+fk -I
+v
+go run main.go --config ../../devutils/configs/carboter02.yaml
+brew list | grep clip
+brew search maccy
+berw install maccy
+brew install maccy
+maccy
+doc ls
+docker-compose -f (ls ../../**/docker*.y*ml | first | get name) up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+l
+source ../../devutils/configs/carboter02.env
+go run main.go --config ../../devutils/configs/carboter02.yaml
+docker container ls
+docker container ls | detect columns  
+docker container ls | detect columns  | first
+docker container ls | detect columns  | first | get NAMES
+go run main.go --config ../../devutils/configs/carboter02.yaml
+z w 
+l
+z test
+l
+z phenix
+l
+z w se se
+l
+z htt
+z work
+l
+z pegasus
+l
+z sophos
+l
+z htt wor peg sop
+l
+source .lamberti.env.sh
+(https  https://api4.central.sophos.com/gateway/siem/v1/alerts<\n>from_date==1729029600<\n>limit==10<\n>"X-Locale: en"<\n>"accept: application/json"<\n>"Authorization: Basic $AUTH"<\n>"x-api-key: $XAPI")<\n>
+(https  https://api4.central.sophos.com/gateway/siem/v1/alerts<\n>"from_date==1729029600"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>"Authorization: Basic ( $env.AUTH )"<\n>"x-api-key: ( $env.XAPI )")<\n>
+(https  https://api4.central.sophos.com/gateway/siem/v1/alerts<\n>"from_date==1729029600"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )")<\n>
+2024-03-03
+2024-03-03 | timeit 
+'Last Friday at 19:45' | into datetime<\n>
+fk
+fk
+fk --dry --clip
+kubectl -n sec-clopin-production get pod clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml
+kubectl -n sec-clopin-production get pod clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml 
+kubectl -n sec-clopin-production get pod clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec
+kubectl -n sec-clopin-production get pod clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.volumes
+p
+(https  https://api4.central.sophos.com/gateway/siem/v1/alerts<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )")<\n>
+(https  https://api4.central.sophos.com/gateway/siem/v1/alerts<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json <\n>
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json <\n>
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items<\n> 
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==1000"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items <\n> 
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items <\n> 
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items | each {$in.created_at}<\n> 
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items | each {$in.created_at} | sort<\n> 
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items | each {$in.created_at} | into datetime <\n> 
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items | each {$in.created_at} | into datetime | sort<\n> 
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items | each {$in.severity} | into datetime | sort<\n> 
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items | each {$in.severity} <\n> 
+(https  https://api4.central.sophos.com/gateway/siem/v1/events<\n>"from_date==1731452400"<\n>"limit==10"<\n>"X-Locale: en"<\n>"accept: application/json"<\n>$"Authorization: Basic ( $env.AUTH )"<\n>$"x-api-key: ( $env.XAPI )") | from json | get items | each {$in.severity} | str upcase <\n>
+v
+z pr pe fk fk
+l
+fk
+commandline edit --help 
+let asd = "asd"
+$asd | length 
+$asd
+length --help 
+cd projects/personal/fk/fk/
+source .lamberti.env.sh
+source fk.nu
+fk
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-56ff8c95c6-l9rp7 -f
+fk --run
+fk
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-56ff8c95c6-l9rp7 -f
+fk
+fk --dry
+fk --dry | str upcase 
+z pr pe fk fk
+fk --dry | str upcase 
+fk --dry 
+fk --get
+cd projects/personal/fk/fk/
+fk
+fk --get
+z pr pe fk fk
+source fk.nu
+fk
+fk --get
+fk
+fk --get
+kubectl -n sec-clopin-production get po -o yaml | from yaml 
+fk --get
+let asd = "asd"
+$asd | str length 
+cd projects/personal/fk/fk/
+source fk.nu
+fk --get
+source fk.nu
+z pr pe fk fk
+source fk.nu
+cd projects/personal/fk/fk/
+source fk.nu
+fk --get
+fk --get --run
+fk --get --dry
+fk --get --dry --clip
+fk
+v phenix-models.yaml
+fk
+kubectl -n sec-clopin-production get pod clopin-sec-clopin-production-56ff8c95c6-l9rp7
+fk --run
+fk
+kubectl -n sec-llama-production get pod api-sec-llama-production-79d877946d-46nb8
+fk --run
+fk --run | where secret != null
+fk --run 
+fk --run | where secret != null
+fk --run 
+fk
+fk --run 
+fk --run | get name
+fk --run | columns
+fk
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-56ff8c95c6-l9rp7 -f
+z conf fk
+z pr pe fk fk
+fssh
+cal
+2024-11-19
+2024-11-19 10:30:30
+v
+fk
+kubectl cp sec-clopin-production/clopin-sec-clopin-production-56ff8c95c6-l9rp7:/usr/lib/python3/dist-packages/certifi/cacert.pem asd.pem
+rm asd.pem
+v
+ls ../../**/carboter*.env | first | get name
+source (ls ../../**/carboter*.env | first | get name)
+ls ../../**/carboter*.env | first | get name
+source (ls ../../**/carboter*.env | first | get name)
+let env_file = (ls ../../**/carboter*.env | first | get name)
+$env_file
+source $env_file
+const env_file = (ls ../../**/carboter*.env | first | get name)
+source ../../devutils/configs/carboter02.env
+docker container ls | detect columns  | first | get NAMES
+v
+go run main.go --config ../../devutils/configs/carboter02.yaml
+source ../../devutils/configs/carboter02.env
+go run main.go --config ../../devutils/configs/carboter02.yaml
+fk
+kubectl cp sec-llama-production/api-sec-llama-production-79d877946d-46nb8:/usr/lib/python3/dist-packages/certifi/cacert.pem asd.pem
+open asd.pem
+rm asd.pem
+fk
+kubectl api-versions 
+kubectl completion 
+kubectl completion -h
+kubectl describe -h
+kubectl -n sec-clopin-production describe deployments clopin-sec-clopin-production | from yaml 
+kubectl -n sec-clopin-production describe deployments clopin-sec-clopin-production 
+kubectl -n sec-clopin-production describe deployments clopin-sec-clopin-production -o yaml
+kubectl describe namespaces -a
+kubectl describe namespaces -A
+fk
+kubectl describe namespaces 
+kubectl -n sec-securityproject-production describe deployments 
+kubectl -n sec-securityproject-production describe deployment 
+z pr pe fk fk
+source fk.nu
+fk
+source fk.nu
+fk
+source fk.nu
+fk
+kubectl describe pod -A
+fk
+kubectl -n sec-clopin-production get deployment clopin-sec-clopin-production
+source fk.nu
+fk
+kubectl -n sec-clopin-production get pod clopin-sec-clopin-production-56ff8c95c6-l9rp7
+fk
+kubectl -n sec-clopin-production describe pod clopin-sec-clopin-production-56ff8c95c6-l9rp7
+v
+napp | ccp
+v
+napp | ccp
+v
+cd
+cd .local/share/db_ui/
+l
+open connections.json | sort-by name | save --force connections.json
+ssh besteuro-dmilog01.dmi.elmec.ad 
+ssh besteuro-dmi01.dmi.elmec.ad 
+kubectl rollout history 
+kubectl rollout history -n sec-clopin-production 
+kubectl rollout history -n sec-clopin-production deployments/clopin-sec-clopin-production 
+kubectl rollout history -n sec-clopin-production deployments/clopin-sec-clopin-production | detect columns 
+kubectl -n sec-clopin-production rollout 
+kubectl -n sec-clopin-production rollout status 
+kubectl -n sec-clopin-production rollout status deployments/clopin-sec-clopin-production 
+z pr pe fk fk
+source fk.nu
+fk
+kubectl -n sec-clopin-production rollout history deployment clopin-sec-clopin-production
+docker container exec -it redis redis-cli
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker exec -it redis redis-cli
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+touch providers.table
+v providers.table
+open providers.table
+open providers.table | from csv 
+open providers.table | from csv | to yaml 
+open providers.table | from csv 
+open providers.table | from csv | sort-by IDRS
+open providers.table | from csv 
+open providers.table | from csv | sort-by idrs
+open providers.table | from csv | sort-by idrs | to csv | save --force providers.table
+let p = open providers.table
+$p
+$p | from csv | sort-by idrs | to csv | save --force providers.table
+open providers.table | from csv 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+docker run -it redis redis-cli
+docker exec -it redis redis-cli
+doco -f ../../devutils/docker-compose.yaml up -d
+docker exec -it redis redis-cli
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+ls
+mv providers.table providers.csv
+open providers.csv
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+doco -f ../../devutils/docker-compose.yaml up -d
+docker container stop redis 
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+fk
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-56ff8c95c6-l9rp7 -f
+fk
+kubectl -n sec-clopin-production get pod
+fk
+kubectl -n sec-clopin-production get pod -o wide | detect columns 
+fk
+kubectl -n sec-clopin-production get pod | detect columns
+fk --run
+fk --dry
+fk --clip 
+fk --dry --clip
+kubectl -n sec-clopin-production get pod | detect columns
+fk --clip
+kubectl -n sec-clopin-production get pod | detect columns
+source fk.nu
+fk
+fk --run
+open providers.csv
+fk
+kubectl -n sec-clopin-production get pod | detect columns
+fk --run
+ssh cesarin-dmi01.dmi.elmec.ad 
+ssh cesarin-dmilog01.dmi.elmec.ad 
+ssh ircaspa-dmilog04.dmi.elmec.ad -L 8006:172.25.6.51:8006
+ssh cesarin-dmilog01.dmi.elmec.ad -L 8006:172.25.6.51:8006
+ssh ircaspa-dmi04.dmi.elmec.ad -L 8006:172.25.6.50:8006
+ssh cesarin-dmilog01.dmi.elmec.ad -L 8006:172.25.6.51:8006
+ssh ircaspa-dmi04.dmi.elmec.ad -L 8006:172.25.6.50:8006
+ssh cesarin-dmilog01.dmi.elmec.ad -L 8006:172.25.6.51:8006
+z htt
+l
+z /Users/colombos/http/work
+l
+z w cl cl 
+l
+z node
+l
+kl
+l
+mkdir clopin
+cd clopin/
+touch .envs.nu
+vi .envs.nu 
+z htt
+l
+z work
+l
+z /Users/colombos/projects/work/pegasus/pegasusl
+z pegasus
+l
+z microsoft
+l
+v
+z ..
+z clopin
+l
+source .envs.nu
+open customers.nu
+open customers.nu | ccp
+(https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json' <\n>)<\n>
+fk
+kubectl -n sec-clopin-production describe pod clopin-sec-clopin-production-56ff8c95c6-l9rp7
+fk
+kubectl -n sec-securityproject-production get job refresh-siem-timeline-production-28859280 | detect columns
+fk 
+kubectl -n sec-securityproject-production get job refresh-siem-timeline-production-28859280
+fk --run
+open customers.nu | ccp
+(https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+fk
+fk --get
+kubectl -n autom-ac-catalog-production get pod backend-autom-ac-catalog-production-b85574c4b-57lbl -o yaml | from yaml
+fk --get
+fk
+fk --get
+kubectl -n sec-clopin-production get pod clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o json
+fk --get
+kubectl -n sec-clopin-production get pod clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o wide | detect columns
+z htt w cl
+l
+source .envs.nu
+open customers.nu | ccp
+(https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+(https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json') | from json <\n>
+(https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json') | from json  | sort-by  id<\n>
+(https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json') | from json  | sort-by  id | first<\n>
+ssh ircaspa-dmi04.dmi.elmec.ad -L 8007:172.25.6.50:443
+ssh cesarin-dmilog01.dmi.elmec.ad -L 8006:172.25.6.50:443
+ssh cesarin-dmilog01.dmi.elmec.ad -L 8007:172.25.6.50:443
+ssh ircaspa-dmi04.dmi.elmec.ad -L 8007:172.25.6.50:443
+fk
+fk --get
+fk
+fk --get
+kubectl -n sec-clopin-production get pod clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml
+fk
+fk --get
+let fields = ["asd"]
+$fields | append "asdasd"
+$fields
+$fields = $fields | append "Aasdds"
+z pr pe fk fk
+kubectl get resourcequotas
+kubectl api-resources 
+v
+kubectl api-resources | get NAME
+kubectl api-resources | detect columns | get NAME
+fk -z
+ls ~/.cache/fk/
+ls ~/.cache/fk/ | get NAME
+ls ~/.cache/fk/ | get NAME | each {open $in}
+ls ~/.cache/fk/ | get NAME | each {rm $in}
+v
+source fk.nu
+so
+source fk.nu
+fk
+ls ~/.cache/fk/ | get NAME | each {rm $in}
+fk
+fk --logs
+fk
+ls ~/.cache/fk/ | get NAME | each {rm $in}
+fk
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-56ff8c95c6-l9rp7 -f
+fk
+fk -z
+fk
+fk -z
+fk --logs
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-56ff8c95c6-l9rp7 -f
+fk --get
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o json
+source fk.nu
+fk
+kubectl -n sec-clopin-production edit pods clopin-sec-clopin-production-56ff8c95c6-l9rp7
+fk
+fk --cip
+fk --clip
+fk --clip --dry
+source fk.nu
+fk
+open ~/.cache/fk/cache.yaml
+source $"( $fk_home_dir )/src/kube/current_context.nu"
+let current_context = _fk_current_context 
+$current_context
+mut contexts = open $cache_path
+mut contexts = open ~/.cache/fk/cache.yaml
+$contexts | flatten | columns | any {$in == $current_context}
+$contexts | flatten | columns }
+$contexts | flatten | columns 
+$contexts 
+$contexts | columns
+fk
+kubectl -n autom-anomaly-detection-production logs anomalyd-flaskapp-autom-anomaly-detection-production-7945fn9r5n 
+fk --get --run
+fk --get --dry 
+fk --get --dry --clip
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 | detect columns
+fk --rollout
+fk --logs
+fk -r
+kubectl -n autom-agentx-docs-production rollout status namespaces autom-agentx-be-production
+fk -r
+kubectl -n sec-clopin-production rollout status deployments static-sec-clopin-production
+fk -r
+fk
+fk -r
+fk
+fk -r
+fk
+fk -r
+v
+z pr pe fk fk
+fk
+l
+fk
+z pr pe fk fk
+z
+z conf
+l
+mkdir fk
+cd fk
+touch fk.yaml
+$env.XDG_CONFIG_HOME
+$env.asd
+env
+$env
+$env | get HOME
+$env | get asd
+$env.asd?
+let h = $env.XDG_CONFIG_HOME
+$h
+$h | path expand 
+$h
+$h | str join 
+str join  --help 
+$h | path join 
+[$h, "asd/asd" ] | path join 
+path --help 
+$env.XDG_CONFIG_HOME | path parse
+z pr pe fk fk
+source fk.nu
+commands
+help commands 
+help commands | where description =~ "*create*file*"
+help commands | where description =~ "create"
+help commands | where description =~ "create" | where description =~ "file"
+use std/iters
+use std
+source fk.nu
+fk
+source fk.nu
+fk
+z pr pe fk fk
+source fk.nu
+fk
+source fk.nu
+fk
+{} | into string 
+{} | to nuon
+source fk.nu
+fk
+source fk.nu
+fk
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 | detect columns
+let my_record = {a: true, b: false, c: true}<\n>
+$my_record | each {|pair| if $pair.value { $pair.key } }
+$my_record
+$my_record | length 
+$my_record | columns 
+$my_record | columns | length 
+$my_record | first
+$my_record | transpose asd asdasd
+$my_record | transpose asd asdasd | get asd
+$my_record | transpose flag value 
+source fk.nu
+fk --get
+fk
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 | detect columns
+fk
+kubectl -n sec-clopin-production get pods | detect columns
+fk
+kubectl -n sec-clopin-production get pods -o wide | detect columns
+fk 
+kubectl -n sec-clopin-production get pods -o json
+fk 
+fk
+fk --run
+fk --clip 
+fk --clip --dry
+fk --get
+z pr pe fk fk
+source fk.nu
+fk
+fk --get
+fk --get --delete
+source fk.nu
+fk --get 
+source fk.nu
+fk --get 
+source fk.nu
+fk
+fk --get 
+fk --get --delete
+source fk.nu
+fk --get --delete
+source fk.nu
+fk --get --delete
+fk --get 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml
+fk --rollout
+kubectl -n sec-clopin-production rollout history deployments clopin-sec-clopin-production
+source fk.nu
+fk --dry --clip
+fk --dry 
+fk --logs
+source fk.nu
+fk
+kubectl -n sec-clopin-production get pods | detect columns
+fk --get
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get metadata.annotations
+source fk.nu
+fk --get
+z pr pe fk fk
+fk --get
+source fk.nu
+fk --get
+kubectl -n sec-clopin-production get pods | detect columns
+fk --get
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers | describe
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers.1 | describe
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers.1 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers.1 | describe
+(kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers.1 | describe) == "record"
+(kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers.1 | describe) =~ "^record"
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers.1 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers | get 1
+ps
+ps | where mem > 100.2Mib
+ps | sort-by mem
+ps | sort-by mem | where name =~ "nvim" 
+> cargo install nu_plugin_skim
+> plugin add ~/.cargo/bin/nu_plugin_skim
+plugin add ~/.cargo/bin/nu_plugin_skim
+plugin add /Users/colombos/.asdf/installs/rust/1.82.0/bin/nu_plugin_skim
+which nu
+which cargo
+cargo --version
+> cargo uninstall nu_plugin_skim
+cargo uninstall nu_plugin_skim
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers | columns
+1..10
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers | length
+[asd, asd]
+[asd, asd] | str join "."
+source fk.nu
+fk --inspect
+source fk.nu
+fk --inspect
+source fk.nu
+1..10 | into string 
+1..10 | each {$in | into str}
+1..10 | each {$in | into string}
+source fk.nu
+fk --inspect
+source fk.nu
+fk --inspect
+source fk.nu
+fk
+source fk.nu
+fk --inspect
+z pr pe fk fk
+source fk.nu
+fk --inspect
+fk --inspect | describe
+source fk.nu
+fk --inspect | describe
+z pr pe fk fk
+source fk.nu
+fk --inspect | describe
+fk --inspect | describe | columns
+fk --inspect | columns
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+fk --inspect 
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z pr pe fk fk; source fk.nu
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n autom-ac-catalog-production get pods backend-autom-ac-catalog-production-b85574c4b-57lbl -o yaml | from_yaml | get apiVersion
+kubectl -n autom-ac-catalog-production get pods backend-autom-ac-catalog-production-b85574c4b-57lbl -o yaml | from yaml | get apiVersion
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 | to json
+fk 
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion
+fk --inspect 
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production | to json
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 | to json
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion.apiVersion | to json
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion.apiVersion 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion | to json
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion | to yaml
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion 
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion 
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+source fk.nu
+z 
+source fk.nu
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get this | to json
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get  | to json
+source fk.nu
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 | to json
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 | to json
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion | to json
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion
+fk --inspect 
+fk --inspect --run
+z pr pe fk fk
+source fk.nu
+fk --inspect --run
+z pr pe fk fk
+source fk.nu
+fk --inspect --run
+fk --inspect --dry --clip
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get kind
+fk --inspect --run --clip
+fk --inspect --run 
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion
+fk --inspect 
+source fk.nu
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+source fk.nu
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get kind
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec | to json
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec 
+fk --inspect 
+[1,2]
+[1,2] | get 0
+[1,2].0
+[1,2] | get 0
+[1,2] | get 1
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers.0
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers | get 0
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec | to json
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec 
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec | describe
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec.0
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec.contaienrs
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec.containers
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec.containers.0
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec.containers.0.image
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.terminationGracePeriodSeconds
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+z pr pe fk fk
+source fk.nu
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion
+fk --inspect 
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers | describe
+z pr pe fk fk
+z conf
+z nu
+l
+fk
+fk 
+fk
+kubectl -n sec-clopin-production get pods | detect columns
+fk
+kubectl -n sec-clopin-production get pods | detect columns
+fk
+kubectl -n sec-clopin-production get deployments | detect columns
+fk
+kubectl -n sec-llama-production get cronjobs -o yaml | from yaml
+fk 
+kubectl -n sec-llama-production logs api-sec-llama-production-79d877946d-c4pd8 
+fk
+kubectl -n sec-clopin-production exec clopin-sec-clopin-production-56ff8c95c6-l9rp7 -it -- bash
+fk
+kubectl -n sec-clopin-production edit deployments clopin-sec-clopin-production
+fk --run
+fk --get
+fk --gR
+fk -g -R
+fk -l -R
+fk -l 
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-56ff8c95c6-l9rp7 -f
+fk
+fk --edit
+fk
+kubectl -n sec-clopin-production describe deployments
+fk
+kubectl -n sec-clopin-production describe deployments clopin-sec-clopin-production
+fk
+kubectl -n sec-securityproject-production rollout status cronjobs refresh-siem-timeline-production
+fk 0i
+cd projects/personal/fk/fk/
+source fk.nu
+cd projects/personal/fk/fk/
+source fk.nu
+fk --inspect 
+fk
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get apiVersion
+fk
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers
+fk
+fk -i
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers
+fk -i
+cd projects/personal/fk/fk/
+source fk.nu
+nu
+fk -i
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers
+fk -i
+2 | into cell-path 
+'asd' | into cell-path 
+fk -i
+cd projects/personal/fk/fk/
+source fk.nu
+fk -i
+"1" | into int 
+"asd" | into int 
+cd projects/personal/fk/fk/
+source fk.nu
+0..10 | each { $in | into cell-path}
+match --help
+fk -i
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers.0.image
+fk -i
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get spec.containers.0
+cd projects/personal/fk/fk/
+source fk.nu
+fzf
+fzf --header 'asd'
+cd projects/personal/fk/fk/
+source fk.nu
+nu
+v
+nu
+nu
+cd projects/personal/fk/fk/
+source fk.nu
+cd projects/personal/fk/fk/
+source fk.nu
+cd projects/personal/fk/fk/
+source fk.nu
+nu
+nu
+fk -o
+fk -g
+z pr pe fk fk
+ls src/kube/current_context.nu
+ls src/kube/current_context.nu | get name
+ls src/kube/current_context.nu | get name | first
+ls src/kube/current_context.nu | get name
+ls src/kube/current_context.nu | get name | first
+let pp = ls src/kube/current_context.nu | get name | first
+$pp
+use $pp
+use src/kube/current_context.nu
+current_context fk_current_context 
+nu
+fk
+fk -z
+fk
+fk -z
+fk
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml
+fk -i
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 -o yaml | from yaml | get metadata.labels
+fk -i
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec.containers.0.ports
+fk -i
+kubectl -n sec-clopin-production get deployments clopin-sec-clopin-production -o yaml | from yaml | get spec.template.spec.imagePullSecrets
+fk -i
+fk
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-l9rp7 | detect columns
+fk -g -C -O
+kubectl -n sec-clopin-production get serviceaccounts
+fk -g
+kubectl -n sec-clopin-production get serviceaccounts default -o yaml | from yaml
+fk -g
+kubectl -n sec-clopin-production get services svc-clopin-production-clopin-api -o yaml | from yaml
+kubectl attach -h
+kubectl logs -h
+l
+fk
+kubectl -n sec-clopin-production get pods -o wide | detect columns
+kubectl logs -h
+fk
+kubectl -n sec-llama-production get po api-sec-llama-production-79d877946d-c4pd8 | get spec
+kubectl -n sec-llama-production get po api-sec-llama-production-79d877946d-c4pd8 -o yaml | from yaml | get spec
+kubectl -n sec-llama-production get po backend-tasks-sec-llama-production-2 -o yaml | from yaml | get spec.containers
+kubectl -n sec-llama-production get po backend-tasks-sec-llama-production-2 -o yaml | from yaml | get spec.containers.*.names
+kubectl -n sec-llama-production get po backend-tasks-sec-llama-production-2 -o yaml | from yaml | get spec.containers | each {$in.name}
+kubectl -n sec-llama-production get po backend-tasks-sec-llama-production-2 -o yaml | from yaml | get spec.containers.name
+fk
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-56ff8c95c6-nkzgn -c core -f
+fk
+kubectl -n sec-llama-production logs backend-tasks-sec-llama-production-0 -c worker 
+kubectl logs -h
+kubectl exec -h
+kubectl cp -h
+kubectl delete -f
+kubectl delete -h
+kubectl describe -h
+fk
+kubectl attach -h
+kf
+fk
+kubectl -n sec-clopin-production exec clopin-sec-clopin-production-56ff8c95c6-nkzgn -c core -i -t -- bash
+kubectl attach -h
+fk
+kubectl -n sec-clopin-production attach clopin-sec-clopin-production-56ff8c95c6-nkzgn -c core -it
+kubectl cluster-info
+kubectl create -h
+ls --help
+kubectl create -h
+cd projects/personal/fk/fk/
+source fk.nu
+cd projects/personal/fk/fk/
+source fk.nu
+cd projects/personal/fk/fk/
+source fk.nu
+fk
+glob *
+glob ./projects/work/
+glob ./projects/work/ansibles/dmilog-ansible/README.md --depth 2
+glob ./* --no-dir --depth 5
+ls
+l
+glob ./* --no-dir --depth 5
+glob ./* --no-dir --depth 10
+glob ./* --depth 10
+glob --help 
+cd projects/work/
+glob * --depth 6
+l
+glob **/* --depth 6
+cd
+glob ./projects/work/**/* --depth 6
+fk
+glob ./projects/work/**/* --depth 6
+fk
+kubectl create jobs test --from=jobs/refresh-siem-timeline-production-28863600 --dry-run=client -o yaml | from yaml
+kubectl create job test --from
+kubectl create jobs test --from
+fk
+kubectl create job test --from=job/refresh-siem-timeline-production-28863600 --dry-run=client -o yaml | from yaml
+fk
+cd projects/work/
+source fk.nu
+cd
+cd projects/personal/fk/fk/
+source fk.nu
+fk
+kubectl create job test --from=sec-securityproject-production/job/refresh-siem-timeline-production-28863600 --dry-run=client -o yaml | from yaml
+ssh bottver-dmilog03.dmi.elmec.ad 
+fk
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-nkzgn | detect columns
+fk
+kubectl -n sec-llama-production logs api-sec-llama-production-79d877946d-c4pd8 -c api -f
+ssh cesarin-dmilog01.dmi.elmec.ad 
+v
+ssh bottver-dmilog03.dmi.elmec.ad 
+doc ls
+l
+docker-compose -f (ls ../../**/docker*.y*ml | first | get name) up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+source (ls ../../**/carboter*.env | first | get name)
+source ../../devutils/configs/carboter02.env
+go run main.go --config ../../devutils/configs/carboter02.yaml
+v
+s w skipper
+z w sk]
+z w sl
+z w sk
+l
+lzg
+l
+cd ..
+ls
+rmr skipper
+l
+z
+z w 
+z skipper
+l
+lz
+lzg
+doc ls
+docker container exec -it hopeful_agnesi  sh
+doc ls
+z w sk
+l
+docker stop hopeful_agnesi 
+source .build.envs.sh
+doc ls
+docker container exec -it hardcore_carson sh
+fk
+kx
+fk
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+fk
+kubectl -n sec-skipper-quality get pods | detect columns
+fk
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+kubectl -n sec-skipper-quality get pods -w | detect columns
+kubectl -n sec-skipper-quality get pods -w 
+fk
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-fc85cfd8c-9zsdn -c skipper -f
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+kubectl -n sec-skipper-quality get pods -w 
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+kubectl -n sec-skipper-quality get pods -w 
+fk
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-fc85cfd8c-7s4ls -c skipper -f
+l
+z w peg
+l
+z /Users/colombos/projects/work/pegasus/pegasus/devutils
+l
+z scripts
+l
+z graphs
+l
+rm -rf venv
+pipenv install
+lzg
+ls ../../../.gitignore | first | get name
+v (ls ../../../.gitignore | first | get name)
+lzg
+v ../../../.gitignore
+lzg
+v ../../../.gitignore
+l
+pipenv install -r requirements.txt
+rm requirements.txt
+v ../../../.gitignore
+l
+v
+l
+p bookmark.py --identity gessi-microsoft --manager graph --collector azure.singin
+go run main.go --config ../../devutils/configs/carboter02.yaml
+fk
+kubectl -n sec-skipper-quality describe pods skipper-sec-skipper-quality-96fcc88c6-8cv5b
+fk
+kubectl -n sec-skipper-quality get pods skipper-sec-skipper-quality-96fcc88c6-8cv5b -o yaml | from yaml | get spec.containers
+fk 
+kubectl -n sec-skipper-quality get deployments skipper-sec-skipper-quality -o yaml | from yaml
+fk
+kubectl -n sec-skipper-quality get deployments skipper-sec-skipper-quality -o yaml | from yaml | get spec.template.spec.containers
+fk
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+kubectl -n sec-skipper-quality get po -w
+fk
+kubectl -n sec-skipper-quality get pods skipper-sec-skipper-quality-fc85cfd8c-2ctft -o yaml | from yaml | get spec.containers
+kubectl -n sec-skipper-quality get po -w
+pipenv shell
+p bookmark.py --identity gessi-microsoft --manager graph --collector azure.singin
+p bookmark.py --identity gessi_microsoft --manager graph --collector azure.singin
+p bookmark.py --identity gessi_microsoft --manager graph --collector azure_singin
+p bookmark.py --identity gessi_microsoft --manager graph --collector azure_signin
+p bookmark.py --manager gessi_microsoft.graph --collector azure_signin
+z w sec sec
+p resources.py --manager gessi_microsoft.graph 
+p resources.py --manager gessi_microsoft.graph
+napp | ccp
+p bookmark.py --manager gessi_microsoft.graph --collector azure_signin
+l
+p bookmark.py --manager gessi_microsoft.graph --kind azure_signin
+v
+p bookmark.py --manager gessi_microsoft.graph --kind azure_signin
+go run main.go --config ../../devutils/configs/carboter02.yaml
+p bookmark.py --manager gessi_microsoft.graph --kind azure_signin
+kubectl -n sec-skipper-quality get
+fk
+kubectl -n sec-skipper-quality get pods skipper-sec-skipper-quality-c7968555b-zc5dt -o yaml | from yaml
+fk
+kubectl -n sec-skipper-quality describe pods skipper-sec-skipper-quality-c7968555b-zc5dt
+fk
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-c7968555b-zc5dt -c skipper 
+fk
+kubectl -n sec-skipper-quality get pods skipper-sec-skipper-quality-c7968555b-zc5dt -o yaml | from yaml | get spec.containers
+fk
+kubectl -n sec-skipper-quality rollout restart deployments skipper-sec-skipper-quality
+fk
+kubectl -n sec-skipper-quality get pods -o wide -w
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-76d6858856-krgkl
+fk
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+kubectl -n sec-skipper-quality get pods -o wide -w
+fk
+kubectl -n sec-skipper-quality exec skipper-sec-skipper-quality-76d87595f-nk4js -c skipper -it -- sh
+kubectl -n sec-skipper-quality exec skipper-sec-skipper-quality-76d87595f-nk4js -c skipper -it -- bash
+p bookmark.py --identity gessi_microsoft --manager gessi_microsoft.graph --kind azure_signin
+p bookmark.py --identity gessi_microsoft --manager graph --kind azure_signin
+p resources.py  --identity gessi_microsoft --manager gessi_microsoft
+p resources.py  --identity gessi_microsoft --manager graph
+docker exec -it redis redis-cli
+docker stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+docker stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+l
+source ../../devutils/configs/carboter02.env
+doc ls
+docker container stop hardcore_carson 
+fk
+kubectl -n sec-skipper-quality get deployments skipper-sec-skipper-quality -o yaml | from yaml | get spec.template.spec.containers
+kubectl -n sec-skipper-quality get deployments skipper-sec-skipper-quality -o yaml | from yaml | get spec.template.spec.containers | columns
+kubectl -n sec-skipper-quality get deployments skipper-sec-skipper-quality -o yaml | from yaml | get spec.template.spec.containers | get command
+fk 
+fk
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+fk
+kubectl -n sec-skipper-quality get pods -w
+fk 
+kubectl -n sec-securityproject-quality edit deployments api-sec-securityproject-quality
+fk
+kubectl -n sec-skipper-quality describe pods skipper-sec-skipper-quality-5dccd6d664-94ldv
+fk
+kf
+fk
+kubectl -n sec-skipper-quality get pods -o yaml | from yaml
+kubectl -n sec-skipper-quality get pods 
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-5dccd6d664-94ldv
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+z w sk
+fk
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+fk
+kubectl -n sec-skipper-quality rollout restart deployments skipper-sec-skipper-quality
+fk
+kubectl -n sec-skipper-quality get pods -o wide -w
+fk 
+kubectl -n sec-skipper-quality edit deployments skipper-sec-skipper-quality
+fk
+kubectl -n sec-skipper-quality rollout restart deployments skipper-sec-skipper-quality
+fk
+kubectl -n sec-skipper-quality get pods -w
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-78dd4c48ff-lkjms
+z w sec sec
+z w sk
+source .build.envs.sh
+v
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+docker exec -it redis redis-cli
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+docker exec -it redis redis-cli
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+docker stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+v
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doc ls
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+source ../../devutils/configs/carboter02.env
+docker exec -it redis redis-cli
+docker stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+v
+source ../../devutils/configs/carboter02.env
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+v
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doco 
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+v
+doco -f ../../devutils/docker-compose.yaml up -d
+docker exec -it redis redis-cli
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+docker exec -it redis redis-cli
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+open /proc/sys/kernel/random/uuid
+l
+go get github.com/google/uuid
+go mod tidy
+v
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+c
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+docker exec -it redis redis-cli
+doco -f ../../devutils/docker-compose.yaml up -d
+docker exec -it redis redis-cli flushall
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+docker exec -it redis redis-cli flushall
+go run main.go --config ../../devutils/configs/carboter02.yaml
+z
+z downloads
+l
+start immagine.png
+mv immagine.png switch.png
+start immagine.png
+mv immagine.png drift.png
+z
+l
+doco -f ../../devutils/docker-compose.yaml up -d
+docker exec -it redis redis-cli flushall
+go run main.go --config ../../devutils/configs/carboter02.yaml
+source ../../devutils/configs/carboter02.env
+docker stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+fk
+kx
+fk
+kubectl -n sec-clopin-production get pods -o yaml | from yaml
+fk 
+kubectl -n sec-clopin-production get pods | detect columns
+fk --dry --clip
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+doc stop redis
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doco -f ../../devutils/docker-compose.yaml up -d
+v
+source ../../devutils/configs/carboter02.env
+docker exec -it redis redis-cli flushall
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doc stop redis
+docker exec -it redis redis-cli flushall
+doco -f ../../devutils/docker-compose.yaml up -d
+v
+go run main.go --config ../../devutils/configs/carboter02.yaml
+doc stop redis
+doco -f ../../devutils/docker-compose.yaml up -d
+ssh carboter-dmilog02.dmi.elmec.ad 
+kubectl -n sec-trahoproject-production create job --from=cronjobs/pull-group-0-production test -o yaml --dry-run=client | save --force job.yaml
+v job.yaml
+kubectl apply -f job.yaml 
+fk
+kubectl -n sec-trahoproject-production logs test-mlwkg -c pull-group-0 -f
+fk
+kubectl -n sec-trahoproject-production logs test-mlwkg -c pull-group-0 
+z w tr tr
+l
+rm -rf venv
+pipenv install
+l
+rm Pipfile
+pipenv install
+ls 
+ls  | where name =~ pip
+ls  | where name =~ "pip"
+ls  | where name =~ "Pip"
+ls  | where name =~ "Pip" | get name
+rm (ls  | where name =~ "Pip" | get name | first)
+l
+rm job.yaml
+pipenv init
+pipenv install -r requirements.txt
+python --version
+which python
+which pip
+pip --version
+pip list
+pip list | detect columns 
+pip list | detect columns | where Package =~ "pipenv"
+pip list | detect columns | where Package =~ "pipenv" | first | get Package
+pip uninstall (pip list | detect columns | where Package =~ "pipenv" | first | get Package)
+pip uninstall pipenv
+pip install pipenv
+pipenv install
+deactivate
+ls **/*Pip*
+rm Pipfile
+v requirements.txt
+pipenv install
+rm Pipfile
+ls **/*Pip*
+l
+mv requirements.txt ..
+pipenv install
+l
+ls **/*requirements*
+pipenv install
+rm Pipfile
+pipenv install
+cd ..
+l
+ls **/*requirements*
+cd trahoproject/
+l
+rm Pipfile
+pipenv shell
+pwd
+cd ..
+mv requirements.txt trahoproject/
+cd trahoproject/
+mv requirements.txt asdasd.txt
+rm Pipfile
+pipenv install
+pipenv install -r asdasd.txt
+mv asdasd.txt requirements.txt
+v requirements.txt
+z w cl cl
+ls **/*Pip&
+ls **/*Pip*
+ls **/*Pip* | where name =~ core
+ls **/*Pip* | where name =~ core | second
+(ls **/*Pip* | where name =~ core).1
+(ls **/*Pip* | where name =~ core).1 | get name
+v ((ls **/*Pip* | where name =~ core).1 | get name)
+v Pipfile
+pipenv update
+pipenv install
+v Pipfile
+pipenv install
+l
+v Pipfile
+pipenv install
+v Pipfile
+v requirements.txt
+v pi
+v Pipfile
+pipenv install
+pipenv shell
+pipenv shell
+l
+rm asd.json
+l
+v ((ls **/*Pip* | where name =~ core).0 | get name)
+lzg
+ls **/*env*
+(ls **/*env*).1 | get name
+((ls **/*env*).1 | get name)
+source devutils/envs.traho.prod
+v devutils/envs.traho.prod
+source devutils/envs.traho.prod
+v devutils/envs.traho.prod
+source devutils/envs.traho.prod
+v devutils/envs.traho.prod
+source devutils/envs.traho.prod
+p trahoproject/manage.py shell
+fk
+kubectl -n sec-trahoproject-production exec traho-sec-trahoproject-production-5d8b49f4c6-7bfxc -c api -it -- bash
+v
+fk
+ssh carboter-dmilog02.dmi.elmec.ad 
+z w
+ls **/*mole*
+gcl git@git.elmec.com:security/dmilog-ng/gitops/mole.git --bare
+cd mole
+l
+cd mole.git/
+l
+napp | ccp
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree add $branch }<\n>
+l
+ls ZONIN/
+ls ZUCCHI/
+ls **/.gitlab-ci.yml
+open CARBOTER/.gitlab-ci.yml
+open CARBOTER/.gitlab-ci.yml > /tmp/CI.yml
+open CARBOTER/.gitlab-ci.yml | save /tmp/CI.yml
+open CARBOTER/.gitlab-ci.yml --raw |  save /tmp/CI.yml
+open /tmp/CI.yml --raw
+ls **/.gitlab-ci.yml
+ls **/.gitlab-ci.yml | each {$in}
+ls **/.gitlab-ci.yml | each {open /tmp/CI.yml --raw | save --force $in}
+ls **/.gitlab-ci.yml | each {$in}
+ls **/.gitlab-ci.yml | get name
+ls **/.gitlab-ci.yml | get name | each {open /tmp/CI.yml --raw | save --force $in}
+let exclude = ["master", "quality"]<\n>for ref in (git for-each-ref --format='%(refname)' refs/heads/ | each { |it| echo $it | split-column '/' | get 2 }) {<\n>    if $exclude | any? { |ex| $ex == $ref } {<\n>        continue<\n>    }<\n>    if (try { cd $ref } catch { echo "directory $ref does not exist. skipping" ; continue }) {<\n>        open /tmp/<\n>        echo "done with $ref"<\n>        cd ..<\n>    }<\n>}<\n><\n><\n>let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {<\n>   |branch|<\n>       cd $branch<\n>       # do stuff<\n>}<\n>
+let exclude = ["master", "quality"]<\n>for ref in (git for-each-ref --format='%(refname)' refs/heads/ | each { |it| echo $it | split-column '/' | get 2 }) {<\n>    if $exclude | any? { |ex| $ex == $ref } {<\n>        continue<\n>    }<\n>    if (try { cd $ref } catch { echo "directory $ref does not exist. skipping" ; continue }) {<\n>        echo "done with $ref"<\n>        cd ..<\n>    }<\n>}<\n><\n><\n>let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {<\n>   |branch|<\n>       cd $branch<\n>       # do stuff<\n>}<\n>
+let exclude = ["master", "quality"]<\n>for ref in (git for-each-ref --format='%(refname)' refs/heads/ | each { |it| echo $it | split-column '/' | get 2 }) {<\n>    if $exclude | any? { |ex| $ex == $ref } {<\n>        continue<\n>    }<\n>    if (try { cd $ref } catch { echo "directory $ref does not exist. skipping" ; continue }) {<\n>        open /tmp/CI.yml | save --force $"( $ref )/.gitlab-ci.yaml"<\n>        echo "done with $ref"<\n>        cd ..<\n>    }<\n>}<\n>
+for ref in (git for-each-ref --format='%(refname)' refs/heads/ | each { |it| echo $it | split-column '/' | get 2 }) {<\n>    if $ref == "master" or $ref == "quality" or $ref == "main" {<\n>        continue<\n>    }<\n>    if (try { cd $ref } catch { echo "directory $ref does not exist. skipping" ; continue }) {<\n>        open /tmp/CI.yml | save --force $"( $ref )/.gitlab-ci.yaml"<\n>        echo "done with $ref"<\n>        cd ..<\n>    }<\n>}
+z w p sk
+napp | ccp
+let exclude = ["master", "quality", "main"]<\n>for ref in (git for-each-ref --format='%(refname)' refs/heads/ | each { |it| echo $it | split-column '/' | get 2 }) {<\n>    if (try { cd $ref } catch { echo "directory $ref does not exist. skipping" ; continue }) {<\n>        echo "done with $ref"<\n>        cd ..<\n>    }<\n>}
+let exclude = ["master", "quality", "main"]<\n>for ref in (git for-each-ref --format='%(refname)' refs/heads/ | each { |it| echo $it | split-column '/' | get 2 }) {<\n>    cd $ref<\n>    echo "done with $ref"<\n>    cd ..<\n>}
+git for-each-ref --format='%(refname)' refs/heads/
+napp | ccp
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| cd $branch; git add .gitlab-ci.yml; git commit -m "added skipper stage"; git push }<\n>
+l
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| cd $branch; git add .gitlab-ci.yml; git commit -m "added skipper stage"; git push --set-upstream origin $branch }
+cd BGP/
+l
+git status
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+git push --set-upstream origin BGP
+l
+ls
+cd ..
+ls
+ls | where type == dir | get name
+ls | where type == dir | get name | filter {$in != "hooks"}
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"}
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git add .gitlab-ci.yml; git commit -m "added skipper stage"; git push --set-upstream origin $in}
+cd BONOMI/
+l
+add .gitlab-ci.yml
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+$env.LAST_EXIT_CODE
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git add .gitlab-ci.yml; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in}
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git add .gitlab-ci.yml; git commit -m "added skipper stage"; git push --set-upstream origin $in}
+l
+cd ..
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git add .gitlab-ci.yml; git commit -m "added skipper stage"; git push --set-upstream origin $in}
+l
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git add .gitlab-ci.yml; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in}
+cd STEFANIA
+l
+git status
+l
+git worktree add master
+v -d DALDOSS/.gitlab-ci.yml master/.gitlab-ci.yml
+cd DALDOSS/
+lzg
+v .gitlab-ci.yml
+open /tmp/CI.yml --raw
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git pull; git add .gitlab-ci.yml; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in}<\n>
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git pull; git add .gitlab-ci.yml | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in}<\n>
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git pull; git add .gitlab-ci.yml | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}<\n>
+cd ..
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git pull; git add .gitlab-ci.yml | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}<\n>
+fk
+kx
+fk
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}
+cd SORIN/
+l
+cp /tmp/CI.yml | save --force .gitlab-ci.yml 
+open /tmp/CI.yml | save --force .gitlab-ci.yml 
+open /tmp/CI.yml --raw| save --force .gitlab-ci.yml 
+git status
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+git push --set-upstream origin SORIN
+cd ..
+cd VIGILANZA/
+open /tmp/CI.yml --raw| save --force .gitlab-ci.yml 
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+git push --set-upstream origin VIGILANZA
+cd ../TECNICA/
+l
+open .gitlab-ci.yml
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+git push --set-upstream origin VIGILANZA
+git push --set-upstream origin TECNICA
+git pull
+git config pull.ff only
+git pull
+git status
+git rebase
+git status
+cd ..
+l
+cd TECNICA/
+l
+cd ..
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs" and $in =~ "^V"} | each {cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs" and $in =~ "^T"} | each {cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}
+cd TECNICA/
+l
+git pull
+git config pull.ff merge
+git pull
+l
+git config pull.rebase true
+git pull
+napp | ccp
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree add $branch }<\n>
+l
+z /Users/colombos/projects/work/mole.git
+let whitelist = ["main", "master", "quality"]<\n>git for-each-ref --format='%(refname:short)' refs/heads | lines |<\n>   filter {|branch| not ($whitelist | any {|w| $w == $branch}) } |<\n>   each {|branch| git worktree add $branch }<\n>
+l
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs" and $in =~ "^T"} | each {cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}<\n>
+git config pull.rebase true
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs" and $in =~ "^T"} | each {cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}<\n>
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs" and $in =~ "^R"} | each {cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}<\n>
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs" and $in =~ "^R"} | each {print $"(ansi magenta) ( $in )" cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs" and $in =~ "^R"} | each {print $"(ansi magenta) ( $in ) (ansi reset)" cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs" and $in =~ "^R"} | each {print $"(ansi magenta) ( $in ) (ansi reset)"; cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}
+cd RAVSCOIAT/
+l
+open .gitlab-ci.yml
+git pull
+open .gitlab-ci.yml --raw | save --force .gitlab-ci.yml
+open /tmp/CI.yml --raw | save --force .gitlab-ci.yml
+git status
+git diff
+git show .gitlab-ci.yml HEAD~
+git show .gitlab-ci.yml ~HEAD
+git show .gitlab-ci.yml 
+l
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+git push --set-upstream origin RAVSCOIAT
+git pull
+git status
+git push
+git push --set-upstream origin RAVSCOIAT
+lzg
+l
+open .gitlab-ci.yml
+git pull
+git status
+open /tmp/CI.yml --raw | save --force .gitlab-ci.yml
+git status
+git add .gitlab-ci.yml
+git statys
+git status
+git commit -m "added skipper stage"
+git push --set-upstream origin RAVSCOIAT
+git pull
+git push --set-upstream origin RAVSCOIAT --force
+cd ..
+cd RCHITALIA/
+l
+git pull
+git status
+git rebase --abort
+git status
+open /tmp/CI.yml --raw | save --force .gitlab-ci.yml
+git status
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+git push --set-upstream origin RCHITALIA
+cd ../RESDATA/
+l
+git status
+open /tmp/CI.yml --raw | save --force .gitlab-ci.yml
+git status
+git pull
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+lzg
+git push --set-upstream origin RESDATA
+git pull
+git push --set-upstream origin RESDATA --force
+cd ../RIGANTI/
+git rebase --abort
+git pull
+open /tmp/CI.yml --raw | save --force .gitlab-ci.yml
+git status
+cd ../RONDASPA/
+git status
+git pull
+open /tmp/CI.yml --raw | save --force .gitlab-ci.yml
+git status
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+git push --set-upstream origin RONDASPA
+git push --set-upstream origin RONDASPA --force
+cd ..
+cd RPE
+git status
+git pull
+open /tmp/CI.yml --raw | save --force .gitlab-ci.yml
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+git push
+git push --set-upstream origin RPE
+cd ..
+cd RUBRITM/
+l
+git status
+open /tmp/CI.yml --raw | save --force .gitlab-ci.yml
+git status
+git add .gitlab-ci.yml
+git commit -m "added skipper stage"
+git push --set-upstream origin RUBRITM
+git push --set-upstream origin RUBRITM --force
+l
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs" and $in =~ "^M"} | each {print $"(ansi magenta) ( $in ) (ansi reset)"; cd $in; git pull | ignore; try {git add .gitlab-ci.yml} catch {continue} | ignore; git commit -m "added skipper stage" | ignore; git push --set-upstream origin $in | ignore}
+open .gitlab-ci.yml
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {print $"(ansi magenta) ($in) (ansi reset)"  open $"($in)/.gitlab-ci.yml" | get notify_skipper }
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {print $"(ansi magenta) ($in) (ansi reset)"; open $"($in)/.gitlab-ci.yml" | get notify_skipper }
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {if not ( open $"($in)/.gitlab-ci.yml" | get notify_skipper? ) {print $"(ansi magenta) ($in) (ansi reset)"} }
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {if not ( open $"($in)/.gitlab-ci.yml" | get notify_skipper? | is-empty ) {print $"(ansi magenta) ($in) (ansi reset)"} }
+diff ZUCCHI/.gitlab-ci.yml CARBOTER/.gitlab-ci.yml 
+$env.LAST_EXIT_CODE
+diff ZUCCHI/.gitlab-ci.yml CARBOTER/mole_networks.lst 
+$env.LAST_EXIT_CODE
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {if ( diff $"($in)/.gitlab-ci.yml" /tmp/CI.yml ) {print $"(ansi magenta) ($in) (ansi reset)"} }
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {if ( diff $"($in)/.gitlab-ci.yml" /tmp/CI.yml != "" ) {print $"(ansi magenta) ($in) (ansi reset)"} }
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {if ( ( diff $"($in)/.gitlab-ci.yml" /tmp/CI.yml ) != "" ) {print $"(ansi magenta) ($in) (ansi reset)"} }
+ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"} | each {print $"($in)";  if ( ( diff $"($in)/.gitlab-ci.yml" /tmp/CI.yml ) != "" ) {print $"(ansi magenta) ($in) (ansi reset)"} }
+diff ZUCCHI/.gitlab-ci.yml /tmp/
+diff ZUCCHI/.gitlab-ci.yml /tmp/CI.yml 
+let asd = ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"}<\n>for b in $asd {<\n>    print $b<\n>    if ((diff $"($in)/.gitlab-ci.yml" /tmp/CI.yml) != "") {<\n>       print $"(ansi magenta) ($in) (ansi reset)"<\n>    }<\n>}
+$asd
+let asd = ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"}<\n>for b in $asd {<\n>    print $b<\n>    if ((diff $"($b)/.gitlab-ci.yml" /tmp/CI.yml) != "") {<\n>       print $"(ansi magenta) ($b) (ansi reset)"<\n>    }<\n>}
+let asd = ls | where type == dir | get name | filter {$in != "hooks" and $in != "objects" and $in != "info" and $in != "refs" and $in != "worktrees" and $in != "logs"}<\n>for b in $asd {<\n>    if ((diff $"($b)/.gitlab-ci.yml" /tmp/CI.yml) == "") {<\n>       print $"(ansi magenta) ($b) (ansi reset)"<\n>    }<\n>}
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-c98688d95-65dwm -c skipper -f
+z w
+l
+ls **/*ansi*
+cd ansibles/dmilog-ansible/
+l
+lzg
+git rebase --abort
+lzg
+open jolly-dmilog-ng.yml
+open jolly-dmilog-ng.yml --raw
+lzg
+open jolly-dmilog-ng.yml --raw
+lzg
+l
+ls **/*operator*
+v subtasks/jolly-update-operator.yaml
+z w ope
+v
+l
+cd dmilog-operator/
+l
+lzg
+git checkout  soldato
+l
+fssh
+ssh carboter-dmilog02.dmi.elmec.ad 
+docker exec -it redis redis-cli 
+doc ls
+docker exec -it redis redis-cli flushall
+go run main.go --config ../../devutils/configs/carboter02.yaml
+v
+l
+ls **/*.json
+ls **/*.json | get name | each {rm $in}
+y
+rm --help
+which rm
+z conf nu
+l
+which rm
+rm --help
+v 
+l
+ls -a
+ls
+ls **/.*env*
+v microsoft/.gessi.env.sh
+mv microsoft/.gessi.env.sh microsoft/.gessi.env.nu
+source microsoft/.gessi.env.nu
+cd microsoft/graph/
+l
+ls **/.*nu
+ls **/*nu
+open get-access.nu
+open get-access.nu | ccp
+ls ../**/*.env
+cd ..
+l
+source .gessi.env.nu
+cd graph/
+l
+open get-access.nu | ccp
+# get access<\n>let access = (https --form POST https://login.microsoftonline.com/$TENANT/oauth2/v2.0/token <\n>  "Content-Type:application/x-www-form-urlencoded" <\n>  "Accept:text/html" <\n>  "grant_type=client_credentials" <\n>  $"client_id=( $$env.APPLICATION )" <\n>  $"client_secret=($$env.AUTHKEY)" <\n>  "scope=https://graph.microsoft.com/.default" | jq -r '.access_token')<\n>$env.APPLICATION
+$env.APPLICATION
+open get-access.nu | ccp
+# get access<\n>let access = (https --form POST https://login.microsoftonline.com/$TENANT/oauth2/v2.0/token <\n>  "Content-Type:application/x-www-form-urlencoded" <\n>  "Accept:text/html" <\n>  "grant_type=client_credentials" <\n>  $"client_id=( $env.APPLICATION )" <\n>  $"client_secret=($env.AUTHKEY)" <\n>  "scope=https://graph.microsoft.com/.default" | jq -r '.access_token')<\n>
+$access
+# get access<\n>https --form POST https://login.microsoftonline.com/$TENANT/oauth2/v2.0/token <\n>  "Content-Type:application/x-www-form-urlencoded" <\n>  "Accept:text/html" <\n>  "grant_type=client_credentials" <\n>  $"client_id=( $env.APPLICATION )" <\n>  $"client_secret=($env.AUTHKEY)" <\n>  "scope=https://graph.microsoft.com/.default" <\n>
+https --form POST https://login.microsoftonline.com/$TENANT/oauth2/v2.0/token "Content-Type:application/x-www-form-urlencoded" "Accept:text/html" "grant_type=client_credentials" $"client_id=( $env.APPLICATION )" $"client_secret=($env.AUTHKEY)" "scope=https://graph.microsoft.com/.default"<\n>
+open get-access.nu | ccp
+# get access<\n>https --form --offline POST https://login.microsoftonline.com/$TENANT/oauth2/v2.0/token <\n>  "Content-Type:application/x-www-form-urlencoded" <\n>  "Accept:text/html" <\n>  "grant_type=client_credentials" <\n>  $"client_id=( $env.APPLICATION )" <\n>  $"client_secret=($env.AUTHKEY)" <\n>  "scope=https://graph.microsoft.com/.default"<\n>
+https --form POST $"https://login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>  "Content-Type:application/x-www-form-urlencoded" <\n>  "Accept:text/html" <\n>  "grant_type=client_credentials" <\n>  $"client_id=( $env.APPLICATION )" <\n>  $"client_secret=($env.AUTHKEY)" <\n>  "scope=https://graph.microsoft.com/.default"<\n>
+https --form --offline POST $"https://login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>  "Content-Type:application/x-www-form-urlencoded" <\n>  "Accept:text/html" <\n>  "grant_type=client_credentials" <\n>  $"client_id=( $env.APPLICATION )" <\n>  $"client_secret=($env.AUTHKEY)" <\n>  "scope=https://graph.microsoft.com/.default"<\n>
+open get-access.nu | ccp
+# get access<\n>https --form POST $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>  "Content-Type:application/x-www-form-urlencoded" <\n>  "Accept:text/html" <\n>  "grant_type=client_credentials" <\n>  $"client_id=( $env.APPLICATION )" <\n>  $"client_secret=($env.AUTHKEY)" <\n>  "scope=https://graph.microsoft.com/.default"<\n>
+nu ./get-access.nu 
+http --form --offline POST $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>  "Content-Type:application/x-www-form-urlencoded" <\n>  "Accept:text/html" <\n>  $"""<\n>    grant_type=client_credentials<\n>    client_id=( $env.APPLICATION )<\n>    client_secret=( $env.AUTHKEY )<\n>    scope=https://graph.microsoft.com/.default<\n>  """<\n>
+https --form --offline POST $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>  "Content-Type:application/x-www-form-urlencoded" <\n>  "Accept:text/html" <\n>  $"""<\n>    grant_type=client_credentials<\n>    client_id=( $env.APPLICATION )<\n>    client_secret=( $env.AUTHKEY )<\n>    scope=https://graph.microsoft.com/.default<\n>  """<\n>
+nu ./get-access.nu 
+open get-access.nu | cc
+open get-access.nu | ccp
+nu ./get-access.nu 
+http --help
+http post --help
+open get-access.nu | ccp
+# get access<\n>https --offline POST $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>  "Content-Type=application/json" <\n>  "Accept=text/html" <\n>  "grant_type=client_credentials" <\n>  $"client_id=( $env.APPLICATION )" <\n>  $"client_secret=( $env.AUTHKEY )" <\n>  "scope=https://graph.microsoft.com/.default"<\n>
+nu ./get-access.nu 
+https --offline --form POST $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>  "Content-Type=application/json" <\n>  "Accept=text/html" <\n>  $"grant_type=client_credentials\nclient_id=( $env.APPLICATION )\nclient_secret=( $env.AUTHKEY )\nscope=https://graph.microsoft.com/.default"<\n>
+https --form POST $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>  "Content-Type=application/json" <\n>  "Accept=text/html" <\n>  $"grant_type=client_credentials\nclient_id=( $env.APPLICATION )\nclient_secret=( $env.AUTHKEY )\nscope=https://graph.microsoft.com/.default"<\n>
+https --offline --form POST $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>  "Content-Type=application/json" <\n>  "Accept=text/html" <\n>  $"grant_type=client_credentials\nclient_id=( $env.APPLICATION )\nclient_secret=( $env.AUTHKEY )\nscope=https://graph.microsoft.com/.default"<\n>
+nu ./get-access.nu 
+cd get-access/
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" |<\n>  http post $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" <\n>
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" <\n>
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | from yaml | to json |<\n> 
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | from yaml | to json |<\n>  http post $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" 
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | from yaml | to json <\n>
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | to json <\n>
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | to json <\n>  http post $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" 
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | to json |<\n>  http post $"login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" 
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | to json |<\n>  http post $"https://login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" 
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | to json<\n>
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | to json |<\n>  http post $"https://login.microsoftonline.com/( $env.TENANT )/oauth2/v2.0/token" 
+open body.yaml |<\n>  upsert client_id $"($env.APPLICATION)" |<\n>  upsert client_secret $"($env.AUTHKEY)" | to json <\n>
+cd ..
+rm -rf get-access/
+l
+http --form POST https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token \<\n>  Content-Type:application/x-www-form-urlencoded \<\n>  Accept:text/html \<\n>  grant_type=client_credentials \<\n>  client_id=($env.APPLICATION) \<\n>  client_secret=($env.AUTHKEY) \<\n>  scope=https://graph.microsoft.com/.default | from json | get access_token<\n>
+https --form POST https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token \<\n>  Content-Type:application/x-www-form-urlencoded \<\n>  Accept:text/html \<\n>  grant_type=client_credentials \<\n>  client_id=($env.APPLICATION) \<\n>  client_secret=($env.AUTHKEY) \<\n>  scope=https://graph.microsoft.com/.default | from json | get access_token<\n>
+https --form POST https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token \<\n>  Content-Type:application/x-www-form-urlencoded \<\n>  Accept:text/html \<\n>  grant_type=client_credentials \<\n>  client_id=($env.APPLICATION) \<\n>  client_secret=($env.AUTHKEY) \<\n>  "scope=https://graph.microsoft.com/.default" | from json | get access_token<\n>
+which https
+z conf nu
+v
+cd
+cd .config/nushell/
+v
+nvim
+which https | fget path
+which https 
+z conf nu
+v
+which https | fget path
+z conf nu
+v
+which https | first | get path 
+which https | first | get path | path expand 
+which https | first | get path | path expand | path split 
+which https | first | get path | path expand | path split | 0..7
+which https | first | get path | path expand | path split 
+which https | first | get path | path expand | path split | select 0..-2
+which https | first | get path | path expand | path split | first -1
+first --help
+which https | first | get path | path expand | path split 
+which https | first | get path | path expand | path split | first 8
+which https | first | get path | path expand | path split | first 8 | path join 
+which https | first | get path | path expand | path split | first 8 | path join | ls
+ls (which https | first | get path | path expand | path split | first 8 | path join)
+z conf nu
+v
+which http
+http
+source ../../microsoft/.gessi.env.nu
+$env.APPLICATION
+nu ./get-access.nu 
+https --form --offline POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>  "scope=https://graph.microsoft.com/.default"<\n>  $"client_id=( $env.APPLICATION )"<\n>  $"client_secret=( $env.AUTHKEY )"<\n>  "grant_type=client_credentials"<\n>
+open asd.yaml | upsert client_id $"($env.APPLICATION)" | upsert client_secret $"($env.AUTHKEY)" | to json |<\n>https --form --offline POST "https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+open asd.yaml | upsert client_id $"($env.APPLICATION)" | upsert client_secret $"($env.AUTHKEY)" | to json |<\n>https --offline POST "https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+open asd.yaml | upsert client_id $"($env.APPLICATION)" | upsert client_secret $"($env.AUTHKEY)" | to json |<\n>https POST "https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+open asd.yaml | upsert client_id $"($env.APPLICATION)" | upsert client_secret $"($env.AUTHKEY)" | to json |<\n>https --offline POST "https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+open asd.yaml | upsert client_id $"($env.APPLICATION)" | upsert client_secret $"($env.AUTHKEY)" <\n>
+open asd.yaml | upsert client_id $"($env.APPLICATION)" | upsert client_secret $"($env.AUTHKEY)" | to json |<\n>https --offline POST "https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+open asd.yaml \<\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)" <\n>| flatten 
+open asd.yaml <\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)" <\n>| flatten 
+open asd.yaml <\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)" <\n>
+open asd.yaml <\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)" |<\n>
+open asd.yaml <\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)"
+open asd.yaml <\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)"<\n>| flatten
+format --help
+format pattern --help
+open asd.yaml <\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)"<\n>| flatten<\n>| format pattern "{name}={value}"
+format pattern --help
+open asd.yaml <\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)"<\n>| format pattern "{name}={value}"
+open asd.yaml <\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)"<\n>
+open asd.yaml <\n>| upsert client_id $"($env.APPLICATION)" <\n>| upsert client_secret $"($env.AUTHKEY)"<\n>| each {$in}
+open asd.txt
+open asd.txt | str join 
+open asd.txt | str contains 
+open asd.txt 
+let raw_content = (open asd.txt)<\n>
+$raw_content
+let templated_content = ($raw_content | str replace '($env.APPLICATION)' ($env.APPLICATION) | str replace '($env.AUTHKEY)' ($env.AUTHKEY))<\n>
+$templated_content
+$templated_content | https --offline POST "https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+$templated_content | https POST "https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+$templated_content | https --form POST "https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+$templated_content | https --form POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https --offline POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+open asd.txt 
+open get-access.nu | ccp
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https --offline --form POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https --form POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https --form POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" | from json<\n> 
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https --form POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" | jq | from json<\n> 
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https --form POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" | jq <\n> 
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https --form POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" <\n> 
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https --form POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" | from json
+https --help
+open get-access.nu | ccp
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" | from hson<\n>
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" | from json<\n>
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" | jq<\n>
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" <\n>
+https --help
+open get-access.nu | ccp
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body --pretty none POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+open get-access.nu | ccp
+https --help
+# get access<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body --pretty none POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body --pretty none POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>
+<\n>"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body --pretty none POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html" | save out.json<\n>
+open out.json
+open out.json --raw
+rm out.json
+<\n>let asd = ("scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body --pretty none POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html")<\n>
+$asd
+$asd | from json
+open get-access.nu
+open get-access.nu | ccp
+# get access<\n>let response = ("scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body --pretty none POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html")<\n>let access = $response | from json | get access_token<\n>
+$access
+$response
+$access
+open token-info.nu
+open token-info.nu | ccp
+let response = (<\n>  {<\n>    client_id: $env.APPLICATION<\n>    client_secret: $env.AUTHKEY<\n>    refresh_token: $access<\n>  } | https --form POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>)<\n>
+let response = (<\n>  {<\n>    client_id: $env.APPLICATION<\n>    client_secret: $env.AUTHKEY<\n>    refresh_token: $access<\n>  } | to json | https --form POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>)<\n>
+{<\n>  client_id: $env.APPLICATION<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | https --form --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+{<\n>  client_id: $env.APPLICATION<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | https --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+{<\n>  client_id: $env.APPLICATION<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | from json | https --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+{<\n>  client_id: $env.APPLICATION<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | to json | https --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+{<\n>  client_id: $env.APPLICATION<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | to json | https POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+open token-info.nu | ccp
+{<\n>  client_id: $env.APPLICATION<\n>  grant_type: "client_credentials"<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | https --form --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+open token-info.nu | ccp
+{<\n>  client_id: $env.APPLICATION<\n>  grant_type: "client_credentials"<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | to json | https --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+open token-info.nu | ccp
+{<\n>  client_id: $env.APPLICATION<\n>  grant_type: "client_credentials"<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | to json | https POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+open token-info.nu | ccp
+{<\n>  client_id: $env.APPLICATION<\n>  grant_type: "client_credentials"<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | to json | https --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+open token-info.nu | ccp
+$"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_secret=( $env.AUTHKEY )<\n>refresh_token=( $access )"<\n>| to json<\n>| https --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>
+$"scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_secret=( $env.AUTHKEY )<\n>refresh_token=( $access )"<\n>| to json<\n>| https POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>
+open token-info.nu | ccp
+{<\n>  client_id: $env.APPLICATION<\n>  grant_type: "client_credentials"<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | https --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+open token-info.nu | ccp
+{<\n>  client_id: $env.APPLICATION<\n>  grant_type: "client_credentials"<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>}<\n>| to json |<\n>https --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+open token-info.nu | ccp
+{<\n>  client_id: $env.APPLICATION<\n>  grant_type: "client_credentials"<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>}<\n>| to json |<\n>https POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+fk
+fx
+kx
+fk
+kubectl -n sec-trahoproject-production get pods | detect columns
+kubectl -n sec-trahoproject-production get pods | detect columns | where NAME =~ "pull" | get NAME
+fk 
+kubectl -n sec-trahoproject-production logs pull-production-28868085-xfrjh -c pull | grep CDRPOMPE
+kubectl -n sec-trahoproject-production create job --from=cronjobs/pull-group-0-production test -o yaml --dry-run=client | save --force job.yaml
+v job.yaml
+kubectl apply -f job.yaml 
+fk
+kubectl -n sec-trahoproject-production logs test-swp2x -c pull-group-0 -f
+$env.APPLICATION
+open get-access.nu | ccp
+# get access<\n>let response = ("scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body --pretty none POST $"https:/login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html")<\n>let access = $response | from json | get access_token<\n>
+open get-access.nu | ccp
+# get access<\n>let response = ("scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body --pretty none POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html")<\n>let access = $response | from json | get access_token<\n>
+$response
+$access
+open token-info.nu | ccp
+{<\n>  client_id: $env.APPLICATION<\n>  grant_type: "client_credentials"<\n>  client_secret: $env.AUTHKEY<\n>  refresh_token: $access<\n>} | to json |<\n>https POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  "Accept:application/json"<\n>
+z ..
+l
+z ..
+l
+z ..
+l
+mkdir secproj
+cd secproj/
+mkdir SIEM
+cd SIEM
+l
+touch .envs.nu
+v .envs.nu
+v
+v
+z ..
+l
+z /Users/colombos/http/work/secproj
+l
+z /Users/colombos/http/work/secproj/SIEM
+l
+v
+z ..
+l
+z ..
+l
+z clopin
+l
+z ..
+z work
+l
+z clopin
+l
+open .envs.nu
+source .envs.nu
+open customers.nu | ccp
+(https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+(https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json') | from json<\n>
+open customers.nu | ccp
+https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json'<\n>
+open customers.nu | ccp
+(https $"($env.URL)/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+open dmilogs.nu | ccp
+(https $"($env.URL)/dmilogs/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+open dmilogs.nu | ccp
+(https $"($env.URL)/dmilogs/"<\n>  "customer==IRCASPA"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+open dmilogs.nu | ccp
+(https --offline GET $"($env.URL)/dmilogs/"<\n>  "customer==IRCASPA"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+open dmilogs.nu | ccp
+(https GET $"($env.URL)/dmilogs/"<\n>  "idrs==IRCASPA"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+(https GET $"($env.URL)/dmilogs/"<\n>  "name==elmec-dmilog07"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+fk
+(https GET $"($env.URL)/dmilogs/"<\n>  "customer==3"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+(https --offline GET $"($env.URL)/dmilogs/"<\n>  "customer==3"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+(https --offline GET $"($env.URL)/dmilogs/"<\n>  "customer==CARBOTER"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+(https GET $"($env.URL)/dmilogs/"<\n>  "customer==CARBOTER"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+kubectl -n sec-clopin-production logs clopin-sec-clopin-production-56ff8c95c6-nkzgn -c core -f
+z w cl cl
+v
+ql
+l
+ls **/*entities*
+ls **/*entities* | first | get name
+v (ls **/*entities* | first | get name)
+open dmilogs.nu | ccp
+(https --offline GET $"($env.URL)/dmilogs/"<\n>  "name==elmec"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+(https GET $"($env.URL)/dmilogs/"<\n>  "name==elmec"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+open dmilogs.nu | ccp
+(https --offline GET $"($env.URL)/dmilogs/?name=elmec"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+(https GET $"($env.URL)/dmilogs/?name=elmec"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+open customers.nu | ccp
+(https $"($env.URL)/customers/"<\n>  "idrs==ELMEC"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+(https --offline $"($env.URL)/customers/"<\n>  "idrs==ELMEC"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+open customer.nu | ccp
+(https $"($env.URL)/ELMEC/customers/"<\n>  $"Authorization:STATIC ( $env.TOKEN )"<\n>  'Accept:application/json')<\n>
+v
+v
+z ..
+l
+z /Users/colombos/http/work/pegasus
+l
+z /Users/colombos/http/work/pegasus/microsoft/graph/
+l
+z /Users/colombos/http/work/pegasus/microsoft/graph
+l
+source ../.gessi.env.nu
+open get-access.nu | ccp
+# get access<\n>let response = ("scope=https://graph.microsoft.com/.default&<\n>grant_type=client_credentials&<\n>client_id=CLIENT_ID&<\n>client_secret=CLIENT_SECRET"<\n>| str replace CLIENT_ID $env.APPLICATION<\n>| str replace CLIENT_SECRET $env.AUTHKEY<\n>| https  --form --body --pretty none POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html")<\n>let access = $response | from json | get access_token<\n>
+cv
+open get-access2.nu | ccp
+(https  --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>  "scope=https://graph.microsoft.com/.default"<\n>  "grant_type=client_credentials"<\n>  $"client_id=($env.APPLICATION)"<\n>  $"client_secret=($env.AUTHKEY)")<\n>
+(https  --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>  "scope=https://graph.microsoft.com/.default"<\n>  "grant_type=client_credentials"<\n>  $"client_id=($env.APPLICATION)"<\n>  $"client_secret=($env.AUTHKEY)") | from json<\n>
+(https  --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>  "scope=https://graph.microsoft.com/.default"<\n>  "grant_type=client_credentials"<\n>  $"client_id=($env.APPLICATION)"<\n>  $"client_secret=($env.AUTHKEY)") | from json | get access_token<\n>
+let access = (https  --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>  "scope=https://graph.microsoft.com/.default"<\n>  "grant_type=client_credentials"<\n>  $"client_id=($env.APPLICATION)"<\n>  $"client_secret=($env.AUTHKEY)"<\n>| from json<\n>| get access_token)
+$access
+open get-access.nu | ccp
+# get access<\n>let access = (https --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>  "scope=https://graph.microsoft.com/.default"<\n>  "grant_type=client_credentials"<\n>  $"client_id=($env.APPLICATION)"<\n>  $"client_secret=($env.AUTHKEY)"<\n>| from json<\n>| get access_token)<\n>
+$access
+open signin.nu | ccp
+(https --offline GET "https://graph.microsoft.com/v1.0/auditLogs/signIns"<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded'<\n>  '$filter==createdDateTime gt  2024-10-30T11:00:00Z and createdDateTime lt 2024-10-31T05:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>)<\n>
+open signin.nu | ccp
+(https GET "https://graph.microsoft.com/v1.0/auditLogs/signIns"<\n>  '$filter==createdDateTime gt  2024-10-30T11:00:00Z and createdDateTime lt 2024-10-30T17:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded'<\n>)<\n>
+open signin.nu | ccp
+https --body GET "https://graph.microsoft.com/v1.0/auditLogs/signIns"<\n>  '$filter==createdDateTime gt  2024-10-30T11:00:00Z and createdDateTime lt 2024-10-30T17:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded'<\n>
+(https --body GET "https://graph.microsoft.com/v1.0/auditLogs/signIns"<\n>  '$filter==createdDateTime gt  2024-10-30T11:00:00Z and createdDateTime lt 2024-10-30T17:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded')<\n>
+date now
+date now | date humanize 
+date now | date to-record 
+date now | date to-table 
+date now | date to-timezone 
+date now | date to-timezone 'Europe/Rome'
+date now 
+date now | date to-timezone 'USA/NewYork'
+date list-timezone 
+date now | date to-timezone 'US/Hawaii'
+date format --list
+format date --list
+yesterday
+date now --help 
+nu ./get-access.nu 
+open get-access.nu | ccp
+# get access<\n>let access = (https --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>  "scope=https://graph.microsoft.com/.default"<\n>  "grant_type=client_credentials"<\n>  $"client_id=($env.APPLICATION)"<\n>  $"client_secret=($env.AUTHKEY)"<\n>| from json<\n>| get access_token)<\n>
+$access
+open token-info.nu | ccp
+(https --offline POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  $"client_id=( $env.APPLICATION )"<\n>  $"client_secret=($env.AUTHKEY)"<\n>  $"refresh_token=( $access )")<\n>
+(https POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  $"client_id=( $env.APPLICATION )"<\n>  $"client_secret=($env.AUTHKEY)"<\n>  $"refresh_token=( $access )")<\n>
+open token-info.nu | ccp
+(https --form POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  $"client_id=( $env.APPLICATION )"<\n>  $"client_secret=($env.AUTHKEY)"<\n>  $"refresh_token=( $access )")<\n>
+open get-access.nu | ccp
+# get access<\n>let A = (https --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>  "scope=https://graph.microsoft.com/.default"<\n>  "grant_type=client_credentials"<\n>  $"client_id=($env.APPLICATION)"<\n>  $"client_secret=($env.AUTHKEY)"<\n>| from json<\n>| get access_token)<\n>
+$A
+open token-info.nu | ccp
+(https --form POST "login.microsoftonline.com/consumers/oauth2/v2.0/token "<\n>  "grant_type=refresh_token"<\n>  $"client_id=( $env.APPLICATION )"<\n>  $"client_secret=($env.AUTHKEY)"<\n>  $"refresh_token=( $A )")<\n>
+(https --form --body POST $"https://login.microsoftonline.com/($env.TENANT)/oauth2/v2.0/token"<\n>  "Content-Type:application/x-www-form-urlencoded"<\n>  "Accept:text/html"<\n>  "scope=https://graph.microsoft.com/.default"<\n>  "grant_type=client_credentials"<\n>  $"client_id=($env.APPLICATION)"<\n>  $"client_secret=($env.AUTHKEY)")<\n>
+open securityalert.sh | ccp
+(https --body GET "https://graph.microsoft.com/v1.0/auditLogs/signIns"<\n>  '$filter==createdDateTime gt  2024-10-30T11:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded')<\n><\n>
+open securityalert.sh | ccp
+(https --body GET "graph.microsoft.com/v1.0/auditLogs/signIns"<\n>  '$filter==createdDateTime gt  2024-10-30T11:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded')<\n><\n>
+open securityalert.sh | ccp
+ps
+(https --body GET "graph.microsoft.com/v1.0/auditLogs/signIns"<\n>  '$filter==createdDateTime gt  2024-10-30T11:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded')<\n>
+ps | where name =~ "httpie"
+open securityalert.nu | ccp
+(https --body GET "graph.microsoft.com/v1.0/security/alert"<\n>  '$filter==createdDateTime gt  2024-10-30T11:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded')<\n>
+(https --body GET "graph.microsoft.com/v1.0/security/alerts"<\n>  '$filter==createdDateTime gt  2024-10-30T11:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded')<\n>
+open riskyuser.sh | ccp
+(https --body GET "https://graph.microsoft.com/v1.0/identityProtection/riskyUsers"<\n>  '$filter==createdDateTime gt 2024-11-10T11:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded')<\n>
+open riskyuser.sh | ccp
+(https --body GET "https://graph.microsoft.com/v1.0/identityProtection/riskyUsers"<\n>  '$filter==createdDateTime gt 2024-11-10T11:00:00Z'<\n>  '$orderby==createdDateTime asc'<\n>  $"Authorization:Bearer ( $access )"<\n>  'Accept:application/json'<\n>  'Content-Type:application/x-www-form-urlencoded')<\n>
+z w sec sec
+l
+z w tr ansi
+l
+v
+v job.yaml
+kubectl apply -f job.yaml 
+fk
+kubectl -n sec-trahoproject-production logs test-hrjgx -c pull-group-0 -f
+z w ope ope
+l
+v
+z w ansi ansi
+l
+v
+v
+z
+v job.yaml
+kubectl apply -f job.yaml 
+fk 
+kubectl -n sec-trahoproject-production logs test-8ts7z -c pull-group-0 -f
+ssh elmec-dmilog03.dmi.elmec.ad 
+ssh elmec-dmilog03.dmi.elmec.ad 
+ssh carboter-dmilog02.dmi.elmec.ad 
+fk
+kx
+fk
+kubectl -n sec-skipper-quality logs skipper-sec-skipper-quality-657d8bd56c-fp9ql -c skipper -f
+kx
+kubectl -n sec-pandora-quality get networkpolicies
+kubectl -n sec-pandora-quality get networksets
+kubectl -n sec-pandora-quality get networkpolicies
+kubectl api-resources | grep netw
+nslookup skipper.cybergon.com
+nslookup pandora.cybergon.com
+nslookup smarty.cybergon.com
+fk
+fj
+fk
+kx
+fk
+kubectl -n sec-trahoproject-production exec traho-sec-trahoproject-production-5d8b49f4c6-7bfxc -c api -it -- bash
+kubectl get networkpolicies
+z conf
+z nu
+l
+brew install fish
+zoxide query -l .
+fish
+kubectl get networkpolicies.crd.projectcalico.org 
+fk
+kubectl api-resources
+kubectl api-resources | grep net
+kubectl get networkpolicies.crd.projectcalico.org
+fk 
+kubectl -n sec-clopin-production get pods -o yaml | from yaml
+fk
+kubectl -n sec-clopin-production get pods clopin-sec-clopin-production-56ff8c95c6-nkzgn -o yaml | from yaml | get spec.containers.0.volumeMounts
+k
+kubectl get networksets.crd.projectcalico.org
+which carapace
+brew remove carapace

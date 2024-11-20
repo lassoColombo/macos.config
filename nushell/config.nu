@@ -147,16 +147,23 @@ let carapace_completer = {|spans|
 let zoxide_completer = {|spans|
     $spans | skip 1 | zoxide query -l ...$in | lines | where {|x| $x != $env.PWD}
 }
+
+let fish_completer = {|spans|
+    fish --command $'complete "--do-complete=($spans | str join " ")"'
+    | $"value(char tab)description(char newline)" + $in
+    | from tsv --flexible --no-infer
+}
+
 let multiple_completers = {|spans|
     match $spans.0 {
         # ls => $ls_completer
         # git => $git_completer
         z => $zoxide_completer
         zi => $zoxide_completer
-        docker => $carapace_completer
-        go => $carapace_completer
-        kubectl => $carapace_completer
-        _ => $carapace_completer
+        docker => $fish_completer
+        go => $fish_completer
+        kubectl => $fish_completer
+        _ => $fish_completer
     } | do $in $spans
 }
 
@@ -949,8 +956,6 @@ $env.PROMPT_MULTILINE_INDICATOR = "::: "
 # aliases and simple commands
 ## system
 alias l = ls --all
-alias rm = rm -I
-alias rmr = rm -Irf
 alias v = nvim
 alias vv = nvim .
 alias ccp = pbcopy
@@ -974,8 +979,12 @@ def fssh [] {
 }
 ## nu
 alias dtc = detect columns
+alias http = /opt/homebrew/Cellar/httpie/3.2.3/libexec/bin/http
+# def fget [field] {
+#     $in | first | get field
+# }
 ## kube
-alias kk = k9s
+source $"( $fk_home_dir )/fk.nu"
 alias kx = kubectl-ctx
 ## docker
 alias doc = docker container
