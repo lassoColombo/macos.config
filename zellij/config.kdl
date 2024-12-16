@@ -22,12 +22,6 @@ keybinds {
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
         bind "Alt b" { ToggleFloatingPanes; SwitchToMode "Normal"; }
-        bind "Alt W" {
-            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij-workspace.wasm" {
-                floating true
-                debug true
-            }
-        }
         bind "Alt M" {
             LaunchOrFocusPlugin "zellij:session-manager" {
                 floating true
@@ -83,7 +77,7 @@ keybinds {
         bind "c" { SwitchToMode "RenameTab"; TabNameInput 0; }
         bind "h" "Left" "Up" "k" { GoToPreviousTab; }
         bind "l" "Right" "Down" "j" { GoToNextTab; }
-        bind "n" { NewTab; SwitchToMode "RenameTab"; TabNameInput 0; }
+        bind "n" { NewTab; }
         bind "x" { CloseTab; SwitchToMode "Normal"; }
         bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }
         bind "b" { BreakPane; SwitchToMode "Normal"; }
